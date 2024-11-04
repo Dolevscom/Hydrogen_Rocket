@@ -1,0 +1,13 @@
+.bar-container {
+  width: 50px;
+  height: 300px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.bar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.5s;
+}
