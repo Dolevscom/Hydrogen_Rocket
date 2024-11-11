@@ -8,6 +8,8 @@ import numpy as np
 from bidi.algorithm import get_display
 import arabic_reshaper
 import sys
+import os
+
 
 ###### CONSTANTS ######
 STARTING_AMPS = 0
@@ -17,7 +19,7 @@ ACCELERATION = 0.02
 ######################### PATHS #########################
 empty_image_path = '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/empty_bar_graph.jpg'
 full_image_path = '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/full_bar_graph.jpg'
-opening_gif_path = '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/Sequence 01.gif'
+opening_gif_path = '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/start/start_hebrew.gif'
 
 font_paths = {
     'hebrew': '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/fonts/SimplerPro_HLAR-Semibold.otf',
@@ -40,6 +42,7 @@ gif_frames = [frame.copy() for frame in ImageSequence.Iterator(Image.open(openin
 is_opening_screen = True
 ani_opening = None
 ani_measuring = None
+screen_state = "opening"  # Start with the opening screen
 
 translations = {
     'hebrew': 'שחררתם {coulombs:.1f} קולומבים של חשמל!',
@@ -81,6 +84,21 @@ heading_text = {
 
 ######################### HELPER FUNCTIONS #########################
 
+
+def calculate_charge(current, elapsed_time):
+    """
+    Calculate the charge (in Coulombs) based on current and elapsed time.
+    
+    Args:
+        current (float): The current in Amperes.
+        elapsed_time (float): The time in seconds over which the current flowed.
+    
+    Returns:
+        float: The calculated charge in Coulombs.
+    """
+    return current * elapsed_time  # Q = I * t
+
+
 def blend_images(amps, min_amps=0, max_amps=MAX_AMPS):
     normalized_amps = (amps - min_amps) / (max_amps - min_amps)
     fill_height = int(normalized_amps * height)
@@ -91,6 +109,7 @@ def blend_images(amps, min_amps=0, max_amps=MAX_AMPS):
     
     return Image.composite(full_img, empty_img, mask)
 
+
 def simulated_data_generator():
     current_value = STARTING_AMPS
     while current_value <= MAX_AMPS:
@@ -98,27 +117,46 @@ def simulated_data_generator():
         current_value += ACCELERATION
         time.sleep(0.2)
 
-hp_data_generator = simulated_data_generator()
 
-def setup_opening_screen():
-    """Setup the opening screen with the loaded GIF."""
-    fig.clear()
-    ax = fig.add_subplot(111)
-    ax.axis('off')
+def calculate_charge_from_current(serial_connection):
+    """
+    Calculate the total charge (in Coulombs) from current (in Amperes) over time.
     
-    global img_display, ani_opening
-    img_display = ax.imshow(gif_frames[0])
+    Args:
+        serial_connection: The serial connection to the Arduino.
+        
+    Returns:
+        The accumulated charge (Q) in Coulombs.
+    """
+    total_charge = 0.0  # Initialize the total charge in Coulombs
+    last_time = time.time()  # Record the start time
+    
+    while True:
+        # Read current (in Amperes) from the Arduino
+        if serial_connection.in_waiting > 0:
+            try:
+                current_data = serial_connection.readline().decode('utf-8').strip()
+                current = float(current_data)  # Convert the current to a float (in Amperes)
+                
+                # Calculate the elapsed time since the last reading
+                current_time = time.time()
+                elapsed_time = current_time - last_time
+                last_time = current_time
+                
+                # Calculate the charge for this interval
+                charge = calculate_charge(current, elapsed_time)
+                total_charge += charge  # Accumulate total charge
+                
+                print(f"Current: {current} A, Time: {elapsed_time:.2f} s, Charge: {charge:.4f} C, Total Charge: {total_charge:.4f} C")
+                
+            except ValueError:
+                print("Error reading current data. Skipping this reading.")
+                
+        # Include a short sleep if needed to control the read frequency
+        time.sleep(0.1)  # Adjust as necessary
 
-    # Create the GIF animation for the opening screen
-    ani_opening = animation.FuncAnimation(
-        fig, update_opening_screen, frames=len(gif_frames), interval=100, blit=True, cache_frame_data=False
-    )
-    plt.draw()
 
-def update_opening_screen(i):
-    """Update function for the opening screen animation (GIF frames)."""
-    img_display.set_data(gif_frames[i])
-    return [img_display]
+hp_data_generator = simulated_data_generator()
 
 
 def setup_measuring_screen():
@@ -173,6 +211,8 @@ def setup_measuring_screen():
     plt.tight_layout(pad=0)
 
     # print("Measuring screen setup complete.")  # Debug to confirm setup completion
+
+
 def update_screen(frame):
     amps = next(hp_data_generator, MAX_AMPS)
     coulombs = amps * frame  # Simplified charge calculation
@@ -215,43 +255,103 @@ def update_screen(frame):
     plt.draw()
     return [img_display, shower_text, timer_text, color_text]
 
-def close_app(event):
-    sys.exit(0)
+
+def setup_opening_screen():
+    """Display the opening screen in the selected language."""
+    fig.clear()
+    ax = fig.add_subplot(111)
+    ax.axis('off')
+    
+    # Construct the path for the current language's opening image
+    opening_image_path = f"/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/start/start_{current_language}.png"
+    
+    # Check if the file exists
+    if os.path.exists(opening_image_path):
+        opening_img = Image.open(opening_image_path)
+        ax.imshow(opening_img)
+        plt.draw()
+        print(f"Opening screen displayed in {current_language}")  # Debug
+    else:
+        print(f"File not found: {opening_image_path}")  # Notify if file is missing
+
+
+def setup_end_screen():
+    """Display the end screen in the selected language."""
+    fig.clear()
+    ax = fig.add_subplot(111)
+    ax.axis('off')
+    
+    # Construct the path for the current language's end image
+    end_image_path = f"/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/end_screen/Hydro_end_{current_language}.png"
+    
+    # Check if the file exists
+    if os.path.exists(end_image_path):
+        end_img = Image.open(end_image_path)
+        ax.imshow(end_img)
+        plt.draw()
+        # print(f"End screen displayed in {current_language}")  # Debug
+    else:
+        print(f"File not found: {end_image_path}")  # Notify if file is missing
+
 
 def on_key_press(event):
-    """Event handler to transition from opening screen to measuring screen on Enter key press."""
-    # print(f"Key pressed: {event.key}")
-    global is_opening_screen, ani_opening
-    if is_opening_screen and event.key == 'enter':
-        # print("Enter key detected, switching to measuring screen...")
-        is_opening_screen = False
-        if ani_opening:
-            # print("Stopping opening animation...")
-            ani_opening.event_source.stop()  # Stop the opening animation
+    """Event handler to transition between screens on Enter key press."""
+    global screen_state, ani_opening
+    
+    if event.key == 'enter':
+        if screen_state == "opening":
+            # Transition from opening to measuring screen
+            print("Switching from opening to measuring screen...")
+            screen_state = "measuring"
+            if ani_opening:
+                ani_opening.event_source.stop()  # Stop the opening animation
 
-        # Clear the figure and set up the measuring screen
-        fig.clf()
-        setup_measuring_screen()
-        plt.pause(0.1)  # Force a brief pause to allow Matplotlib to refresh
+            # Clear the figure and set up the measuring screen
+            fig.clf()
+            setup_measuring_screen()
+            plt.pause(0.1)  # Allow time for the screen to refresh
 
-        # print("Starting manual update loop for measuring screen...")
-        
-        # Manual update loop
-        frame = 0
-        while not is_opening_screen:
-            update_screen(frame)  # Call update function manually
-            plt.pause(0.2)  # Adjust this interval as needed for smoothness
-            frame += 1
+            # Manual update loop for measuring screen
+            frame = 0
+            while screen_state == "measuring":
+                update_screen(frame)  # Call update function manually
+                plt.pause(0.2)  # Adjust this interval as needed for smoothness
+                frame += 1
+
+        elif screen_state == "measuring":
+            # Transition from measuring to end screen
+            print("Switching from measuring to end screen...")
+            screen_state = "end"
+
+            # Clear the figure and set up the end screen
+            fig.clf()
+            setup_end_screen()
+            plt.pause(0.1)  # Allow time for the screen to refresh
 
 
 def change_language(event):
-    # print(f"Language change key pressed: {event.key}")  # Debug: Check if spacebar is detected
-    global current_language, current_language_index
+    global current_language, current_language_index, screen_state
+    
     if event.key == ' ':
+        # Cycle through the languages
         current_language_index = (current_language_index + 1) % len(languages)
         current_language = languages[current_language_index]
-        # print(f"Language switched to: {current_language}")  # Debug: Confirm language switch
-        setup_measuring_screen()
+        print(f"Language switched to: {current_language}")  # Debug: Confirm language switch
+        
+        # Update the current screen based on `screen_state`
+        if screen_state == "opening":
+            # Display the correct language version of the opening screen
+            setup_opening_screen()
+        elif screen_state == "measuring":
+            # Re-setup the measuring screen with the new language
+            setup_measuring_screen()
+        elif screen_state == "end":
+            # Display the correct language version of the end screen
+            setup_end_screen()
+
+
+def close_app(event):
+    sys.exit(0)
 
 # Initialize the figure and connect the key press event handler
 fig, _ = plt.subplots(figsize=(10, 8))
