@@ -1,0 +1,264 @@
+import time
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from matplotlib import font_manager as fm
+from matplotlib.gridspec import GridSpec
+from PIL import Image, ImageDraw, ImageSequence
+import numpy as np
+from bidi.algorithm import get_display
+import arabic_reshaper
+import sys
+
+###### CONSTANTS ######
+STARTING_AMPS = 0
+MAX_AMPS = 10
+ACCELERATION = 0.02
+
+######################### PATHS #########################
+empty_image_path = '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/empty_bar_graph.jpg'
+full_image_path = '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/full_bar_graph.jpg'
+opening_gif_path = '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/Sequence 01.gif'
+
+font_paths = {
+    'hebrew': '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/fonts/SimplerPro_HLAR-Semibold.otf',
+    'english': '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/fonts/SimplerPro_HLAR-Semibold.otf',
+    'arabic': '/Users/dolevsmac/Desktop/Hydrogen_Rocket/assets/fonts/NotoKufiArabic-SemiBold.ttf'
+}
+
+languages = ['hebrew', 'english', 'arabic']
+current_language_index = 0
+current_language = languages[current_language_index]
+
+# Load images and set up display parameters
+empty_img = Image.open(empty_image_path).convert("RGBA")
+full_img = Image.open(full_image_path).convert("RGBA")
+empty_img = empty_img.resize(full_img.size)
+width, height = full_img.size
+gif_frames = [frame.copy() for frame in ImageSequence.Iterator(Image.open(opening_gif_path))]
+
+######################### GLOBALS & FLAGS #########################
+is_opening_screen = True
+ani_opening = None
+ani_measuring = None
+
+translations = {
+    'hebrew': 'שחררתם {coulombs:.1f} קולומבים של חשמל!',
+    'english': 'You released {coulombs:.1f} Coulombs of electric charge!',
+    'arabic': 'لقد أطلقت {coulombs:.1f} كولوم من الشحنة الكهربائية!'
+}
+
+instruction_texts = {
+    'hebrew': 'סובבו את הידית על מנת ליצור מתח חשמלי',
+    'english': 'Turn the knob to generate electrical force',
+    'arabic': 'لف المقبض لتوليد قوة كهربائية'
+}
+
+color_messages = {
+    'yellow': {
+        'hebrew': 'המשיכו לסובב עד שתגיעו לאזור הירוק',
+        'english': 'Keep turning until you reach the green zone',
+        'arabic': 'استمر في الدوران حتى تصل إلى المنطقة الخضراء'
+    },
+    'green': {
+        'hebrew': 'אפשר לשגר',
+        'english': 'Ready to launch',
+        'arabic': 'جاهز للإطلاق'
+    },
+    'red': {
+        'hebrew': 'חובה לשגר!',
+        'english': 'Mandatory to launch!',
+        'arabic': 'يجب الإطلاق الآن!'
+    }
+}
+
+heading_text = {
+    'hebrew': 'רקטת מימן',
+    'english': 'Hydrogen Rocket',
+    'arabic': 'صاروخ الهيدروجين'
+}
+
+
+
+######################### HELPER FUNCTIONS #########################
+
+def blend_images(amps, min_amps=0, max_amps=MAX_AMPS):
+    normalized_amps = (amps - min_amps) / (max_amps - min_amps)
+    fill_height = int(normalized_amps * height)
+    
+    mask = Image.new("L", empty_img.size, 0)
+    draw = ImageDraw.Draw(mask)
+    draw.rectangle([0, height - fill_height, width, height], fill=255)
+    
+    return Image.composite(full_img, empty_img, mask)
+
+def simulated_data_generator():
+    current_value = STARTING_AMPS
+    while current_value <= MAX_AMPS:
+        yield current_value
+        current_value += ACCELERATION
+        time.sleep(0.2)
+
+hp_data_generator = simulated_data_generator()
+
+def setup_opening_screen():
+    """Setup the opening screen with the loaded GIF."""
+    fig.clear()
+    ax = fig.add_subplot(111)
+    ax.axis('off')
+    
+    global img_display, ani_opening
+    img_display = ax.imshow(gif_frames[0])
+
+    # Create the GIF animation for the opening screen
+    ani_opening = animation.FuncAnimation(
+        fig, update_opening_screen, frames=len(gif_frames), interval=100, blit=True, cache_frame_data=False
+    )
+    plt.draw()
+
+def update_opening_screen(i):
+    """Update function for the opening screen animation (GIF frames)."""
+    img_display.set_data(gif_frames[i])
+    return [img_display]
+
+
+def setup_measuring_screen():
+    fig.clear()
+    gs = GridSpec(5, 2, height_ratios=[1, 0.5, 2, 1, 1], width_ratios=[1, 1])
+
+    # Top: Heading and Instruction
+    ax1 = fig.add_subplot(gs[0, :])
+    heading = heading_text[current_language]
+    reshaped_heading = arabic_reshaper.reshape(heading) if current_language in ['arabic', 'hebrew'] else heading
+    bidi_heading = get_display(reshaped_heading) if current_language in ['arabic', 'hebrew'] else reshaped_heading
+    ax1.text(0.5, 0.5, bidi_heading, ha='center', va='center', fontsize=30,
+             fontproperties=fm.FontProperties(fname=font_paths[current_language]), color='black')
+    ax1.axis('off')
+
+    ax2 = fig.add_subplot(gs[1, :])
+    instruction = instruction_texts[current_language]
+    reshaped_instruction = arabic_reshaper.reshape(instruction) if current_language in ['arabic', 'hebrew'] else instruction
+    bidi_instruction = get_display(reshaped_instruction) if current_language in ['arabic', 'hebrew'] else reshaped_instruction
+    ax2.text(0.5, 0.5, bidi_instruction, ha='center', va='center', fontsize=20,
+             fontproperties=fm.FontProperties(fname=font_paths[current_language]), color='gray')
+    ax2.axis('off')
+
+    # Middle: Coulomb Shower
+    ax3 = fig.add_subplot(gs[2, :])
+    global shower_text
+    shower_text = ax3.text(0.5, 0.5, '', ha='center', va='center', fontsize=15,
+                           fontproperties=fm.FontProperties(fname=font_paths[current_language]), color='blue')
+    ax3.axis('off')
+
+    # Bottom Left: Timer
+    ax4 = fig.add_subplot(gs[3, 0])
+    global timer_text
+    timer_text = ax4.text(0.5, 0.5, '0.0 s', ha='center', va='center', fontsize=20,
+                          fontproperties=fm.FontProperties(fname=font_paths[current_language]), color='black')
+    ax4.axis('off')
+
+    # Bottom Right: Bar Graph
+    ax5 = fig.add_subplot(gs[3, 1])
+    global img_display
+    img_display = ax5.imshow(np.zeros((height, width, 4), dtype=np.uint8))
+    ax5.axis('off')
+
+    # Bottom Text: Color Message
+    ax6 = fig.add_subplot(gs[4, :])
+    global color_text
+    color_text = ax6.text(0.5, 0.5, '', ha='center', va='center', fontsize=20,
+                          fontproperties=fm.FontProperties(fname=font_paths[current_language]), color='black')
+    ax6.axis('off')
+
+    plt.subplots_adjust(left=0, right=1, top=1, bottom=0, hspace=0, wspace=0)
+    plt.tight_layout(pad=0)
+
+    # print("Measuring screen setup complete.")  # Debug to confirm setup completion
+def update_screen(frame):
+    amps = next(hp_data_generator, MAX_AMPS)
+    coulombs = amps * frame  # Simplified charge calculation
+
+    # Debug: Print current amps and frame
+    # print(f"Frame: {frame}, Amps: {amps}, Coulombs: {coulombs}")
+
+    # Update Coulomb Shower
+    shower_text.set_text(f'{coulombs:.1f} C')
+
+    # Update Timer
+    elapsed_time = frame * 0.2  # Assuming each frame is ~0.2 seconds
+    timer_text.set_text(f'{elapsed_time:.1f} s')
+
+    # Update Bar Graph
+    result_img = blend_images(amps)
+    img_display.set_data(np.array(result_img))
+
+    # Determine the color level based on amps
+    if amps < MAX_AMPS / 3:
+        color = 'yellow'
+    elif amps < 2 * MAX_AMPS / 3:
+        color = 'green'
+    else:
+        color = 'red'
+
+    # Get the appropriate message for the current color and language
+    message = color_messages[color][current_language]
+
+    # Handle RTL for Hebrew and Arabic languages
+    if current_language in ['hebrew', 'arabic']:
+        reshaped_message = arabic_reshaper.reshape(message)
+        bidi_message = get_display(reshaped_message)
+    else:
+        bidi_message = message
+
+    # Update the color message text without changing its color
+    color_text.set_text(bidi_message)
+
+    plt.draw()
+    return [img_display, shower_text, timer_text, color_text]
+
+def close_app(event):
+    sys.exit(0)
+
+def on_key_press(event):
+    """Event handler to transition from opening screen to measuring screen on Enter key press."""
+    # print(f"Key pressed: {event.key}")
+    global is_opening_screen, ani_opening
+    if is_opening_screen and event.key == 'enter':
+        # print("Enter key detected, switching to measuring screen...")
+        is_opening_screen = False
+        if ani_opening:
+            # print("Stopping opening animation...")
+            ani_opening.event_source.stop()  # Stop the opening animation
+
+        # Clear the figure and set up the measuring screen
+        fig.clf()
+        setup_measuring_screen()
+        plt.pause(0.1)  # Force a brief pause to allow Matplotlib to refresh
+
+        # print("Starting manual update loop for measuring screen...")
+        
+        # Manual update loop
+        frame = 0
+        while not is_opening_screen:
+            update_screen(frame)  # Call update function manually
+            plt.pause(0.2)  # Adjust this interval as needed for smoothness
+            frame += 1
+
+
+def change_language(event):
+    # print(f"Language change key pressed: {event.key}")  # Debug: Check if spacebar is detected
+    global current_language, current_language_index
+    if event.key == ' ':
+        current_language_index = (current_language_index + 1) % len(languages)
+        current_language = languages[current_language_index]
+        # print(f"Language switched to: {current_language}")  # Debug: Confirm language switch
+        setup_measuring_screen()
+
+# Initialize the figure and connect the key press event handler
+fig, _ = plt.subplots(figsize=(10, 8))
+fig.canvas.mpl_connect('key_press_event', on_key_press)
+fig.canvas.mpl_connect('key_press_event', change_language)
+fig.canvas.mpl_connect('close_event', close_app)
+
+# Display the opening screen
+setup_opening_screen()
+plt.show()
