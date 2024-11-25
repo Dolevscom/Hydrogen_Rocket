@@ -123,12 +123,12 @@
 }
 
 
-.language-selector button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
+/*.language-selector button {*/
+/*    margin: 0 10px;*/
+/*    padding: 10px 20px;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*}*/
 
 .full-screen-image-wrapper {
     display: flex;
@@ -167,5 +167,11 @@
     object-fit: contain;
 }
 
+.arduino-data {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
 
 
