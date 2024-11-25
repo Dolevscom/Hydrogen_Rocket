@@ -105,12 +105,44 @@ handleMessage = (event) => {
 
         // Labels for data1 and data2 based on the language
         const labels = {
-        Hebrew: { data1: "זרם נוכחי", data2: "מטען שהצטבר", unit1: "אמפר", unit2: "קולון" },
-        English: { data1: "Current", data2: "Accumulated Charge", unit1: "Amper", unit2: "Coulomb" },
-        Arabic: { data1: "التيار الحالي", data2: "الشحنة المتراكمة", unit1: "أمبير", unit2: "كولوم" },
-        };
+        Hebrew: {
+            data1: "זרם נוכחי",
+            data2: "מטען שהצטבר",
+            unit1: "אמפר",
+            unit2: "קולון",
+            text1: "סובבו את הידית עד שתגיעו לחלק הצהוב",
+            text2: "לחצו על ׳שגר׳!",
+            text3: "חובה לשגר",
+        },
+        English: {
+            data1: "Current",
+            data2: "Accumulated Charge",
+            unit1: "Amper",
+            unit2: "Coulomb",
+            text1: "Turn the handle until you reach the yellow zone",
+            text2: "Press 'Launch'!",
+            text3: "Must Launch!",
+        },
+        Arabic: {
+            data1: "التيار الحالي",
+            data2: "الشحنة المتراكمة",
+            unit1: "أمبير",
+            unit2: "كولوم",
+            text1: "قم بتدوير المقبض حتى تصل إلى المنطقة الصفراء",
+            text2: "اضغط على 'إطلاق'!",
+            text3: "يجب الإطلاق",
+        },
+    };
 
         const currentLabels = labels[language];
+
+        const getBottomText = (charge) => {
+        if (charge < 20) return currentLabels.text1;
+        if (charge >= 20 && charge <= 40) return currentLabels.text2;
+        return currentLabels.text3;
+        };
+
+    const bottomText = getBottomText(arduinoData.number2);
 
 
         const getImagePath = () => {
@@ -141,42 +173,79 @@ handleMessage = (event) => {
             );
         }
 
-        if (screen === "main") {
-            return (
-                <>
-                    <h1 className={`${language} h1-bold`}>
-                        {language === "Hebrew"
-                            ? "טיל מימן"
-                            : language === "English"
-                            ? "Hydrogen Rocket"
-                            : "صاروخ الهيدروجين"}
-                    </h1>
-                    <p className={`${language} h3-regular`}>
-                        {language === "Hebrew"
-                            ? "סובבו את ידית הגנרטור על מנת ליצור מתח חשמלי"
-                            : language === "English"
-                            ? "Turn the generator handle to generate electrical voltage."
-                            : "قم بتدوير مقبض المولد لتوليد الجهد الكهربائي."}
-                    </p>
-                    <div className="data-screen-side-by-side">
-                        <div className="data-item">
-                            <h2 className={`${language} data-label`}>{currentLabels.data1}</h2>
-                            <p className={`${language} data-value`}>
-                                {arduinoData.number1.toFixed(2)} {currentLabels.unit1}
-                            </p>
-                        </div>
-                        <div className="data-item">
-                            <h2 className={`${language} data-label`}>{currentLabels.data2}</h2>
-                            <p className={`${language} data-value`}>
-                                {arduinoData.number2.toFixed(2)} {currentLabels.unit2}
-                            </p>
+        const barGraphColor = (value) => {
+        if (value < 20) return "green";
+        if (value < 40) return "yellow";
+        return "red";
+        };
+
+        const gaugeRotation = (value) => {
+            const maxValue = 30; // Adjust based on max value for current
+            return (value / maxValue) * 180; // Scale to half-circle (180 degrees)
+        };
+
+         if (screen === "main") {
+        return (
+            <>
+                <h1 className={`${language} h1-bold`}>
+                    {language === "Hebrew"
+                        ? "טיל מימן"
+                        : language === "English"
+                        ? "Hydrogen Rocket"
+                        : "صاروخ الهيدروجين"}
+                </h1>
+                <p className={`${language} h3-regular`}>
+                    {language === "Hebrew"
+                        ? "סובבו את ידית הגנרטור על מנת ליצור מתח חשמלי"
+                        : language === "English"
+                        ? "Turn the generator handle to generate electrical voltage."
+                        : "قم بتدوير مقبض المولد لتوليد الجهد الكهربائي."}
+                </p>
+                <div className="data-screen-side-by-side">
+                    {/* Current (Gauge Clock) */}
+                    <div className="data-item">
+                        <h2 className={`${language} data-label`}>{currentLabels.data1}</h2>
+                        <p className={`${language} data-value`}>
+                            {arduinoData.number1.toFixed(2)} {currentLabels.unit1}
+                        </p>
+                        <div className="gauge-container">
+                            <div
+                                className="gauge"
+                                style={{
+                                    transform: `rotate(${gaugeRotation(
+                                        arduinoData.number1
+                                    )}deg)`,
+                                }}
+                            ></div>
                         </div>
                     </div>
-                </>
-            );
-        }
 
-        if (screen === "ending") {
+                    {/* Accumulated Charge (Vertical Bar Graph) */}
+                    <div className="data-item">
+                        <h2 className={`${language} data-label`}>{currentLabels.data2}</h2>
+                        <p className={`${language} data-value`}>
+                            {arduinoData.number2.toFixed(2)} {currentLabels.unit2}
+                        </p>
+                        <div className="bar-graph-container-vertical">
+                            <div
+                                className="bar-graph-vertical"
+                                style={{
+                                    height: `${arduinoData.number2}%`,
+                                    backgroundColor: barGraphColor(arduinoData.number2),
+                                }}
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                {/* Bottom Text */}
+                <div className="bottom-text">
+                    <p className={`${language} h3-regular`}>{bottomText}</p>
+                </div>
+            </>
+        );
+    }
+
+         if (screen === "ending") {
             return (
                 <div className="full-screen-image-wrapper">
                     <img

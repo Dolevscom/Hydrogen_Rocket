@@ -41,7 +41,7 @@
 .h1-bold {
     font-weight: 900; /* Black */
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .h2-semi-bold {
@@ -51,7 +51,7 @@
 .h3-regular {
     font-weight: 400; /* Regular */
     font-size: 1.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .App {
@@ -128,13 +128,6 @@
 }
 
 
-/*.language-selector button {*/
-/*    margin: 0 10px;*/
-/*    padding: 10px 20px;*/
-/*    font-size: 16px;*/
-/*    cursor: pointer;*/
-/*}*/
-
 .full-screen-image-wrapper {
     display: flex;
     justify-content: center;
@@ -182,14 +175,55 @@
 .data-screen-side-by-side {
     display: flex;
     justify-content: space-around; /* Space out items evenly */
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     width: 100%;
-    padding: 20px;
-}
+    padding: 10px 20px; /* Reduce padding for vertical alignment */
+    margin-top: 20px; /* Adjust the spacing below the subtitle */}
 
 .data-item {
     text-align: center;
     flex: 1; /* Ensure items take equal space */
+    position: relative;
 }
+
+/* Bar Graph (Vertical) */
+.bar-graph-container-vertical {
+    width: 20px;
+    height: 150px; /* Adjust height for the bar */
+    background-color: #ccc; /* Bar graph background */
+    border-radius: 10px;
+    margin: 10px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end; /* Align the bar graph to the bottom */
+}
+
+.bar-graph-vertical {
+    width: 100%; /* Full width of the container */
+    transition: height 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Gauge Clock */
+.gauge-container {
+    width: 120px;
+    height: 60px; /* Half-circle */
+    background-color: #b7f4e4; /* Gauge background */
+    border-radius: 60px 60px 0 0; /* Make it a half-circle */
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.gauge {
+    width: 10px;
+    height: 60px;
+    background-color: #000fed; /* Pointer color */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: transform 0.3s ease; /* Smooth pointer movement */
+}
+
 
 
