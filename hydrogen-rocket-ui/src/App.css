@@ -40,6 +40,8 @@
 
 .h1-bold {
     font-weight: 900; /* Black */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .h2-semi-bold {
@@ -48,6 +50,8 @@
 
 .h3-regular {
     font-weight: 400; /* Regular */
+    font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
 .App {
@@ -86,6 +90,7 @@
 .English {
     text-align: center;
     direction: ltr;
+    margin: 50px auto
 }
 
 .stats-container {
@@ -172,6 +177,19 @@
     font-size: 1.5rem;
     color: #333;
     text-align: center;
+}
+
+.data-screen-side-by-side {
+    display: flex;
+    justify-content: space-around; /* Space out items evenly */
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.data-item {
+    text-align: center;
+    flex: 1; /* Ensure items take equal space */
 }
 
 

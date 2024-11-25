@@ -32,10 +32,23 @@ def find_arduino_port(baud_rate=9600):
 
 # WebSocket handler that sends serial data to connected clients
 async def arduino_websocket_handler(websocket, serial_connection):
+    # logger.info(f"New client connected: {websocket.remote_address}")
     try:
         while True:
             # Read a line from the serial port
-            data = serial_connection.readline().decode('utf-8').strip()
+            data = serial_connection.readline()
+            try:
+                # Attempt to decode as UTF-8
+                decoded_data = data.decode('utf-8').strip()
+            except UnicodeDecodeError:
+                # Fallback for non-UTF-8 data
+                decoded_data = data.hex()  # Convert raw bytes to a hexadecimal string
+                logger.warning(f"Non-UTF-8 data received: {decoded_data}")
+
+            # Continue with decoded_data
+            if decoded_data:
+                await websocket.send(decoded_data)
+                logger.info(f"Sent: {decoded_data}")
             if data:
                 await websocket.send(data)
                 logger.info(f"Sent: {data}")
