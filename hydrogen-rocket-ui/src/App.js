@@ -1,6 +1,12 @@
 import React from "react";
 import { BaseApp } from "./BaseApp";
 import "./App.css";
+import startHebrew from './assets/start_screen/start_hebrew.png';
+import startEnglish from './assets/start_screen/start_english.png';
+import startArabic from './assets/start_screen/start_arabic.png';
+import endHebrew from './assets/end_screen/end_hebrew.png';
+import endEnglish from './assets/end_screen/end_english.png';
+import endArabic from './assets/end_screen/end_arabic.png';
 
 class App extends BaseApp {
     constructor(props) {
@@ -10,58 +16,72 @@ class App extends BaseApp {
             screen: "opening", // Default to the opening screen
             language: "Hebrew", // Default language
             rawArduinoData: "", // Raw data from Arduino
-            arduinoData: { number1: 0, number2: 0 }, // Initialize with default values
+            arduinoData: {
+                current: 0, // Amperes
+                charge: 0, // Coulombs
+                ignition: 0, // Ignition button status
+                language: 0, // Language index
+            }, // Initialize with default values
         };
     }
 
-handleMessage = (event) => {
-    let rawData;
-
-    // Handle different types of WebSocket data
-    if (event.data instanceof ArrayBuffer) {
-        try {
-            rawData = new TextDecoder("utf-8").decode(event.data);
-        } catch (error) {
-            console.error("Failed to decode WebSocket data:", error);
+    handleMessage = (event) => {
+        console.log("WebSocket message received:", event);
+    
+        let rawData;
+    
+        if (event.data instanceof ArrayBuffer) {
+            console.log("Data type is ArrayBuffer.");
+            try {
+                rawData = new TextDecoder("utf-8").decode(event.data);
+                console.log("Decoded ArrayBuffer data:", rawData);
+            } catch (error) {
+                console.error("Failed to decode WebSocket ArrayBuffer data:", error);
+                return;
+            }
+        } else if (typeof event.data === "string") {
+            console.log("Data type is string.");
+            rawData = event.data;
+            console.log("Raw string data:", rawData);
+        } else {
+            console.warn("Unsupported data type:", event.data);
             return;
         }
-    } else if (typeof event.data === "string") {
-        // Handle string data directly
-        rawData = event.data;
-    } else if (typeof event.data === "object" && Object.keys(event.data).length > 0) {
+    
         try {
-            // If it's a non-empty object, process as JSON
-            rawData = JSON.stringify(event.data);
-            console.warn(
-                "WebSocket sent a structured object; check the server for structured data. Processed as JSON."
-            );
-        } catch (error) {
-            console.error("Failed to process object WebSocket data:", error);
-            return;
-        }
-    } else {
-        console.warn("Unsupported or empty data received:", event.data);
-        return; // Exit for unsupported or empty objects
-    }
-
-    console.log("Raw data from WebSocket:", rawData);
-
-    // Process valid string data
-    if (typeof rawData === "string" && rawData.trim().length > 0) {
-        try {
-            const [number1, number2] = rawData.trim().split(/\s+/).map(parseFloat);
+            const [current, charge, ignition, language] = rawData
+                .trim()
+                .split(/\s+/)
+                .map((val, index) => (index < 2 ? parseFloat(val) : parseInt(val, 10)));
+    
+            console.log("Parsed data:", { current, charge, ignition, language });
+    
             this.setState({
                 rawArduinoData: rawData, // Save raw data for debugging
-                arduinoData: { number1: number1 || 0, number2: number2 || 0 }, // Parsed numbers with fallback
+                arduinoData: {
+                    current: current || 0,
+                    charge: charge || 0,
+                    ignition: ignition || 0,
+                    language: language || 0,
+                },
+                language: ["Hebrew", "English", "Arabic"][language || 0], // Update language directly
             });
-        } catch (parseError) {
-            console.error("Failed to parse WebSocket data:", parseError);
+    
+            console.log("Updated state:", this.state);
+    
+            // Trigger transition on ignition button press if charge is sufficient
+            if (ignition === 1 && charge >= 100) {
+                console.log("Ignition button pressed with sufficient charge. Transitioning to ending screen...");
+                setTimeout(() => {
+                    this.setState({ screen: "ending" });
+                    console.log("Screen transitioned to 'ending'.");
+                }, 3000); // 3-second delay
+            }
+        } catch (error) {
+            console.error("Error parsing WebSocket message:", rawData, error);
         }
-    }
-};
-
-
-
+    };
+    
     componentDidMount() {
         super.componentDidMount(); // Set up WebSocket connection
         window.addEventListener("keydown", this.handleKeyPress);
@@ -71,7 +91,6 @@ handleMessage = (event) => {
         super.componentWillUnmount(); // Clean up WebSocket and listeners
         window.removeEventListener("keydown", this.handleKeyPress);
     }
-
 
     handleKeyPress = (event) => {
         if (event.code === "Enter") {
@@ -103,62 +122,75 @@ handleMessage = (event) => {
     renderScreen() {
         const { screen, language, arduinoData } = this.state;
 
-        // Labels for data1 and data2 based on the language
         const labels = {
-        Hebrew: {
-            data1: "זרם נוכחי",
-            data2: "מטען שהצטבר",
-            unit1: "אמפר",
-            unit2: "קולון",
-            text1: "סובבו את הידית עד שתגיעו לחלק הצהוב",
-            text2: "לחצו על ׳שגר׳!",
-            text3: "חובה לשגר",
-        },
-        English: {
-            data1: "Current",
-            data2: "Accumulated Charge",
-            unit1: "Amper",
-            unit2: "Coulomb",
-            text1: "Turn the handle until you reach the yellow zone",
-            text2: "Press 'Launch'!",
-            text3: "Must Launch!",
-        },
-        Arabic: {
-            data1: "التيار الحالي",
-            data2: "الشحنة المتراكمة",
-            unit1: "أمبير",
-            unit2: "كولوم",
-            text1: "قم بتدوير المقبض حتى تصل إلى المنطقة الصفراء",
-            text2: "اضغط على 'إطلاق'!",
-            text3: "يجب الإطلاق",
-        },
-    };
+            Hebrew: {
+                data1: "זרם נוכחי",
+                data2: "מטען שהצטבר",
+                unit1: "אמפר",
+                unit2: "קולון",
+                text1: "סובבו את הידית עד שתגיעו לחלק הצהוב",
+                text2: "לחצו על ׳שגר׳!",
+                text3: "חובה לשגר",
+            },
+            English: {
+                data1: "Current",
+                data2: "Accumulated Charge",
+                unit1: "Amper",
+                unit2: "Coulomb",
+                text1: "Turn the handle until you reach the yellow zone",
+                text2: "Press 'Launch'!",
+                text3: "Must Launch!",
+            },
+            Arabic: {
+                data1: "التيار الحالي",
+                data2: "الشحنة المتراكمة",
+                unit1: "أمبير",
+                unit2: "كولوم",
+                text1: "قم بتدوير المقبض حتى تصل إلى المنطقة الصفراء",
+                text2: "اضغط على 'إطلاق'!",
+                text3: "يجب الإطلاق",
+            },
+        };
 
         const currentLabels = labels[language];
 
         const getBottomText = (charge) => {
-        if (charge < 20) return currentLabels.text1;
-        if (charge >= 20 && charge <= 40) return currentLabels.text2;
-        return currentLabels.text3;
+            if (charge < 100) return currentLabels.text1;
+            if (charge >= 100 && charge <= 120) return currentLabels.text2;
+            return currentLabels.text3;
         };
 
-    const bottomText = getBottomText(arduinoData.number2);
+        const bottomText = getBottomText(arduinoData.charge);
 
-
-        const getImagePath = () => {
+        const getImagePath = (screen, language) => {
             if (screen === "opening") {
-                return `/assets/start_screen/start_${language}.png`;
+                if (language === "Hebrew") return startHebrew;
+                if (language === "English") return startEnglish;
+                if (language === "Arabic") return startArabic;
             } else if (screen === "ending") {
-                return `/assets/end_screen/Hydro_end_${language}.png`;
+                if (language === "Hebrew") return endHebrew;
+                if (language === "English") return endEnglish;
+                if (language === "Arabic") return endArabic;
             }
             return null; // No image for the main screen
+        };
+
+        const barGraphColor = (value) => {
+            if (value < 100) return "green";
+            if (value < 120) return "yellow";
+            return "red";
+        };
+
+        const gaugeRotation = (value) => {
+            const maxValue = 30; // Adjust based on max value for current
+            return (value / maxValue) * 180; // Scale to half-circle (180 degrees)
         };
 
         if (screen === "opening") {
             return (
                 <div className="full-screen-image-wrapper">
                     <img
-                        src={getImagePath()}
+                        src={getImagePath(screen, language)}
                         alt={`${screen} screen`}
                         className="full-screen-image"
                     />
@@ -173,83 +205,69 @@ handleMessage = (event) => {
             );
         }
 
-        const barGraphColor = (value) => {
-        if (value < 20) return "green";
-        if (value < 40) return "yellow";
-        return "red";
-        };
+        if (screen === "main") {
+            return (
+                <>
+                    <h1 className={`${language} h1-bold`}>
+                        {language === "Hebrew"
+                            ? "טיל מימן"
+                            : language === "English"
+                            ? "Hydrogen Rocket"
+                            : "صاروخ الهيدروجين"}
+                    </h1>
+                    <p className={`${language} h3-regular`}>
+                        {language === "Hebrew"
+                            ? "סובבו את ידית הגנרטור על מנת ליצור מתח חשמלי"
+                            : language === "English"
+                            ? "Turn the generator handle to generate electrical voltage."
+                            : "قم بتدوير مقبض المولد لتوليد الجهد الكهربائي."}
+                    </p>
+                    <div className="data-screen-side-by-side">
+                        <div className="data-item">
+                            <h2 className={`${language} data-label`}>{currentLabels.data1}</h2>
+                            <p className={`${language} data-value`}>
+                                {arduinoData.current.toFixed(2)} {currentLabels.unit1}
+                            </p>
+                            <div className="gauge-container">
+                                <div
+                                    className="gauge"
+                                    style={{
+                                        transform: `rotate(${gaugeRotation(
+                                            arduinoData.current
+                                        )}deg)`,
+                                    }}
+                                ></div>
+                            </div>
+                        </div>
 
-        const gaugeRotation = (value) => {
-            const maxValue = 30; // Adjust based on max value for current
-            return (value / maxValue) * 180; // Scale to half-circle (180 degrees)
-        };
-
-         if (screen === "main") {
-        return (
-            <>
-                <h1 className={`${language} h1-bold`}>
-                    {language === "Hebrew"
-                        ? "טיל מימן"
-                        : language === "English"
-                        ? "Hydrogen Rocket"
-                        : "صاروخ الهيدروجين"}
-                </h1>
-                <p className={`${language} h3-regular`}>
-                    {language === "Hebrew"
-                        ? "סובבו את ידית הגנרטור על מנת ליצור מתח חשמלי"
-                        : language === "English"
-                        ? "Turn the generator handle to generate electrical voltage."
-                        : "قم بتدوير مقبض المولد لتوليد الجهد الكهربائي."}
-                </p>
-                <div className="data-screen-side-by-side">
-                    {/* Current (Gauge Clock) */}
-                    <div className="data-item">
-                        <h2 className={`${language} data-label`}>{currentLabels.data1}</h2>
-                        <p className={`${language} data-value`}>
-                            {arduinoData.number1.toFixed(2)} {currentLabels.unit1}
-                        </p>
-                        <div className="gauge-container">
-                            <div
-                                className="gauge"
-                                style={{
-                                    transform: `rotate(${gaugeRotation(
-                                        arduinoData.number1
-                                    )}deg)`,
-                                }}
-                            ></div>
+                        <div className="data-item">
+                            <h2 className={`${language} data-label`}>{currentLabels.data2}</h2>
+                            <p className={`${language} data-value`}>
+                                {arduinoData.charge.toFixed(2)} {currentLabels.unit2}
+                            </p>
+                            <div className="bar-graph-container-vertical">
+                                <div
+                                    className="bar-graph-vertical"
+                                    style={{
+                                        height: `${arduinoData.charge}%`,
+                                        backgroundColor: barGraphColor(arduinoData.charge),
+                                    }}
+                                ></div>
+                            </div>
                         </div>
                     </div>
-
-                    {/* Accumulated Charge (Vertical Bar Graph) */}
-                    <div className="data-item">
-                        <h2 className={`${language} data-label`}>{currentLabels.data2}</h2>
-                        <p className={`${language} data-value`}>
-                            {arduinoData.number2.toFixed(2)} {currentLabels.unit2}
-                        </p>
-                        <div className="bar-graph-container-vertical">
-                            <div
-                                className="bar-graph-vertical"
-                                style={{
-                                    height: `${arduinoData.number2}%`,
-                                    backgroundColor: barGraphColor(arduinoData.number2),
-                                }}
-                            ></div>
-                        </div>
+                    <div className="bottom-text">
+                        <p className={`${language} h3-regular`}>{bottomText}</p>
                     </div>
-                </div>
-                {/* Bottom Text */}
-                <div className="bottom-text">
-                    <p className={`${language} h3-regular`}>{bottomText}</p>
-                </div>
-            </>
-        );
-    }
+                </>
+            );
+        }
 
-         if (screen === "ending") {
+        if (screen === "ending") {
             return (
                 <div className="full-screen-image-wrapper">
                     <img
-                        src={getImagePath()}
+                        src={getImagePath(screen, language)}
                         alt={`${screen} screen`}
                         className="full-screen-image"
                     />

@@ -19,12 +19,15 @@ export class BaseApp extends Component {
     }
 
     componentWillUnmount() {
+        console.log("Component is unmounting");
         if (this.reconnectIntervalRef) {
             clearInterval(this.reconnectIntervalRef);
+            console.log("Reconnect interval cleared");
         }
-        if (this.ws) {
-            this.ws.close();
-        }
+        // if (this.ws) {
+        //     console.log("Closing WebSocket connection");
+        //     this.ws.close();
+        // }
     }
 
     connectWebSocket = () => {
