@@ -1,0 +1,4654 @@
+Starting serial_to_websocket.py...
+Starting the React app...
+Poetry is not installed. Installing now...
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+Something is already running on port 3000.
+Retrieving Poetry metadata
+
+# Welcome to Poetry!
+
+This will download and install the latest version of Poetry,
+a dependency and package manager for Python.
+
+It will add the `poetry` command to Poetry's bin directory, located at:
+
+/home/mada/.local/bin
+
+You can uninstall at any time by executing this script with the --uninstall option,
+and these changes will be reverted.
+
+Installing Poetry (1.8.5)
+Installing Poetry (1.8.5): Creating environment
+Installing Poetry (1.8.5): Installing Poetry
+Installing Poetry (1.8.5): Creating script
+Installing Poetry (1.8.5): Done
+
+Poetry (1.8.5) is installed now. Great!
+
+To get started you need Poetry's bin directory (/home/mada/.local/bin) in your `PATH`
+environment variable.
+
+Add `export PATH="/home/mada/.local/bin:$PATH"` to your shell configuration file.
+
+Alternatively, you can call Poetry explicitly with `/home/mada/.local/bin/poetry`.
+
+You can test that everything is set up by executing:
+
+`poetry --version`
+
+Installed poetry
+Making sure we're in the right directory
+Installing dependencies
+/home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/on_startup.sh: line 19: poetry: command not found
+Installed dependencies
+Running the script
+/home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/on_startup.sh: line 31: poetry: command not found
+Starting serial_to_websocket.py...
+Starting the React app...
+Poetry is not installed. Installing now...
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+Retrieving Poetry metadata
+
+The latest version (1.8.5) is already installed.
+Installed poetry
+Making sure we're in the right directory
+Installing dependencies
+/home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/on_startup.sh: line 19: poetry: command not found
+Installed dependencies
+Running the script
+/home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/on_startup.sh: line 31: poetry: command not found
+(node:850430) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:850430) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Starting serial_to_websocket.py...
+INFO:__main__:Connected to /dev/ttyUSB0
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+INFO:__main__:Server stopped.
+INFO:websockets.server:server closing
+INFO:websockets.server:server closed
+Starting the React app...
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:851001) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:851001) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Starting serial_to_websocket.py...
+INFO:__main__:Connected to /dev/ttyUSB0
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+Starting serial_to_websocket.py...
+INFO:__main__:Connected to /dev/ttyUSB0
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:__main__:Server stopped.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<start_websocket_server() done, defined at /home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/serial_to_websocket.py:67> exception=OSError(98, "error while attempting to bind on address ('127.0.0.1', 9001): address already in use")>
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/serial_to_websocket.py", line 71, in start_websocket_server
+    async with websockets.serve(lambda ws: handler(ws, serial_connection), 'localhost', 9001):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 807, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 825, in __await_impl__
+    server = await self.create_server
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1572, in create_server
+    raise OSError(err.errno, msg) from None
+OSError: [Errno 98] error while attempting to bind on address ('127.0.0.1', 9001): address already in use
+Starting the React app...
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:851335) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:851335) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Starting serial_to_websocket.py...
+INFO:__main__:Connected to /dev/ttyUSB1
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+Activating virtual environment and starting serial_to_websocket.py...
+[1] 853555
+Serving the React app...
+[2] 853556
+[?2004h(my_env) ]0;mada@mada-energy-3: ~/Desktop/Hydrogen_Rocket[01;32mmada@mada-energy-3[00m:[01;34m~/Desktop/Hydrogen_Rocket[00m$ INFO:__main__:Connected to /dev/ttyUSB0
+ INFO  Accepting connections at http://localhost:3000
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+serve -s /home/mada/Desktop/Hydrogen_Rocket/hydrogen-rocket-ui/build &^C[?2004l[?2004h[?2004l
+[?2004h(my_env) ]0;mada@mada-energy-3: ~/Desktop/Hydrogen_Rocket[01;32mmada@mada-energy-3[00m:[01;34m~/Desktop/Hydrogen_Rocket[00m$ [?2004lActivating virtual environment and starting serial_to_websocket.py...
+[1] 853611
+Serving the React app...
+[2] 853612
+[?2004h(my_env) ]0;mada@mada-energy-3: ~[01;32mmada@mada-energy-3[00m:[01;34m~[00m$ INFO:__main__:Connected to /dev/ttyUSB0
+ INFO  Accepting connections at http://localhost:3000
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+^C[?2004l[?2004h[?2004l
+[?2004h(my_env) ]0;mada@mada-energy-3: ~[01;32mmada@mada-energy-3[00m:[01;34m~[00m$ Sun Dec  8 11:46:03 AM IST 2024: Activating virtual environment...
+Sun Dec  8 11:46:03 AM IST 2024: Starting serial_to_websocket.py...
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 11:46:05 AM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+Something is already running on port 3000.
+Sun Dec  8 11:47:56 AM IST 2024: Activating virtual environment...
+Sun Dec  8 11:47:56 AM IST 2024: Starting serial_to_websocket.py...
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 11:47:58 AM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+Something is already running on port 3000.
+++ date
++ echo 'Sun Dec  8 11:48:16 AM IST 2024: Script started'
+Sun Dec  8 11:48:16 AM IST 2024: Script started
+++ date
++ echo 'Sun Dec  8 11:48:16 AM IST 2024: Activating virtual environment...'
+Sun Dec  8 11:48:16 AM IST 2024: Activating virtual environment...
++ source /home/mada/Desktop/Hydrogen_Rocket/my_env/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ '[' linux-gnu = cygwin ']'
+++ '[' linux-gnu = msys ']'
+++ export VIRTUAL_ENV=/home/mada/Desktop/Hydrogen_Rocket/my_env
+++ VIRTUAL_ENV=/home/mada/Desktop/Hydrogen_Rocket/my_env
+++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+++ PATH=/home/mada/Desktop/Hydrogen_Rocket/my_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+++ export PATH
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='(my_env) '
+++ export PS1
+++ VIRTUAL_ENV_PROMPT='(my_env) '
+++ export VIRTUAL_ENV_PROMPT
+++ hash -r
+++ date
++ echo 'Sun Dec  8 11:48:16 AM IST 2024: Starting serial_to_websocket.py...'
+Sun Dec  8 11:48:16 AM IST 2024: Starting serial_to_websocket.py...
++ sleep 2
++ python /home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/serial_to_websocket.py
+INFO:__main__:Connected to /dev/ttyUSB0
+++ date
++ echo 'Sun Dec  8 11:48:18 AM IST 2024: Starting the React app...'
+Sun Dec  8 11:48:18 AM IST 2024: Starting the React app...
++ cd /home/mada/Desktop/Hydrogen_Rocket/hydrogen-rocket-ui
++ npm start
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+Something is already running on port 3000.
+++ date
++ echo 'Sun Dec  8 11:48:19 AM IST 2024: Script completed'
+Sun Dec  8 11:48:19 AM IST 2024: Script completed
+++ date
++ echo 'Sun Dec  8 11:49:43 AM IST 2024: Script started'
+Sun Dec  8 11:49:43 AM IST 2024: Script started
+++ date
++ echo 'Sun Dec  8 11:49:43 AM IST 2024: Activating virtual environment...'
+Sun Dec  8 11:49:43 AM IST 2024: Activating virtual environment...
++ source /home/mada/Desktop/Hydrogen_Rocket/my_env/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ '[' linux-gnu = cygwin ']'
+++ '[' linux-gnu = msys ']'
+++ export VIRTUAL_ENV=/home/mada/Desktop/Hydrogen_Rocket/my_env
+++ VIRTUAL_ENV=/home/mada/Desktop/Hydrogen_Rocket/my_env
+++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+++ PATH=/home/mada/Desktop/Hydrogen_Rocket/my_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+++ export PATH
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='(my_env) '
+++ export PS1
+++ VIRTUAL_ENV_PROMPT='(my_env) '
+++ export VIRTUAL_ENV_PROMPT
+++ hash -r
+++ date
++ echo 'Sun Dec  8 11:49:43 AM IST 2024: Starting serial_to_websocket.py...'
+Sun Dec  8 11:49:43 AM IST 2024: Starting serial_to_websocket.py...
++ sleep 2
++ python /home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/serial_to_websocket.py
+INFO:__main__:Connected to /dev/ttyUSB0
+++ date
++ echo 'Sun Dec  8 11:49:45 AM IST 2024: Starting the React app...'
+Sun Dec  8 11:49:45 AM IST 2024: Starting the React app...
++ cd /home/mada/Desktop/Hydrogen_Rocket/hydrogen-rocket-ui
++ npm start
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+Something is already running on port 3000.
+++ date
++ echo 'Sun Dec  8 11:49:46 AM IST 2024: Script completed'
+Sun Dec  8 11:49:46 AM IST 2024: Script completed
+++ date
++ echo 'Sun Dec  8 11:50:19 AM IST 2024: Script started'
+Sun Dec  8 11:50:19 AM IST 2024: Script started
+++ date
++ echo 'Sun Dec  8 11:50:19 AM IST 2024: Activating virtual environment...'
+Sun Dec  8 11:50:19 AM IST 2024: Activating virtual environment...
++ source /home/mada/Desktop/Hydrogen_Rocket/my_env/bin/activate
+++ deactivate nondestructive
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ '[' -n '' ']'
+++ unset VIRTUAL_ENV
+++ unset VIRTUAL_ENV_PROMPT
+++ '[' '!' nondestructive = nondestructive ']'
+++ '[' linux-gnu = cygwin ']'
+++ '[' linux-gnu = msys ']'
+++ export VIRTUAL_ENV=/home/mada/Desktop/Hydrogen_Rocket/my_env
+++ VIRTUAL_ENV=/home/mada/Desktop/Hydrogen_Rocket/my_env
+++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+++ PATH=/home/mada/Desktop/Hydrogen_Rocket/my_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+++ export PATH
+++ '[' -n '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ PS1='(my_env) '
+++ export PS1
+++ VIRTUAL_ENV_PROMPT='(my_env) '
+++ export VIRTUAL_ENV_PROMPT
+++ hash -r
+++ date
++ echo 'Sun Dec  8 11:50:19 AM IST 2024: Starting serial_to_websocket.py...'
+Sun Dec  8 11:50:19 AM IST 2024: Starting serial_to_websocket.py...
++ sleep 2
++ python /home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/serial_to_websocket.py
+INFO:__main__:Connected to /dev/ttyUSB0
+++ date
++ echo 'Sun Dec  8 11:50:21 AM IST 2024: Starting the React app...'
+Sun Dec  8 11:50:21 AM IST 2024: Starting the React app...
++ cd /home/mada/Desktop/Hydrogen_Rocket/hydrogen-rocket-ui
++ npm start
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+Something is already running on port 3000.
+++ date
++ echo 'Sun Dec  8 11:50:22 AM IST 2024: Script completed'
+Sun Dec  8 11:50:22 AM IST 2024: Script completed
+Sun Dec  8 11:55:14 AM IST 2024: Killing processes on ports 3000 and 9001...
+Sun Dec  8 11:55:14 AM IST 2024: Activating virtual environment...
+Sun Dec  8 11:55:14 AM IST 2024: serial_to_websocket.py is already running. Skipping...
+Sun Dec  8 11:55:16 AM IST 2024: Starting the React app...
+Sun Dec  8 11:55:16 AM IST 2024: Script completed.
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:855466) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:855466) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Sun Dec  8 11:58:58 AM IST 2024: Killing processes on ports 3000 and 9001...
+3000/tcp:            855466
+Sun Dec  8 11:58:58 AM IST 2024: Activating virtual environment...
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+Sun Dec  8 11:58:58 AM IST 2024: serial_to_websocket.py is already running. Skipping...
+Sun Dec  8 11:59:00 AM IST 2024: Starting the React app...
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:855839) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:855839) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Sun Dec  8 12:01:00 PM IST 2024: Killing processes on ports 3000 and 9001...
+Sun Dec  8 12:01:00 PM IST 2024: Killing existing serial_to_websocket.py processes...
+Sun Dec  8 12:01:00 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:01:00 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:01:00 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:01:02 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:856243) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:856243) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 18896.58 0 0
+INFO:__main__:Sent: 12.90 18903.03 0 0
+INFO:__main__:Sent: 12.90 18909.47 0 0
+INFO:__main__:Sent: 12.90 18915.92 0 0
+INFO:__main__:Sent: 12.90 18922.36 0 0
+INFO:__main__:Sent: 12.90 18928.81 0 0
+INFO:__main__:Sent: 12.90 18935.25 0 0
+INFO:__main__:Sent: 12.90 18941.70 0 0
+INFO:__main__:Sent: 12.90 18948.14 0 0
+INFO:__main__:Sent: 12.90 18954.59 0 0
+INFO:__main__:Sent: 12.90 18961.03 0 0
+INFO:__main__:Sent: 12.90 18967.48 0 0
+INFO:__main__:Sent: 12.90 18973.92 0 0
+INFO:__main__:Sent: 12.90 18980.37 0 0
+INFO:__main__:Sent: 12.90 18986.81 0 0
+INFO:__main__:Sent: 12.90 18993.26 0 0
+INFO:__main__:Sent: 12.90 18999.71 0 0
+INFO:__main__:Sent: 12.90 19006.15 0 0
+INFO:__main__:Sent: 12.90 19012.60 0 0
+INFO:__main__:Sent: 12.90 19019.04 0 0
+INFO:__main__:Sent: 12.90 19025.49 0 0
+INFO:__main__:Sent: 12.90 19031.93 0 0
+INFO:__main__:Sent: 12.90 19038.38 0 0
+INFO:__main__:Sent: 12.90 19044.82 0 0
+INFO:__main__:Sent: 12.90 19051.27 0 0
+INFO:__main__:Sent: 12.90 19057.71 0 0
+INFO:__main__:Sent: 12.90 19064.16 0 0
+INFO:__main__:Sent: 12.90 19070.60 0 0
+INFO:__main__:Sent: 12.90 19077.05 0 0
+INFO:__main__:Sent: 12.90 19083.49 0 0
+INFO:__main__:Sent: 12.90 19089.94 0 0
+INFO:__main__:Sent: 12.90 19096.38 0 0
+INFO:__main__:Sent: 12.90 19102.83 0 0
+INFO:__main__:Sent: 12.90 19109.28 0 0
+INFO:__main__:Sent: 12.90 19115.72 0 0
+INFO:__main__:Sent: 12.90 19122.17 0 0
+INFO:__main__:Sent: 12.90 19128.61 0 0
+INFO:__main__:Sent: 12.90 19135.06 0 0
+INFO:__main__:Sent: 12.90 19141.50 0 0
+INFO:__main__:Sent: 12.90 19147.95 0 0
+INFO:__main__:Sent: 12.90 19154.39 0 0
+INFO:__main__:Sent: 12.90 19160.84 0 0
+INFO:__main__:Sent: 12.90 19167.28 0 0
+INFO:__main__:Sent: 12.90 19173.73 0 0
+INFO:__main__:Sent: 12.90 19180.17 0 0
+INFO:__main__:Sent: 12.90 19186.62 0 0
+INFO:__main__:Sent: 12.90 19193.06 0 0
+INFO:__main__:Sent: 12.90 19199.51 0 0
+INFO:__main__:Sent: 12.90 19205.96 0 0
+INFO:__main__:Sent: 12.90 19212.40 0 0
+INFO:__main__:Sent: 12.90 19218.85 0 0
+INFO:__main__:Sent: 12.90 19225.29 0 0
+INFO:__main__:Sent: 12.90 19231.74 0 0
+INFO:__main__:Sent: 12.90 19238.18 0 0
+INFO:__main__:Sent: 12.90 19244.63 0 0
+INFO:__main__:Sent: 12.90 19251.07 0 0
+INFO:__main__:Sent: 12.90 19257.52 0 0
+INFO:__main__:Sent: 12.90 19263.96 0 0
+INFO:__main__:Sent: 12.90 19270.41 0 0
+INFO:__main__:Sent: 12.90 19276.85 0 0
+INFO:__main__:Sent: 12.90 19283.30 0 0
+INFO:__main__:Sent: 12.90 19289.74 0 0
+INFO:__main__:Sent: 12.90 19296.19 0 0
+INFO:__main__:Sent: 12.90 19302.63 0 0
+INFO:__main__:Sent: 12.90 19309.08 0 0
+INFO:__main__:Sent: 12.90 19315.53 0 0
+INFO:__main__:Sent: 12.90 19321.97 0 0
+INFO:__main__:Sent: 12.90 19328.42 0 0
+INFO:__main__:Sent: 12.90 19334.86 0 0
+INFO:__main__:Sent: 12.90 19341.31 0 0
+INFO:__main__:Sent: 12.90 19347.75 0 0
+INFO:__main__:Sent: 12.90 19354.20 0 0
+INFO:__main__:Sent: 12.90 19360.64 0 0
+INFO:__main__:Sent: 12.90 19367.09 0 0
+INFO:__main__:Sent: 12.90 19373.53 0 0
+INFO:__main__:Sent: 12.90 19379.98 0 0
+INFO:__main__:Sent: 12.90 19386.42 0 0
+INFO:__main__:Sent: 12.90 19392.87 0 0
+INFO:__main__:Sent: 12.90 19399.31 0 0
+INFO:__main__:Sent: 12.90 19405.76 0 0
+INFO:__main__:Sent: 12.90 19412.21 0 0
+INFO:__main__:Sent: 12.90 19418.65 0 0
+INFO:__main__:Sent: 12.90 19425.10 0 0
+INFO:__main__:Sent: 12.90 19431.54 0 0
+INFO:__main__:Sent: 12.90 19437.99 0 0
+INFO:__main__:Sent: 12.90 19444.43 0 0
+INFO:__main__:Sent: 12.90 19450.88 0 0
+INFO:__main__:Sent: 12.90 19457.32 0 0
+INFO:__main__:Sent: 12.90 19463.77 0 0
+INFO:__main__:Sent: 12.90 19470.21 0 0
+INFO:__main__:Sent: 12.90 19476.66 0 0
+INFO:__main__:Sent: 12.90 19483.10 0 0
+INFO:__main__:Sent: 12.90 19489.55 0 0
+INFO:__main__:Sent: 12.90 19495.99 0 0
+INFO:__main__:Sent: 12.90 19502.44 0 0
+INFO:__main__:Sent: 12.90 19508.88 0 0
+INFO:__main__:Sent: 12.90 19515.33 0 0
+INFO:__main__:Sent: 12.90 19521.78 0 0
+INFO:__main__:Sent: 12.90 19528.22 0 0
+INFO:__main__:Sent: 12.90 19534.67 0 0
+INFO:__main__:Sent: 12.90 19541.11 0 0
+INFO:__main__:Sent: 12.90 19547.56 0 0
+INFO:__main__:Sent: 12.90 19554.00 0 0
+INFO:__main__:Sent: 12.90 19560.45 0 0
+INFO:__main__:Sent: 12.90 19566.89 0 0
+INFO:__main__:Sent: 12.90 19573.34 0 0
+INFO:__main__:Sent: 12.90 19579.78 0 0
+INFO:__main__:Sent: 12.90 19586.23 0 0
+INFO:__main__:Sent: 12.90 19592.67 0 0
+INFO:__main__:Sent: 12.90 19599.12 0 0
+INFO:__main__:Sent: 12.90 19605.56 0 0
+INFO:__main__:Sent: 12.90 19612.01 0 0
+INFO:__main__:Sent: 12.90 19618.46 0 0
+INFO:__main__:Sent: 12.90 19624.90 0 0
+INFO:__main__:Sent: 12.90 19631.35 0 0
+INFO:__main__:Sent: 12.90 19637.79 0 0
+INFO:__main__:Sent: 12.90 19644.24 0 0
+INFO:__main__:Sent: 12.90 19650.68 0 0
+INFO:__main__:Sent: 12.90 19657.13 0 0
+INFO:__main__:Sent: 12.90 19663.57 0 0
+INFO:__main__:Sent: 12.90 19670.02 0 0
+INFO:__main__:Sent: 12.90 19676.46 0 0
+INFO:__main__:Sent: 12.90 19682.91 0 0
+INFO:__main__:Sent: 12.90 19689.35 0 0
+INFO:__main__:Sent: 12.90 19695.80 0 0
+INFO:__main__:Sent: 12.90 19702.24 0 0
+INFO:__main__:Sent: 12.90 19708.69 0 0
+INFO:__main__:Sent: 12.90 19715.13 0 0
+INFO:__main__:Sent: 12.90 19721.58 0 0
+INFO:__main__:Sent: 12.90 19728.03 0 0
+INFO:__main__:Sent: 12.90 19734.47 0 0
+INFO:__main__:Sent: 12.90 19740.92 0 0
+INFO:__main__:Sent: 12.90 19747.36 0 0
+INFO:__main__:Sent: 12.90 19753.81 0 0
+INFO:__main__:Sent: 12.90 19760.25 0 0
+INFO:__main__:Sent: 12.90 19766.70 0 0
+INFO:__main__:Sent: 12.90 19773.14 0 0
+INFO:__main__:Sent: 12.90 19779.59 0 0
+INFO:__main__:Sent: 12.90 19786.03 0 0
+INFO:__main__:Sent: 12.90 19792.48 0 0
+INFO:__main__:Sent: 12.90 19798.92 0 0
+INFO:__main__:Sent: 12.90 19805.37 0 0
+INFO:__main__:Sent: 12.90 19811.81 0 0
+INFO:__main__:Sent: 12.90 19818.26 0 0
+INFO:__main__:Sent: 12.90 19824.71 0 0
+INFO:__main__:Sent: 12.90 19831.15 0 0
+INFO:__main__:Sent: 12.90 19837.60 0 0
+INFO:__main__:Sent: 12.90 19844.04 0 0
+INFO:__main__:Sent: 12.90 19850.49 0 0
+INFO:__main__:Sent: 12.90 19856.93 0 0
+INFO:__main__:Sent: 12.90 19863.38 0 0
+INFO:__main__:Sent: 12.90 19869.82 0 0
+INFO:__main__:Sent: 12.90 19876.27 0 0
+INFO:__main__:Sent: 12.90 19882.71 0 0
+INFO:__main__:Sent: 12.90 19889.16 0 0
+INFO:__main__:Sent: 12.90 19895.60 0 0
+INFO:__main__:Sent: 12.90 19902.05 0 0
+INFO:__main__:Sent: 12.90 19908.49 0 0
+INFO:__main__:Sent: 12.90 19914.94 0 0
+INFO:__main__:Sent: 12.90 19921.38 0 0
+INFO:__main__:Sent: 12.90 19927.83 0 0
+INFO:__main__:Sent: 12.90 19934.28 0 0
+INFO:__main__:Sent: 12.90 19940.72 0 0
+INFO:__main__:Sent: 12.90 19947.17 0 0
+INFO:__main__:Sent: 12.90 19953.61 0 0
+INFO:__main__:Sent: 12.90 19960.06 0 0
+INFO:__main__:Sent: 12.90 19966.50 0 0
+INFO:__main__:Sent: 12.90 19972.95 0 0
+INFO:__main__:Sent: 12.90 19979.39 0 0
+INFO:__main__:Sent: 12.90 19985.84 0 0
+INFO:__main__:Sent: 12.90 19992.28 0 0
+INFO:__main__:Sent: 12.90 19998.73 0 0
+INFO:__main__:Sent: 12.90 20005.17 0 0
+INFO:__main__:Sent: 12.90 20011.62 0 0
+INFO:__main__:Sent: 12.90 20018.06 0 0
+INFO:__main__:Sent: 12.90 20024.51 0 0
+INFO:__main__:Sent: 12.90 20030.96 0 0
+INFO:__main__:Sent: 12.90 20037.40 0 0
+INFO:__main__:Sent: 12.90 20043.85 0 0
+INFO:__main__:Sent: 12.90 20050.29 0 0
+INFO:__main__:Sent: 12.90 20056.74 0 0
+INFO:__main__:Sent: 12.90 20063.18 0 0
+INFO:__main__:Sent: 12.90 20069.63 0 0
+INFO:__main__:Sent: 12.90 20076.07 0 0
+INFO:__main__:Sent: 12.90 20082.52 0 0
+INFO:__main__:Sent: 12.90 20088.96 0 0
+INFO:__main__:Sent: 12.90 20095.41 0 0
+INFO:__main__:Sent: 12.90 20101.85 0 0
+INFO:__main__:Sent: 12.90 20108.30 0 0
+INFO:__main__:Sent: 12.90 20114.74 0 0
+INFO:__main__:Sent: 12.90 20121.19 0 0
+INFO:__main__:Sent: 12.90 20127.63 0 0
+INFO:__main__:Sent: 12.90 20134.08 0 0
+INFO:__main__:Sent: 12.90 20140.53 0 0
+INFO:__main__:Sent: 12.90 20146.97 0 0
+INFO:__main__:Sent: 12.90 20153.42 0 0
+INFO:__main__:Sent: 12.90 20159.86 0 0
+INFO:__main__:Sent: 12.90 20166.31 0 0
+INFO:__main__:Sent: 12.90 20172.75 0 0
+INFO:__main__:Sent: 12.90 20179.20 0 0
+INFO:__main__:Sent: 12.90 20185.64 0 0
+INFO:__main__:Sent: 12.90 20192.09 0 0
+INFO:__main__:Sent: 12.90 20198.53 0 0
+INFO:__main__:Sent: 12.90 20204.98 0 0
+INFO:__main__:Sent: 12.90 20211.42 0 0
+INFO:__main__:Sent: 12.90 20217.87 0 0
+INFO:__main__:Sent: 12.90 20224.31 0 0
+INFO:__main__:Sent: 12.90 20230.76 0 0
+INFO:__main__:Sent: 12.90 20237.21 0 0
+INFO:__main__:Sent: 12.90 20243.65 0 0
+INFO:__main__:Sent: 12.90 20250.10 0 0
+INFO:__main__:Sent: 12.90 20256.54 0 0
+INFO:__main__:Sent: 12.90 20262.99 0 0
+INFO:__main__:Sent: 12.90 20269.43 0 0
+INFO:__main__:Sent: 12.90 20275.88 0 0
+INFO:__main__:Sent: 12.90 20282.32 0 0
+INFO:__main__:Sent: 12.90 20288.77 0 0
+INFO:__main__:Sent: 12.90 20295.21 0 0
+INFO:__main__:Sent: 12.90 20301.66 0 0
+INFO:__main__:Sent: 12.90 20308.10 0 0
+INFO:__main__:Sent: 12.90 20314.55 0 0
+INFO:__main__:Sent: 12.90 20320.99 0 0
+INFO:__main__:Sent: 12.90 20327.44 0 0
+INFO:__main__:Sent: 12.90 20333.88 0 0
+INFO:__main__:Sent: 12.90 20340.33 0 0
+INFO:__main__:Sent: 12.90 20346.78 0 0
+INFO:__main__:Sent: 12.88 20353.22 0 0
+INFO:__main__:Sent: 12.90 20359.67 0 0
+INFO:__main__:Sent: 12.90 20366.11 0 0
+INFO:__main__:Sent: 12.90 20372.56 0 0
+INFO:__main__:Sent: 12.90 20379.00 0 0
+INFO:__main__:Sent: 12.90 20385.45 0 0
+INFO:__main__:Sent: 12.90 20391.89 0 0
+INFO:__main__:Sent: 12.90 20398.34 0 0
+INFO:__main__:Sent: 12.90 20404.78 0 0
+INFO:__main__:Sent: 12.90 20411.23 0 0
+INFO:__main__:Sent: 12.90 20417.67 0 0
+INFO:__main__:Sent: 12.90 20424.12 0 0
+INFO:__main__:Sent: 12.90 20430.56 0 0
+INFO:__main__:Sent: 12.90 20437.01 0 0
+INFO:__main__:Sent: 12.90 20443.46 0 0
+INFO:__main__:Sent: 12.90 20449.90 0 0
+INFO:__main__:Sent: 12.90 20456.35 0 0
+INFO:__main__:Sent: 12.90 20462.79 0 0
+INFO:__main__:Sent: 12.90 20469.24 0 0
+INFO:__main__:Sent: 12.90 20475.68 0 0
+INFO:__main__:Sent: 12.90 20482.13 0 0
+INFO:__main__:Sent: 12.90 20488.57 0 0
+INFO:__main__:Sent: 12.90 20495.02 0 0
+INFO:__main__:Sent: 12.90 20501.46 0 0
+INFO:__main__:Sent: 12.90 20507.91 0 0
+INFO:__main__:Sent: 12.90 20514.35 0 0
+INFO:__main__:Sent: 12.90 20520.80 0 0
+INFO:__main__:Sent: 12.90 20527.24 0 0
+INFO:__main__:Sent: 12.90 20533.69 0 0
+INFO:__main__:Sent: 12.90 20540.13 0 0
+INFO:__main__:Sent: 12.90 20546.58 0 0
+INFO:__main__:Sent: 12.90 20553.03 0 0
+INFO:__main__:Sent: 12.90 20559.47 0 0
+INFO:__main__:Sent: 12.90 20565.92 0 0
+INFO:__main__:Sent: 12.90 20572.36 0 0
+INFO:__main__:Sent: 12.90 20578.81 0 0
+INFO:__main__:Sent: 12.90 20585.25 0 0
+INFO:__main__:Sent: 12.90 20591.70 0 0
+INFO:__main__:Sent: 12.90 20598.14 0 0
+INFO:__main__:Sent: 12.90 20604.59 0 0
+INFO:__main__:Sent: 12.90 20611.03 0 0
+INFO:__main__:Sent: 12.90 20617.48 0 0
+INFO:__main__:Sent: 12.90 20623.92 0 0
+INFO:__main__:Sent: 12.90 20630.37 0 0
+INFO:__main__:Sent: 12.90 20636.81 0 0
+INFO:__main__:Sent: 12.90 20643.26 0 0
+INFO:__main__:Sent: 12.90 20649.71 0 0
+INFO:__main__:Sent: 12.90 20656.15 0 0
+INFO:__main__:Sent: 12.90 20662.60 0 0
+INFO:__main__:Sent: 12.90 20669.04 0 0
+INFO:__main__:Sent: 12.90 20675.49 0 0
+INFO:__main__:Sent: 12.90 20681.93 0 0
+INFO:__main__:Sent: 12.90 20688.38 0 0
+INFO:__main__:Sent: 12.90 20694.82 0 0
+INFO:__main__:Sent: 12.90 20701.27 0 0
+INFO:__main__:Sent: 12.90 20707.71 0 0
+INFO:__main__:Sent: 12.90 20714.16 0 0
+INFO:__main__:Sent: 12.90 20720.60 0 0
+INFO:__main__:Sent: 12.90 20727.05 0 0
+INFO:__main__:Sent: 12.90 20733.49 0 0
+INFO:__main__:Sent: 12.90 20739.94 0 0
+INFO:__main__:Sent: 12.90 20746.38 0 0
+INFO:__main__:Sent: 12.90 20752.83 0 0
+INFO:__main__:Sent: 12.90 20759.28 0 0
+INFO:__main__:Sent: 12.90 20765.72 0 0
+INFO:__main__:Sent: 12.90 20772.17 0 0
+INFO:__main__:Sent: 12.90 20778.61 0 0
+INFO:__main__:Sent: 12.90 20785.06 0 0
+INFO:__main__:Sent: 12.90 20791.50 0 0
+INFO:__main__:Sent: 12.90 20797.95 0 0
+INFO:__main__:Sent: 12.90 20804.39 0 0
+INFO:__main__:Sent: 12.90 20810.84 0 0
+INFO:__main__:Sent: 12.90 20817.28 0 0
+INFO:__main__:Sent: 12.90 20823.73 0 0
+INFO:__main__:Sent: 12.90 20830.17 0 0
+INFO:__main__:Sent: 12.90 20836.62 0 0
+INFO:__main__:Sent: 12.90 20843.06 0 0
+INFO:__main__:Sent: 12.90 20849.51 0 0
+INFO:__main__:Sent: 12.90 20855.96 0 0
+INFO:__main__:Sent: 12.90 20862.40 0 0
+INFO:__main__:Sent: 12.90 20868.85 0 0
+INFO:__main__:Sent: 12.90 20875.29 0 0
+INFO:__main__:Sent: 12.90 20881.74 0 0
+INFO:__main__:Sent: 12.90 20888.18 0 0
+INFO:__main__:Sent: 12.90 20894.63 0 0
+INFO:__main__:Sent: 12.90 20901.07 0 0
+INFO:__main__:Sent: 12.90 20907.52 0 0
+INFO:__main__:Sent: 12.90 20913.96 0 0
+INFO:__main__:Sent: 12.90 20920.41 0 0
+INFO:__main__:Sent: 12.90 20926.85 0 0
+INFO:__main__:Sent: 12.90 20933.30 0 0
+INFO:__main__:Sent: 12.90 20939.74 0 0
+INFO:__main__:Sent: 12.90 20946.19 0 0
+INFO:__main__:Sent: 12.90 20951.99 0 0
+INFO:__main__:Sent: 12.90 20958.44 0 0
+INFO:__main__:Sent: 12.90 20964.88 0 0
+INFO:__main__:Sent: 12.90 20971.33 0 0
+INFO:__main__:Sent: 12.90 20977.77 0 0
+INFO:__main__:Sent: 12.90 20984.22 0 0
+INFO:__main__:Sent: 12.90 20990.66 0 0
+INFO:__main__:Sent: 12.90 20997.11 0 0
+INFO:__main__:Sent: 12.90 21003.55 0 0
+INFO:__main__:Sent: 12.90 21010.00 0 0
+INFO:__main__:Sent: 12.90 21016.44 0 0
+INFO:__main__:Sent: 12.90 21022.89 0 0
+INFO:__main__:Sent: 12.90 21029.33 0 0
+INFO:__main__:Sent: 12.90 21035.78 0 0
+INFO:__main__:Sent: 12.90 21042.22 0 0
+INFO:__main__:Sent: 12.90 21048.67 0 0
+INFO:__main__:Sent: 12.90 21055.12 0 0
+INFO:__main__:Sent: 12.90 21061.56 0 0
+INFO:__main__:Sent: 12.90 21068.01 0 0
+INFO:__main__:Sent: 12.90 21074.45 0 0
+INFO:__main__:Sent: 12.90 21080.90 0 0
+INFO:__main__:Sent: 12.90 21087.34 0 0
+INFO:__main__:Sent: 12.90 21093.79 0 0
+INFO:__main__:Sent: 12.90 21100.23 0 0
+INFO:__main__:Sent: 12.90 21106.68 0 0
+INFO:__main__:Sent: 12.90 21113.12 0 0
+INFO:__main__:Sent: 12.90 21119.57 0 0
+INFO:__main__:Sent: 12.90 21126.01 0 0
+INFO:__main__:Sent: 12.90 21132.46 0 0
+INFO:__main__:Sent: 12.90 21138.90 0 0
+INFO:__main__:Sent: 12.90 21145.35 0 0
+INFO:__main__:Sent: 12.90 21151.79 0 0
+INFO:__main__:Sent: 12.90 21158.24 0 0
+INFO:__main__:Sent: 12.90 21164.69 0 0
+INFO:__main__:Sent: 12.90 21171.13 0 0
+INFO:__main__:Sent: 12.90 21177.58 0 0
+INFO:__main__:Sent: 12.90 21184.02 0 0
+INFO:__main__:Sent: 12.90 21190.47 0 0
+INFO:__main__:Sent: 12.90 21196.91 0 0
+INFO:__main__:Sent: 12.90 21203.36 0 0
+INFO:__main__:Sent: 12.90 21209.80 0 0
+INFO:__main__:Sent: 12.90 21216.25 0 0
+INFO:__main__:Sent: 12.90 21222.69 0 0
+INFO:__main__:Sent: 12.90 21229.14 0 0
+INFO:__main__:Sent: 12.90 21235.58 0 0
+INFO:__main__:Sent: 12.90 21242.03 0 0
+INFO:__main__:Sent: 12.90 21248.47 0 0
+INFO:__main__:Sent: 12.90 21254.92 0 0
+INFO:__main__:Sent: 12.90 21261.37 0 0
+INFO:__main__:Sent: 12.90 21267.81 0 0
+INFO:__main__:Sent: 12.90 21274.26 0 0
+INFO:__main__:Sent: 12.90 21280.70 0 0
+INFO:__main__:Sent: 12.90 21287.15 0 0
+INFO:__main__:Sent: 12.90 21293.59 0 0
+INFO:__main__:Sent: 12.90 21300.04 0 0
+INFO:__main__:Sent: 12.90 21306.48 0 0
+INFO:__main__:Sent: 12.90 21312.93 0 0
+INFO:__main__:Sent: 12.90 21319.37 0 0
+INFO:__main__:Sent: 12.90 21325.82 0 0
+INFO:__main__:Sent: 12.90 21332.26 0 0
+INFO:__main__:Sent: 12.90 21338.71 0 0
+INFO:__main__:Sent: 12.90 21345.15 0 0
+INFO:__main__:Sent: 12.90 21351.60 0 0
+INFO:__main__:Sent: 12.90 21358.04 0 0
+INFO:__main__:Sent: 12.90 21364.49 0 0
+INFO:__main__:Sent: 12.90 21370.94 0 0
+INFO:__main__:Sent: 12.90 21377.38 0 0
+INFO:__main__:Sent: 12.90 21383.83 0 0
+INFO:__main__:Sent: 12.90 21390.27 0 0
+INFO:__main__:Sent: 12.90 21396.72 0 0
+INFO:__main__:Sent: 12.90 21403.16 0 0
+INFO:__main__:Sent: 12.90 21409.61 0 0
+INFO:__main__:Sent: 12.90 21416.05 0 0
+INFO:__main__:Sent: 12.90 21422.50 0 0
+INFO:__main__:Sent: 12.90 21428.94 0 0
+INFO:__main__:Sent: 12.90 21435.39 0 0
+INFO:__main__:Sent: 12.90 21441.83 0 0
+INFO:__main__:Sent: 12.90 21448.28 0 0
+INFO:__main__:Sent: 12.90 21454.72 0 0
+INFO:__main__:Sent: 12.90 21461.17 0 0
+INFO:__main__:Sent: 12.90 21467.62 0 0
+INFO:__main__:Sent: 12.90 21474.06 0 0
+INFO:__main__:Sent: 12.90 21480.51 0 0
+INFO:__main__:Sent: 12.90 21486.95 0 0
+INFO:__main__:Sent: 12.90 21493.40 0 0
+INFO:__main__:Sent: 12.90 21499.84 0 0
+INFO:__main__:Sent: 12.90 21506.29 0 0
+INFO:__main__:Sent: 12.90 21512.73 0 0
+INFO:__main__:Sent: 12.90 21519.18 0 0
+INFO:__main__:Sent: 12.90 21525.62 0 0
+INFO:__main__:Sent: 12.90 21532.07 0 0
+INFO:__main__:Sent: 12.90 21538.51 0 0
+INFO:__main__:Sent: 12.90 21544.96 0 0
+INFO:__main__:Sent: 12.90 21551.40 0 0
+INFO:__main__:Sent: 12.90 21557.85 0 0
+INFO:__main__:Sent: 12.90 21564.29 0 0
+INFO:__main__:Sent: 12.90 21570.74 0 0
+INFO:__main__:Sent: 12.90 21577.19 0 0
+INFO:__main__:Sent: 12.90 21583.63 0 0
+INFO:__main__:Sent: 12.90 21590.08 0 0
+INFO:__main__:Sent: 12.90 21596.52 0 0
+INFO:__main__:Sent: 12.90 21602.97 0 0
+[?2004l[?2004l
+Sun 08 Dec 2024 12:05:11 IST: Killing processes on ports 3000 and 9001...
+Sun 08 Dec 2024 12:05:11 IST: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun 08 Dec 2024 12:05:11 IST: Activating virtual environment...
+Sun 08 Dec 2024 12:05:11 IST: Starting serial_to_websocket.py...
+Sun 08 Dec 2024 12:05:11 IST: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun 08 Dec 2024 12:05:13 IST: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:2007) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:2007) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 22131.48 0 0
+INFO:__main__:Sent: 12.90 22137.93 0 0
+INFO:__main__:Sent: 12.90 22144.37 0 0
+INFO:__main__:Sent: 12.90 22150.82 0 0
+INFO:__main__:Sent: 12.90 22157.26 0 0
+INFO:__main__:Sent: 12.90 22163.71 0 0
+INFO:__main__:Sent: 12.90 22170.15 0 0
+INFO:__main__:Sent: 12.90 22176.60 0 0
+INFO:__main__:Sent: 12.90 22183.04 0 0
+INFO:__main__:Sent: 12.90 22189.49 0 0
+INFO:__main__:Sent: 12.90 22195.94 0 0
+INFO:__main__:Sent: 12.90 22202.38 0 0
+INFO:__main__:Sent: 12.90 22208.83 0 0
+INFO:__main__:Sent: 12.90 22215.27 0 0
+INFO:__main__:Sent: 12.90 22221.72 0 0
+INFO:__main__:Sent: 12.90 22228.16 0 0
+INFO:__main__:Sent: 12.90 22234.61 0 0
+INFO:__main__:Sent: 12.90 22241.05 0 0
+INFO:__main__:Sent: 12.90 22247.50 0 0
+INFO:__main__:Sent: 12.90 22253.94 0 0
+INFO:__main__:Sent: 12.90 22260.39 0 0
+INFO:__main__:Sent: 12.90 22266.83 0 0
+INFO:__main__:Sent: 12.90 22273.28 0 0
+INFO:__main__:Sent: 12.90 22279.72 0 0
+INFO:__main__:Sent: 12.90 22286.17 0 0
+INFO:__main__:Sent: 12.90 22292.62 0 0
+INFO:__main__:Sent: 12.90 22299.06 0 0
+INFO:__main__:Sent: 12.90 22305.51 0 0
+INFO:__main__:Sent: 12.90 22311.95 0 0
+INFO:__main__:Sent: 12.90 22318.40 0 0
+INFO:__main__:Sent: 12.90 22324.84 0 0
+INFO:__main__:Sent: 12.90 22331.29 0 0
+INFO:__main__:Sent: 12.90 22337.73 0 0
+INFO:__main__:Sent: 12.90 22344.18 0 0
+INFO:__main__:Sent: 12.90 22350.62 0 0
+INFO:__main__:Sent: 12.90 22357.07 0 0
+INFO:__main__:Sent: 12.90 22363.51 0 0
+INFO:__main__:Sent: 12.90 22369.96 0 0
+INFO:__main__:Sent: 12.90 22376.40 0 0
+INFO:__main__:Sent: 12.90 22382.85 0 0
+INFO:__main__:Sent: 12.90 22389.29 0 0
+INFO:__main__:Sent: 12.90 22395.74 0 0
+INFO:__main__:Sent: 12.90 22402.19 0 0
+INFO:__main__:Sent: 12.90 22408.63 0 0
+INFO:__main__:Sent: 12.90 22415.08 0 0
+INFO:__main__:Sent: 12.90 22420.88 0 0
+INFO:__main__:Sent: 12.90 22427.32 0 0
+INFO:__main__:Sent: 12.90 22433.77 0 0
+INFO:__main__:Sent: 12.90 22440.21 0 0
+INFO:__main__:Sent: 12.90 22446.66 0 0
+INFO:__main__:Sent: 12.90 22453.10 0 0
+INFO:__main__:Sent: 12.90 22459.55 0 0
+INFO:__main__:Sent: 12.90 22465.99 0 0
+INFO:__main__:Sent: 12.90 22472.44 0 0
+INFO:__main__:Client disconnected.
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+Sun Dec  8 12:11:01 PM IST 2024: Killing processes on ports 3000 and 9001...
+3000/tcp:             2007
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+9001/tcp:             1966
+Sun Dec  8 12:11:02 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:11:02 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:11:02 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:11:02 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:11:04 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:3273) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3273) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 26647.76 0 0
+INFO:__main__:Sent: 12.90 26654.21 0 0
+INFO:__main__:Sent: 12.90 26660.65 0 0
+INFO:__main__:Sent: 12.90 26667.10 0 0
+INFO:__main__:Sent: 12.90 26673.54 0 0
+INFO:__main__:Sent: 12.90 26679.99 0 0
+INFO:__main__:Sent: 12.90 26686.43 0 0
+INFO:__main__:Sent: 12.90 26692.88 0 0
+INFO:__main__:Sent: 12.90 26699.32 0 0
+INFO:__main__:Sent: 12.90 26705.77 0 0
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 40:  1966 Killed                  python /home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/serial_to_websocket.py  (wd: ~)
+Sun 08 Dec 2024 12:11:07 IST: Opening app in full screen...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 43: chromium-browser: command not found
+Sun 08 Dec 2024 12:11:07 IST: Script completed.
+INFO:__main__:Sent: 12.90 26712.21 0 0
+INFO:__main__:Sent: 12.90 26718.66 0 0
+INFO:__main__:Sent: 12.90 26725.11 0 0
+INFO:__main__:Sent: 12.90 26731.55 0 0
+INFO:__main__:Sent: 12.90 26738.00 0 0
+INFO:__main__:Sent: 12.90 26744.44 0 0
+INFO:__main__:Sent: 12.90 26750.89 0 0
+INFO:__main__:Sent: 12.90 26757.33 0 0
+INFO:__main__:Sent: 12.90 26763.78 0 0
+INFO:__main__:Sent: 12.90 26770.22 0 0
+INFO:__main__:Sent: 12.90 26776.67 0 0
+INFO:__main__:Sent: 12.90 26783.11 0 0
+INFO:__main__:Sent: 12.90 26788.91 0 0
+INFO:__main__:Sent: 12.90 26795.36 0 0
+INFO:__main__:Sent: 12.90 26801.80 0 0
+INFO:__main__:Sent: 12.90 26808.25 0 0
+INFO:__main__:Sent: 12.90 26814.70 0 0
+INFO:__main__:Sent: 12.90 26821.14 0 0
+INFO:__main__:Sent: 12.90 26827.59 0 0
+INFO:__main__:Sent: 12.90 26834.03 0 0
+INFO:__main__:Sent: 12.90 26840.48 0 0
+INFO:__main__:Sent: 12.90 26846.92 0 0
+INFO:__main__:Sent: 12.90 26853.37 0 0
+INFO:__main__:Sent: 12.90 26859.81 0 0
+INFO:__main__:Sent: 12.90 26866.26 0 0
+INFO:__main__:Sent: 12.90 26872.70 0 0
+INFO:__main__:Sent: 12.90 26879.15 0 0
+INFO:__main__:Sent: 12.90 26885.59 0 0
+INFO:__main__:Sent: 12.90 26892.04 0 0
+INFO:__main__:Sent: 12.90 26898.48 0 0
+INFO:__main__:Sent: 12.90 26904.93 0 0
+INFO:__main__:Sent: 12.90 26911.38 0 0
+INFO:__main__:Sent: 12.90 26917.82 0 0
+INFO:__main__:Sent: 12.90 26924.27 0 0
+INFO:__main__:Sent: 12.90 26930.71 0 0
+INFO:__main__:Sent: 12.90 26937.16 0 0
+INFO:__main__:Sent: 12.90 26943.60 0 0
+INFO:__main__:Sent: 12.90 26950.05 0 0
+INFO:__main__:Sent: 12.90 26956.49 0 0
+INFO:__main__:Sent: 12.90 26962.94 0 0
+INFO:__main__:Sent: 12.90 26969.38 0 0
+INFO:__main__:Sent: 12.90 26975.83 0 0
+INFO:__main__:Sent: 12.90 26982.27 0 0
+INFO:__main__:Sent: 12.90 26988.72 0 0
+INFO:__main__:Sent: 12.90 26995.16 0 0
+INFO:__main__:Sent: 12.90 27001.61 0 0
+INFO:__main__:Sent: 12.90 27008.05 0 0
+INFO:__main__:Sent: 12.90 27014.50 0 0
+INFO:__main__:Sent: 12.90 27020.95 0 0
+INFO:__main__:Sent: 12.90 27027.39 0 0
+INFO:__main__:Sent: 12.90 27033.84 0 0
+INFO:__main__:Sent: 12.90 27040.28 0 0
+INFO:__main__:Sent: 12.90 27046.73 0 0
+INFO:__main__:Sent: 12.90 27053.17 0 0
+INFO:__main__:Sent: 12.90 27059.62 0 0
+INFO:__main__:Sent: 12.90 27066.06 0 0
+INFO:__main__:Sent: 12.90 27072.51 0 0
+INFO:__main__:Sent: 12.90 27078.95 0 0
+INFO:__main__:Sent: 12.90 27085.40 0 0
+INFO:__main__:Sent: 12.90 27091.84 0 0
+INFO:__main__:Sent: 12.90 27098.29 0 0
+INFO:__main__:Sent: 12.90 27104.73 0 0
+INFO:__main__:Sent: 12.90 27111.18 0 0
+INFO:__main__:Sent: 12.90 27117.63 0 0
+INFO:__main__:Sent: 12.90 27124.07 0 0
+INFO:__main__:Sent: 12.90 27130.52 0 0
+INFO:__main__:Sent: 12.90 27136.96 0 0
+INFO:__main__:Sent: 12.90 27143.41 0 0
+INFO:__main__:Sent: 12.90 27149.85 0 0
+INFO:__main__:Sent: 12.90 27156.30 0 0
+INFO:__main__:Sent: 12.90 27162.74 0 0
+INFO:__main__:Sent: 12.90 27169.19 0 0
+INFO:__main__:Sent: 12.90 27175.63 0 0
+INFO:__main__:Sent: 12.90 27182.08 0 0
+INFO:__main__:Sent: 12.90 27188.52 0 0
+INFO:__main__:Sent: 12.90 27194.97 0 0
+INFO:__main__:Sent: 12.90 27201.41 0 0
+INFO:__main__:Sent: 12.90 27207.86 0 0
+INFO:__main__:Sent: 12.90 27214.30 0 0
+INFO:__main__:Sent: 12.90 27220.75 0 0
+INFO:__main__:Sent: 12.90 27227.20 0 0
+INFO:__main__:Sent: 12.90 27233.64 0 0
+INFO:__main__:Sent: 12.90 27240.09 0 0
+INFO:__main__:Sent: 12.90 27246.53 0 0
+INFO:__main__:Sent: 12.90 27252.98 0 0
+INFO:__main__:Sent: 12.90 27259.42 0 0
+INFO:__main__:Sent: 12.90 27265.87 0 0
+INFO:__main__:Sent: 12.90 27272.31 0 0
+INFO:__main__:Sent: 12.90 27278.76 0 0
+INFO:__main__:Sent: 12.90 27285.20 0 0
+INFO:__main__:Sent: 12.90 27291.65 0 0
+INFO:__main__:Sent: 12.90 27298.09 0 0
+INFO:__main__:Sent: 12.90 27304.54 0 0
+INFO:__main__:Sent: 12.90 27310.98 0 0
+INFO:__main__:Sent: 12.90 27317.43 0 0
+INFO:__main__:Sent: 12.90 27323.88 0 0
+INFO:__main__:Sent: 12.90 27330.32 0 0
+INFO:__main__:Sent: 12.90 27336.77 0 0
+INFO:__main__:Sent: 12.90 27343.21 0 0
+INFO:__main__:Sent: 12.90 27349.66 0 0
+INFO:__main__:Sent: 12.90 27356.10 0 0
+INFO:__main__:Sent: 12.90 27362.55 0 0
+INFO:__main__:Sent: 12.90 27368.99 0 0
+INFO:__main__:Sent: 12.90 27375.44 0 0
+INFO:__main__:Sent: 12.90 27381.88 0 0
+INFO:__main__:Sent: 12.90 27388.33 0 0
+INFO:__main__:Sent: 12.90 27394.77 0 0
+INFO:__main__:Sent: 12.90 27401.22 0 0
+INFO:__main__:Sent: 12.90 27407.66 0 0
+INFO:__main__:Sent: 12.90 27414.11 0 0
+INFO:__main__:Sent: 12.90 27420.55 0 0
+INFO:__main__:Sent: 12.90 27427.00 0 0
+INFO:__main__:Sent: 12.90 27433.45 0 0
+INFO:__main__:Sent: 12.90 27439.89 0 0
+INFO:__main__:Sent: 12.90 27446.34 0 0
+INFO:__main__:Sent: 12.90 27452.78 0 0
+INFO:__main__:Sent: 12.90 27459.23 0 0
+Sun Dec  8 12:12:05 PM IST 2024: Killing processes on ports 3000 and 9001...
+9001/tcp:             3215
+Sun Dec  8 12:12:05 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:12:05 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:12:05 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:12:05 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:12:07 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:3517) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3517) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 27465.67 0 0
+INFO:__main__:Sent: 12.90 27472.12 0 0
+INFO:__main__:Sent: 12.90 27478.56 0 0
+INFO:__main__:Sent: 12.90 27485.01 0 0
+INFO:__main__:Sent: 12.90 27491.45 0 0
+INFO:__main__:Sent: 12.90 27497.90 0 0
+INFO:__main__:Sent: 12.90 27504.34 0 0
+INFO:__main__:Sent: 12.90 27510.79 0 0
+INFO:__main__:Sent: 12.90 27517.23 0 0
+INFO:__main__:Sent: 12.90 27523.68 0 0
+INFO:__main__:Sent: 12.90 27530.13 0 0
+INFO:__main__:Sent: 12.90 27536.57 0 0
+INFO:__main__:Sent: 12.90 27543.02 0 0
+INFO:__main__:Sent: 12.90 27549.46 0 0
+Sun Dec  8 12:12:12 PM IST 2024: Opening app in browser...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 44: chromium-browser: command not found
+INFO:__main__:Sent: 12.90 27555.91 0 0
+INFO:__main__:Client disconnected.
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+Sun Dec  8 12:12:14 PM IST 2024: Simulating F11 for full screen...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 49: xdotool: command not found
+Sun Dec  8 12:12:14 PM IST 2024: Script completed.
+Sun Dec  8 12:12:17 PM IST 2024: Killing processes on ports 3000 and 9001...
+3000/tcp:             3517
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+9001/tcp:             3454
+Sun Dec  8 12:12:17 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:12:17 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:12:17 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:12:17 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:12:19 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:3728) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3728) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 27620.36 0 0
+INFO:__main__:Sent: 12.90 27626.80 0 0
+INFO:__main__:Sent: 12.90 27633.25 0 0
+INFO:__main__:Sent: 12.90 27639.70 0 0
+INFO:__main__:Sent: 12.90 27646.14 0 0
+INFO:__main__:Sent: 12.90 27652.59 0 0
+INFO:__main__:Sent: 12.90 27659.03 0 0
+INFO:__main__:Sent: 12.90 27665.48 0 0
+INFO:__main__:Sent: 12.90 27671.92 0 0
+INFO:__main__:Sent: 12.90 27678.37 0 0
+INFO:__main__:Sent: 12.90 27684.81 0 0
+INFO:__main__:Sent: 12.90 27691.26 0 0
+INFO:__main__:Sent: 12.90 27697.70 0 0
+INFO:__main__:Sent: 12.90 27704.15 0 0
+Sun Dec  8 12:12:24 PM IST 2024: Opening app in browser...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 44: chromium-browser: command not found
+INFO:__main__:Sent: 12.90 27710.59 0 0
+INFO:__main__:Sent: 12.90 27717.04 0 0
+INFO:__main__:Sent: 12.90 27723.48 0 0
+INFO:__main__:Sent: 12.90 27729.93 0 0
+Sun Dec  8 12:12:26 PM IST 2024: Simulating F11 for full screen...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 49: xdotool: command not found
+Sun Dec  8 12:12:26 PM IST 2024: Script completed.
+INFO:__main__:Sent: 12.90 27736.38 0 0
+INFO:__main__:Sent: 12.90 27742.82 0 0
+INFO:__main__:Sent: 12.90 27749.27 0 0
+INFO:__main__:Sent: 12.90 27755.71 0 0
+INFO:__main__:Sent: 12.90 27762.16 0 0
+INFO:__main__:Sent: 12.90 27768.60 0 0
+INFO:__main__:Sent: 12.90 27775.05 0 0
+INFO:__main__:Sent: 12.90 27781.49 0 0
+INFO:__main__:Sent: 12.90 27787.94 0 0
+INFO:__main__:Sent: 12.90 27794.38 0 0
+INFO:__main__:Sent: 12.90 27800.83 0 0
+INFO:__main__:Sent: 12.90 27807.27 0 0
+INFO:__main__:Sent: 12.90 27813.72 0 0
+INFO:__main__:Sent: 12.90 27820.16 0 0
+INFO:__main__:Sent: 12.90 27826.61 0 0
+INFO:__main__:Sent: 12.90 27833.05 0 0
+INFO:__main__:Sent: 12.90 27839.50 0 0
+INFO:__main__:Sent: 12.90 27845.95 0 0
+INFO:__main__:Sent: 12.90 27852.39 0 0
+INFO:__main__:Sent: 12.90 27858.84 0 0
+INFO:__main__:Sent: 12.90 27865.28 0 0
+INFO:__main__:Sent: 12.90 27871.73 0 0
+INFO:__main__:Sent: 12.90 27878.17 0 0
+INFO:__main__:Sent: 12.90 27884.62 0 0
+INFO:__main__:Sent: 12.90 27891.06 0 0
+INFO:__main__:Sent: 12.90 27897.51 0 0
+INFO:__main__:Sent: 12.90 27903.95 0 0
+INFO:__main__:Sent: 12.90 27910.40 0 0
+INFO:__main__:Sent: 12.90 27916.84 0 0
+INFO:__main__:Sent: 12.90 27923.29 0 0
+INFO:__main__:Sent: 12.90 27929.73 0 0
+INFO:__main__:Sent: 12.90 27936.18 0 0
+INFO:__main__:Sent: 12.90 27942.63 0 0
+INFO:__main__:Sent: 12.90 27949.07 0 0
+INFO:__main__:Sent: 12.90 27955.52 0 0
+INFO:__main__:Sent: 12.90 27961.96 0 0
+INFO:__main__:Sent: 12.90 27968.41 0 0
+INFO:__main__:Sent: 12.90 27974.85 0 0
+INFO:__main__:Sent: 12.90 27981.30 0 0
+INFO:__main__:Sent: 12.90 27987.74 0 0
+INFO:__main__:Sent: 12.90 27994.19 0 0
+INFO:__main__:Sent: 12.90 28000.63 0 0
+INFO:__main__:Sent: 12.90 28007.08 0 0
+INFO:__main__:Sent: 12.90 28013.52 0 0
+INFO:__main__:Sent: 12.90 28019.97 0 0
+INFO:__main__:Sent: 12.90 28026.41 0 0
+INFO:__main__:Sent: 12.90 28032.86 0 0
+INFO:__main__:Sent: 12.90 28039.30 0 0
+INFO:__main__:Sent: 12.90 28045.75 0 0
+INFO:__main__:Sent: 12.90 28052.20 0 0
+INFO:__main__:Sent: 12.90 28058.64 0 0
+INFO:__main__:Sent: 12.90 28065.09 0 0
+INFO:__main__:Sent: 12.90 28071.53 0 0
+INFO:__main__:Sent: 12.90 28077.98 0 0
+INFO:__main__:Sent: 12.90 28084.43 0 0
+Sun Dec  8 12:12:54 PM IST 2024: Killing processes on ports 3000 and 9001...
+INFO:__main__:Sent: 12.90 28090.87 0 0
+3000/tcp:             3728
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+9001/tcp:             3669
+Sun Dec  8 12:12:54 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:12:54 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:12:54 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:12:54 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:12:56 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:3970) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3970) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 28097.32 0 0
+INFO:__main__:Sent: 12.90 28103.76 0 0
+INFO:__main__:Sent: 12.90 28110.21 0 0
+INFO:__main__:Sent: 12.90 28116.65 0 0
+INFO:__main__:Sent: 12.90 28123.10 0 0
+INFO:__main__:Sent: 12.90 28129.54 0 0
+INFO:__main__:Sent: 12.90 28135.99 0 0
+INFO:__main__:Sent: 12.90 28142.44 0 0
+INFO:__main__:Sent: 12.90 28148.88 0 0
+INFO:__main__:Sent: 12.90 28155.33 0 0
+INFO:__main__:Sent: 12.90 28161.77 0 0
+INFO:__main__:Sent: 12.90 28168.22 0 0
+INFO:__main__:Sent: 12.90 28174.66 0 0
+INFO:__main__:Sent: 12.90 28181.11 0 0
+Sun Dec  8 12:13:01 PM IST 2024: Opening app in browser...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 44: chromium-browser: command not found
+INFO:__main__:Sent: 12.90 28187.55 0 0
+INFO:__main__:Sent: 12.90 28194.00 0 0
+INFO:__main__:Sent: 12.90 28200.45 0 0
+INFO:__main__:Sent: 12.90 28206.25 0 0
+Sun Dec  8 12:13:03 PM IST 2024: Simulating F11 for full screen...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 49: chromium-browser: command not found
+Sun Dec  8 12:13:03 PM IST 2024: Script completed.
+INFO:__main__:Sent: 12.90 28212.69 0 0
+INFO:__main__:Sent: 12.93 28219.15 0 0
+INFO:__main__:Sent: 12.90 28225.60 0 0
+INFO:__main__:Sent: 12.90 28232.05 0 0
+INFO:__main__:Sent: 12.90 28238.49 0 0
+INFO:__main__:Sent: 12.90 28244.94 0 0
+INFO:__main__:Client disconnected.
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+Sun Dec  8 12:13:07 PM IST 2024: Killing processes on ports 3000 and 9001...
+3000/tcp:             3970
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+9001/tcp:             3901
+Sun Dec  8 12:13:07 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:13:07 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:13:07 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:13:07 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:13:09 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:4195) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:4195) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 28264.27 0 0
+INFO:__main__:Sent: 12.90 28270.72 0 0
+INFO:__main__:Sent: 12.90 28277.16 0 0
+INFO:__main__:Sent: 12.90 28283.61 0 0
+INFO:__main__:Sent: 12.90 28290.05 0 0
+INFO:__main__:Sent: 12.90 28296.50 0 0
+INFO:__main__:Sent: 12.90 28302.95 0 0
+INFO:__main__:Sent: 12.90 28309.39 0 0
+INFO:__main__:Sent: 12.90 28315.84 0 0
+INFO:__main__:Sent: 12.90 28322.28 0 0
+INFO:__main__:Sent: 12.90 28328.73 0 0
+INFO:__main__:Sent: 12.90 28335.17 0 0
+INFO:__main__:Sent: 12.90 28341.62 0 0
+INFO:__main__:Sent: 12.93 28348.08 0 0
+Sun Dec  8 12:13:14 PM IST 2024: Opening app in browser...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 44: chromium-browser: command not found
+INFO:__main__:Sent: 12.90 28354.54 0 0
+INFO:__main__:Sent: 12.90 28360.98 0 0
+INFO:__main__:Sent: 12.90 28367.43 0 0
+INFO:__main__:Sent: 12.90 28373.88 0 0
+Sun Dec  8 12:13:16 PM IST 2024: Simulating F11 for full screen...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 49: chromium-browser: command not found
+Sun Dec  8 12:13:16 PM IST 2024: Script completed.
+INFO:__main__:Sent: 12.90 28380.32 0 0
+INFO:__main__:Sent: 12.90 28386.77 0 0
+INFO:__main__:Sent: 12.90 28393.21 0 0
+INFO:__main__:Sent: 12.90 28399.66 0 0
+INFO:__main__:Sent: 12.90 28406.10 0 0
+INFO:__main__:Sent: 12.90 28412.55 0 0
+INFO:__main__:Sent: 12.90 28418.99 0 0
+INFO:__main__:Sent: 12.90 28425.44 0 0
+INFO:__main__:Sent: 12.90 28431.88 0 0
+INFO:__main__:Sent: 12.90 28438.33 0 0
+INFO:__main__:Sent: 12.90 28444.77 0 0
+INFO:__main__:Sent: 12.93 28451.22 0 0
+INFO:__main__:Sent: 12.90 28457.67 0 0
+INFO:__main__:Sent: 12.90 28464.11 0 0
+INFO:__main__:Sent: 12.93 28470.56 0 0
+INFO:__main__:Sent: 12.90 28477.01 0 0
+INFO:__main__:Sent: 12.90 28483.46 0 0
+INFO:__main__:Sent: 12.93 28489.91 0 0
+INFO:__main__:Sent: 12.90 28496.36 0 0
+INFO:__main__:Sent: 12.90 28502.81 0 0
+INFO:__main__:Sent: 12.90 28509.25 0 0
+INFO:__main__:Sent: 12.93 28515.71 0 0
+INFO:__main__:Sent: 12.93 28522.18 0 0
+INFO:__main__:Sent: 12.90 28528.63 0 0
+INFO:__main__:Sent: 12.90 28535.08 0 0
+INFO:__main__:Sent: 12.90 28541.52 0 0
+INFO:__main__:Sent: 12.90 28547.97 0 0
+INFO:__main__:Sent: 12.93 28554.42 0 0
+INFO:__main__:Sent: 12.90 28560.87 0 0
+INFO:__main__:Sent: 12.90 28567.32 0 0
+INFO:__main__:Sent: 12.90 28573.76 0 0
+INFO:__main__:Sent: 12.90 28580.21 0 0
+INFO:__main__:Sent: 12.90 28586.65 0 0
+INFO:__main__:Sent: 12.90 28593.10 0 0
+INFO:__main__:Sent: 12.90 28599.54 0 0
+INFO:__main__:Sent: 12.90 28605.99 0 0
+INFO:__main__:Sent: 12.90 28612.44 0 0
+INFO:__main__:Sent: 12.90 28618.88 0 0
+INFO:__main__:Sent: 12.90 28625.33 0 0
+INFO:__main__:Sent: 12.90 28631.77 0 0
+INFO:__main__:Sent: 12.90 28638.22 0 0
+INFO:__main__:Sent: 12.90 28644.66 0 0
+INFO:__main__:Sent: 12.90 28651.11 0 0
+INFO:__main__:Sent: 12.90 28657.55 0 0
+INFO:__main__:Sent: 12.90 28664.01 0 0
+INFO:__main__:Sent: 12.93 28670.46 0 0
+INFO:__main__:Sent: 12.90 28676.91 0 0
+INFO:__main__:Sent: 12.90 28683.36 0 0
+INFO:__main__:Sent: 12.90 28689.80 0 0
+INFO:__main__:Sent: 12.90 28696.25 0 0
+INFO:__main__:Sent: 12.90 28702.70 0 0
+INFO:__main__:Sent: 12.90 28709.14 0 0
+INFO:__main__:Sent: 12.90 28715.59 0 0
+INFO:__main__:Sent: 12.90 28722.03 0 0
+INFO:__main__:Sent: 12.90 28728.48 0 0
+INFO:__main__:Sent: 12.90 28734.92 0 0
+INFO:__main__:Sent: 12.90 28741.37 0 0
+INFO:__main__:Sent: 12.90 28747.81 0 0
+INFO:__main__:Sent: 12.90 28754.26 0 0
+INFO:__main__:Sent: 12.90 28760.70 0 0
+INFO:__main__:Sent: 12.90 28767.15 0 0
+INFO:__main__:Sent: 12.90 28773.59 0 0
+INFO:__main__:Sent: 12.90 28780.04 0 0
+INFO:__main__:Sent: 12.90 28786.48 0 0
+INFO:__main__:Sent: 12.90 28792.93 0 0
+INFO:__main__:Sent: 12.90 28799.38 0 0
+INFO:__main__:Sent: 12.90 28805.82 0 0
+INFO:__main__:Sent: 12.93 28812.27 0 0
+INFO:__main__:Sent: 12.90 28818.73 0 0
+INFO:__main__:Sent: 12.90 28825.17 0 0
+INFO:__main__:Sent: 12.90 28831.62 0 0
+INFO:__main__:Sent: 12.90 28838.06 0 0
+INFO:__main__:Sent: 12.90 28844.51 0 0
+INFO:__main__:Sent: 12.90 28850.95 0 0
+INFO:__main__:Sent: 12.90 28857.40 0 0
+INFO:__main__:Sent: 12.90 28863.84 0 0
+INFO:__main__:Sent: 12.90 28870.29 0 0
+INFO:__main__:Sent: 12.90 28876.74 0 0
+INFO:__main__:Sent: 12.90 28883.18 0 0
+INFO:__main__:Sent: 12.90 28889.63 0 0
+INFO:__main__:Sent: 12.90 28896.07 0 0
+INFO:__main__:Sent: 12.90 28902.52 0 0
+INFO:__main__:Sent: 12.90 28908.97 0 0
+INFO:__main__:Sent: 12.93 28915.44 0 0
+INFO:__main__:Sent: 12.93 28921.90 0 0
+INFO:__main__:Sent: 12.90 28928.36 0 0
+INFO:__main__:Sent: 12.90 28934.80 0 0
+INFO:__main__:Sent: 12.93 28941.25 0 0
+INFO:__main__:Sent: 12.93 28947.71 0 0
+INFO:__main__:Sent: 12.93 28954.18 0 0
+INFO:__main__:Sent: 12.93 28960.64 0 0
+INFO:__main__:Sent: 12.90 28967.11 0 0
+INFO:__main__:Sent: 12.93 28973.56 0 0
+INFO:__main__:Sent: 12.93 28980.03 0 0
+INFO:__main__:Sent: 12.90 28986.48 0 0
+INFO:__main__:Sent: 12.90 28992.93 0 0
+INFO:__main__:Sent: 12.90 28999.37 0 0
+INFO:__main__:Sent: 12.90 29005.82 0 0
+INFO:__main__:Sent: 12.93 29012.28 0 0
+INFO:__main__:Sent: 12.93 29018.74 0 0
+INFO:__main__:Sent: 12.93 29025.21 0 0
+INFO:__main__:Sent: 12.93 29031.67 0 0
+INFO:__main__:Sent: 12.93 29038.14 0 0
+INFO:__main__:Sent: 12.93 29044.60 0 0
+INFO:__main__:Sent: 12.93 29051.07 0 0
+INFO:__main__:Sent: 12.93 29057.53 0 0
+INFO:__main__:Sent: 12.93 29064.00 0 0
+INFO:__main__:Sent: 12.90 29070.45 0 0
+INFO:__main__:Sent: 12.93 29076.91 0 0
+INFO:__main__:Sent: 12.93 29083.37 0 0
+INFO:__main__:Sent: 12.93 29089.84 0 0
+INFO:__main__:Sent: 12.93 29096.30 0 0
+INFO:__main__:Sent: 12.90 29102.75 0 0
+INFO:__main__:Sent: 12.93 29109.21 0 0
+INFO:__main__:Sent: 12.93 29115.68 0 0
+INFO:__main__:Sent: 12.90 29122.13 0 0
+INFO:__main__:Sent: 12.90 29128.58 0 0
+INFO:__main__:Sent: 12.93 29135.04 0 0
+INFO:__main__:Sent: 12.93 29141.50 0 0
+INFO:__main__:Sent: 12.93 29147.96 0 0
+INFO:__main__:Sent: 12.93 29154.43 0 0
+INFO:__main__:Sent: 12.93 29160.89 0 0
+INFO:__main__:Sent: 12.93 29167.36 0 0
+INFO:__main__:Sent: 12.93 29173.82 0 0
+INFO:__main__:Sent: 12.93 29180.29 0 0
+INFO:__main__:Sent: 12.93 29186.75 0 0
+INFO:__main__:Sent: 12.93 29193.21 0 0
+INFO:__main__:Sent: 12.93 29199.68 0 0
+INFO:__main__:Sent: 12.90 29206.14 0 0
+INFO:__main__:Sent: 12.93 29212.60 0 0
+INFO:__main__:Sent: 12.93 29219.07 0 0
+INFO:__main__:Sent: 12.93 29225.53 0 0
+INFO:__main__:Sent: 12.93 29232.00 0 0
+INFO:__main__:Sent: 12.93 29238.46 0 0
+INFO:__main__:Sent: 12.93 29244.93 0 0
+INFO:__main__:Sent: 12.93 29251.39 0 0
+INFO:__main__:Sent: 12.93 29257.86 0 0
+INFO:__main__:Sent: 12.93 29264.32 0 0
+INFO:__main__:Sent: 12.93 29270.79 0 0
+INFO:__main__:Sent: 12.93 29277.25 0 0
+INFO:__main__:Sent: 12.93 29283.71 0 0
+INFO:__main__:Sent: 12.93 29290.18 0 0
+INFO:__main__:Sent: 12.93 29296.64 0 0
+INFO:__main__:Sent: 12.93 29303.11 0 0
+INFO:__main__:Sent: 12.93 29309.57 0 0
+INFO:__main__:Sent: 12.93 29316.04 0 0
+INFO:__main__:Sent: 12.93 29322.50 0 0
+INFO:__main__:Sent: 12.93 29328.97 0 0
+INFO:__main__:Sent: 12.93 29335.43 0 0
+INFO:__main__:Sent: 12.93 29341.90 0 0
+INFO:__main__:Sent: 12.93 29348.36 0 0
+INFO:__main__:Sent: 12.93 29354.83 0 0
+INFO:__main__:Sent: 12.93 29361.29 0 0
+INFO:__main__:Sent: 12.93 29367.76 0 0
+INFO:__main__:Sent: 12.93 29374.22 0 0
+INFO:__main__:Sent: 12.93 29380.69 0 0
+INFO:__main__:Sent: 12.93 29387.15 0 0
+INFO:__main__:Sent: 12.93 29393.62 0 0
+INFO:__main__:Sent: 12.93 29400.08 0 0
+INFO:__main__:Sent: 12.93 29406.55 0 0
+INFO:__main__:Sent: 12.93 29413.01 0 0
+INFO:__main__:Sent: 12.93 29419.48 0 0
+INFO:__main__:Sent: 12.93 29425.94 0 0
+INFO:__main__:Sent: 12.93 29432.41 0 0
+INFO:__main__:Sent: 12.93 29438.87 0 0
+INFO:__main__:Sent: 12.93 29445.34 0 0
+INFO:__main__:Sent: 12.93 29451.80 0 0
+INFO:__main__:Sent: 12.93 29458.27 0 0
+INFO:__main__:Sent: 12.93 29464.73 0 0
+INFO:__main__:Sent: 12.93 29471.20 0 0
+INFO:__main__:Sent: 12.93 29477.66 0 0
+INFO:__main__:Sent: 12.93 29484.13 0 0
+INFO:__main__:Sent: 12.93 29490.59 0 0
+INFO:__main__:Sent: 12.93 29497.05 0 0
+INFO:__main__:Sent: 12.93 29503.52 0 0
+INFO:__main__:Sent: 12.93 29509.98 0 0
+INFO:__main__:Sent: 12.93 29516.45 0 0
+INFO:__main__:Sent: 12.90 29522.91 0 0
+INFO:__main__:Sent: 12.90 29529.36 0 0
+INFO:__main__:Sent: 12.93 29535.80 0 0
+INFO:__main__:Sent: 12.93 29542.27 0 0
+INFO:__main__:Sent: 12.90 29548.72 0 0
+INFO:__main__:Sent: 12.90 29555.16 0 0
+INFO:__main__:Sent: 12.93 29561.62 0 0
+Sun Dec  8 12:14:48 PM IST 2024: Killing processes on ports 3000 and 9001...
+3000/tcp:             4195
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+9001/tcp:             4128
+Sun Dec  8 12:14:48 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:14:48 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:14:48 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:14:48 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:14:50 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:5163) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:5163) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.93 29568.07 0 0
+INFO:__main__:Sent: 12.93 29574.54 0 0
+INFO:__main__:Sent: 12.93 29581.00 0 0
+INFO:__main__:Sent: 12.93 29587.47 0 0
+INFO:__main__:Sent: 12.93 29593.93 0 0
+INFO:__main__:Sent: 12.93 29600.40 0 0
+INFO:__main__:Sent: 12.93 29606.86 0 0
+INFO:__main__:Sent: 12.93 29613.33 0 0
+INFO:__main__:Sent: 12.93 29619.79 0 0
+INFO:__main__:Sent: 12.93 29626.26 0 0
+INFO:__main__:Sent: 12.93 29632.72 0 0
+INFO:__main__:Sent: 12.93 29639.19 0 0
+INFO:__main__:Sent: 12.93 29645.65 0 0
+INFO:__main__:Sent: 12.90 29652.11 0 0
+Sun Dec  8 12:14:55 PM IST 2024: Opening app in browser...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 44: chromium-browser: command not found
+INFO:__main__:Sent: 12.90 29658.55 0 0
+INFO:__main__:Sent: 12.90 29665.00 0 0
+INFO:__main__:Sent: 12.90 29671.45 0 0
+INFO:__main__:Client disconnected.
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+Sun Dec  8 12:14:57 PM IST 2024: Simulating F11 for full screen...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 49: chromium-browser: command not found
+Sun Dec  8 12:14:57 PM IST 2024: Script completed.
+Sun Dec  8 12:16:55 PM IST 2024: Killing processes on ports 3000 and 9001...
+3000/tcp:             5163
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+9001/tcp:             5104
+Sun Dec  8 12:16:55 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:16:55 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:16:55 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:16:55 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:16:57 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:5927) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:5927) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 31204.46 0 0
+INFO:__main__:Sent: 12.90 31210.91 0 0
+INFO:__main__:Sent: 12.90 31217.35 0 0
+INFO:__main__:Sent: 12.90 31223.80 0 0
+INFO:__main__:Sent: 12.90 31230.24 0 0
+INFO:__main__:Sent: 12.90 31236.69 0 0
+INFO:__main__:Sent: 12.90 31243.13 0 0
+INFO:__main__:Sent: 12.90 31249.58 0 0
+INFO:__main__:Sent: 12.90 31256.03 0 0
+INFO:__main__:Sent: 12.90 31262.47 0 0
+INFO:__main__:Sent: 12.90 31268.92 0 0
+INFO:__main__:Sent: 12.90 31275.36 0 0
+INFO:__main__:Sent: 12.90 31281.81 0 0
+INFO:__main__:Sent: 12.90 31288.25 0 0
+INFO:__main__:Sent: 12.90 31294.70 0 0
+INFO:__main__:Sent: 12.90 31301.14 0 0
+INFO:__main__:Sent: 12.90 31307.59 0 0
+INFO:__main__:Sent: 12.90 31314.03 0 0
+INFO:__main__:Sent: 12.90 31320.48 0 0
+INFO:__main__:Sent: 12.90 31326.92 0 0
+INFO:__main__:Sent: 12.90 31333.37 0 0
+INFO:__main__:Sent: 12.90 31339.81 0 0
+INFO:__main__:Sent: 12.90 31346.26 0 0
+INFO:__main__:Sent: 12.90 31352.71 0 0
+Sun Dec  8 12:17:07 PM IST 2024: Opening app in browser...
+Sun Dec  8 12:17:07 PM IST 2024: Simulating F11 for full screen...
+INFO:__main__:Sent: 12.90 31359.15 0 0
+INFO:__main__:Sent: 12.90 31365.60 0 0
+Sun Dec  8 12:17:08 PM IST 2024: Script completed.
+INFO:__main__:Sent: 12.90 31372.04 0 0
+INFO:__main__:Sent: 12.90 31378.49 0 0
+INFO:__main__:Sent: 12.90 31384.93 0 0
+INFO:__main__:Sent: 12.90 31391.38 0 0
+INFO:__main__:Sent: 12.90 31397.82 0 0
+INFO:__main__:Sent: 12.90 31404.27 0 0
+INFO:__main__:Sent: 12.90 31410.71 0 0
+INFO:__main__:Sent: 12.90 31417.16 0 0
+INFO:__main__:Sent: 12.90 31423.60 0 0
+INFO:__main__:Sent: 12.90 31430.05 0 0
+INFO:__main__:Sent: 12.90 31436.49 0 0
+INFO:__main__:Sent: 12.90 31442.94 0 0
+INFO:__main__:Sent: 12.90 31449.38 0 0
+INFO:__main__:Sent: 12.90 31455.83 0 0
+INFO:__main__:Sent: 12.90 31462.28 0 0
+INFO:__main__:Sent: 12.90 31468.72 0 0
+INFO:__main__:Sent: 12.90 31475.17 0 0
+INFO:__main__:Sent: 12.90 31481.61 0 0
+INFO:__main__:Sent: 12.90 31488.06 0 0
+INFO:__main__:Sent: 12.90 31494.50 0 0
+INFO:__main__:Sent: 12.90 31500.95 0 0
+INFO:__main__:Sent: 12.90 31507.39 0 0
+INFO:__main__:Sent: 12.90 31513.84 0 0
+INFO:__main__:Sent: 12.90 31520.28 0 0
+INFO:__main__:Sent: 12.90 31526.73 0 0
+INFO:__main__:Sent: 12.90 31533.17 0 0
+INFO:__main__:Sent: 12.90 31539.62 0 0
+INFO:__main__:Sent: 12.90 31546.06 0 0
+INFO:__main__:Sent: 12.90 31552.51 0 0
+INFO:__main__:Sent: 12.90 31558.96 0 0
+INFO:__main__:Sent: 12.90 31565.40 0 0
+INFO:__main__:Sent: 12.90 31571.85 0 0
+INFO:__main__:Sent: 12.90 31578.29 0 0
+INFO:__main__:Sent: 12.90 31584.74 0 0
+INFO:__main__:Sent: 12.90 31591.18 0 0
+INFO:__main__:Sent: 12.90 31597.63 0 0
+INFO:__main__:Sent: 12.90 31604.07 0 0
+INFO:__main__:Sent: 12.90 31610.52 0 0
+INFO:__main__:Sent: 12.90 31616.96 0 0
+INFO:__main__:Sent: 12.90 31623.41 0 0
+INFO:__main__:Sent: 12.90 31629.85 0 0
+INFO:__main__:Sent: 12.90 31636.30 0 0
+INFO:__main__:Sent: 12.90 31642.74 0 0
+INFO:__main__:Sent: 12.90 31649.19 0 0
+INFO:__main__:Sent: 12.90 31655.63 0 0
+INFO:__main__:Sent: 12.90 31662.08 0 0
+INFO:__main__:Sent: 12.90 31668.53 0 0
+INFO:__main__:Sent: 12.90 31674.97 0 0
+INFO:__main__:Sent: 12.90 31681.42 0 0
+INFO:__main__:Sent: 12.90 31687.86 0 0
+INFO:__main__:Sent: 12.90 31694.31 0 0
+INFO:__main__:Sent: 12.90 31700.75 0 0
+INFO:__main__:Sent: 12.90 31707.20 0 0
+INFO:__main__:Sent: 12.90 31713.64 0 0
+INFO:__main__:Sent: 12.90 31720.09 0 0
+INFO:__main__:Sent: 12.90 31726.53 0 0
+INFO:__main__:Sent: 12.90 31732.98 0 0
+INFO:__main__:Sent: 12.90 31739.42 0 0
+INFO:__main__:Sent: 12.90 31745.87 0 0
+INFO:__main__:Sent: 12.90 31752.31 0 0
+INFO:__main__:Sent: 12.90 31758.76 0 0
+INFO:__main__:Sent: 12.90 31765.21 0 0
+INFO:__main__:Sent: 12.90 31771.65 0 0
+INFO:__main__:Sent: 12.90 31778.10 0 0
+INFO:__main__:Sent: 12.90 31784.54 0 0
+INFO:__main__:Sent: 12.90 31790.99 0 0
+INFO:__main__:Sent: 12.90 31797.43 0 0
+INFO:__main__:Sent: 12.90 31803.88 0 0
+INFO:__main__:Sent: 12.90 31810.32 0 0
+INFO:__main__:Sent: 12.90 31816.77 0 0
+INFO:__main__:Sent: 12.90 31823.21 0 0
+INFO:__main__:Sent: 12.90 31829.66 0 0
+INFO:__main__:Sent: 12.90 31836.10 0 0
+INFO:__main__:Sent: 12.90 31842.55 0 0
+INFO:__main__:Sent: 12.90 31848.99 0 0
+INFO:__main__:Sent: 12.90 31855.44 0 0
+INFO:__main__:Sent: 12.90 31861.88 0 0
+INFO:__main__:Sent: 12.90 31868.33 0 0
+INFO:__main__:Sent: 12.90 31874.78 0 0
+INFO:__main__:Sent: 12.90 31881.22 0 0
+INFO:__main__:Sent: 12.90 31887.67 0 0
+INFO:__main__:Sent: 12.90 31894.11 0 0
+INFO:__main__:Sent: 12.90 31900.56 0 0
+INFO:__main__:Sent: 12.90 31907.00 0 0
+INFO:__main__:Sent: 12.90 31913.45 0 0
+INFO:__main__:Sent: 12.90 31919.89 0 0
+INFO:__main__:Sent: 12.90 31926.34 0 0
+INFO:__main__:Sent: 12.90 31932.78 0 0
+INFO:__main__:Sent: 12.90 31939.23 0 0
+INFO:__main__:Sent: 12.90 31945.67 0 0
+INFO:__main__:Sent: 12.90 31952.12 0 0
+INFO:__main__:Sent: 12.90 31958.56 0 0
+INFO:__main__:Sent: 12.90 31965.01 0 0
+INFO:__main__:Client disconnected.
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 31977.90 0 0
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 31990.79 0 0
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 32003.68 0 0
+INFO:__main__:Sent: 12.90 32010.13 0 0
+INFO:__main__:Sent: 12.90 32016.57 0 0
+INFO:__main__:Sent: 12.90 32023.02 0 0
+INFO:__main__:Sent: 12.90 32029.46 0 0
+INFO:__main__:Sent: 12.90 32035.91 0 0
+INFO:__main__:Sent: 12.90 32042.35 0 0
+INFO:__main__:Sent: 12.90 32048.80 0 0
+INFO:__main__:Sent: 12.90 32055.24 0 0
+INFO:__main__:Sent: 12.90 32061.69 0 0
+INFO:__main__:Sent: 12.90 32068.13 0 0
+INFO:__main__:Sent: 12.90 32074.58 0 0
+INFO:__main__:Sent: 12.90 32081.03 0 0
+INFO:__main__:Sent: 12.90 32087.47 0 0
+INFO:__main__:Sent: 12.90 32093.92 0 0
+INFO:__main__:Sent: 12.90 32100.36 0 0
+INFO:__main__:Sent: 12.90 32106.81 0 0
+INFO:__main__:Sent: 12.90 32113.25 0 0
+INFO:__main__:Sent: 12.90 32119.70 0 0
+INFO:__main__:Sent: 12.90 32126.14 0 0
+INFO:__main__:Sent: 12.90 32132.59 0 0
+INFO:__main__:Sent: 12.90 32139.03 0 0
+INFO:__main__:Sent: 12.90 32145.48 0 0
+INFO:__main__:Sent: 12.90 32151.92 0 0
+INFO:__main__:Sent: 12.90 32158.37 0 0
+INFO:__main__:Sent: 12.90 32164.81 0 0
+INFO:__main__:Sent: 12.90 32171.26 0 0
+INFO:__main__:Sent: 12.90 32177.71 0 0
+INFO:__main__:Sent: 12.90 32184.15 0 0
+INFO:__main__:Sent: 12.90 32190.60 0 0
+INFO:__main__:Sent: 12.90 32197.04 0 0
+INFO:__main__:Sent: 12.90 32203.49 0 0
+INFO:__main__:Sent: 12.90 32209.93 0 0
+INFO:__main__:Sent: 12.90 32216.38 0 0
+INFO:__main__:Sent: 12.90 32222.82 0 0
+INFO:__main__:Sent: 12.90 32229.27 0 0
+INFO:__main__:Sent: 12.90 32235.71 0 0
+INFO:__main__:Sent: 12.90 32242.16 0 0
+INFO:__main__:Sent: 12.90 32248.60 0 0
+INFO:__main__:Sent: 12.90 32255.05 0 0
+INFO:__main__:Sent: 12.90 32261.49 0 0
+INFO:__main__:Sent: 12.90 32267.94 0 0
+INFO:__main__:Sent: 12.90 32274.38 0 0
+INFO:__main__:Sent: 12.90 32280.83 0 0
+INFO:__main__:Sent: 12.90 32287.28 0 0
+INFO:__main__:Sent: 12.90 32293.72 0 0
+INFO:__main__:Sent: 12.90 32300.17 0 0
+INFO:__main__:Sent: 12.90 32306.61 0 0
+INFO:__main__:Sent: 12.90 32313.06 0 0
+INFO:__main__:Sent: 12.90 32319.50 0 0
+INFO:__main__:Sent: 12.90 32325.95 0 0
+INFO:__main__:Sent: 12.90 32332.39 0 0
+INFO:__main__:Sent: 12.90 32338.84 0 0
+INFO:__main__:Sent: 12.93 32345.29 0 0
+INFO:__main__:Sent: 12.90 32351.73 0 0
+INFO:__main__:Sent: 12.90 32358.18 0 0
+INFO:__main__:Sent: 12.90 32364.62 0 0
+INFO:__main__:Sent: 12.90 32371.07 0 0
+INFO:__main__:Sent: 12.90 32377.51 0 0
+INFO:__main__:Sent: 12.90 32383.96 0 0
+INFO:__main__:Sent: 12.90 32390.40 0 0
+INFO:__main__:Sent: 12.90 32396.85 0 0
+INFO:__main__:Sent: 12.90 32403.29 0 0
+INFO:__main__:Sent: 12.90 32409.74 0 0
+INFO:__main__:Sent: 12.90 32416.18 0 0
+INFO:__main__:Sent: 12.90 32422.63 0 0
+INFO:__main__:Sent: 12.90 32429.07 0 0
+INFO:__main__:Sent: 12.93 32435.53 0 0
+INFO:__main__:Sent: 12.90 32441.98 0 0
+INFO:__main__:Sent: 12.90 32448.43 0 0
+INFO:__main__:Sent: 12.90 32454.87 0 0
+INFO:__main__:Sent: 12.90 32461.32 0 0
+INFO:__main__:Sent: 12.90 32467.76 0 0
+INFO:__main__:Sent: 12.90 32474.21 0 0
+INFO:__main__:Sent: 12.90 32480.65 0 0
+INFO:__main__:Sent: 12.90 32487.10 0 0
+INFO:__main__:Sent: 12.90 32493.54 0 0
+INFO:__main__:Sent: 12.90 32499.99 0 0
+INFO:__main__:Sent: 12.90 32506.44 0 0
+INFO:__main__:Sent: 12.90 32512.88 0 0
+INFO:__main__:Sent: 12.90 32519.33 0 0
+INFO:__main__:Sent: 12.90 32525.77 0 0
+INFO:__main__:Sent: 12.90 32532.22 0 0
+INFO:__main__:Sent: 12.90 32538.66 0 0
+INFO:__main__:Sent: 12.90 32545.11 0 0
+INFO:__main__:Sent: 12.90 32551.55 0 0
+INFO:__main__:Sent: 12.90 32558.00 0 0
+INFO:__main__:Sent: 12.90 32564.44 0 0
+INFO:__main__:Sent: 12.90 32570.89 0 0
+INFO:__main__:Sent: 12.90 32577.33 0 0
+INFO:__main__:Sent: 12.90 32583.78 0 0
+INFO:__main__:Sent: 12.90 32590.22 0 0
+INFO:__main__:Sent: 12.90 32596.67 0 0
+INFO:__main__:Sent: 12.90 32603.12 0 0
+INFO:__main__:Sent: 12.90 32609.56 0 0
+INFO:__main__:Sent: 12.90 32616.01 0 0
+INFO:__main__:Sent: 12.90 32621.81 0 0
+INFO:__main__:Sent: 12.90 32628.25 0 0
+INFO:__main__:Sent: 12.90 32634.70 0 0
+INFO:__main__:Sent: 12.93 32641.15 0 0
+INFO:__main__:Sent: 12.90 32647.60 0 0
+INFO:__main__:Sent: 12.90 32654.04 0 0
+INFO:__main__:Sent: 12.90 32660.49 0 0
+INFO:__main__:Sent: 12.90 32666.93 0 0
+INFO:__main__:Sent: 12.90 32673.38 0 0
+INFO:__main__:Sent: 12.90 32679.82 0 0
+INFO:__main__:Sent: 12.90 32686.27 0 0
+INFO:__main__:Sent: 12.90 32692.71 0 0
+INFO:__main__:Sent: 12.90 32699.16 0 0
+INFO:__main__:Sent: 12.90 32705.61 0 0
+INFO:__main__:Sent: 12.90 32712.05 0 0
+INFO:__main__:Sent: 12.90 32718.50 0 0
+INFO:__main__:Sent: 12.90 32724.94 0 0
+INFO:__main__:Sent: 12.90 32731.39 0 0
+INFO:__main__:Sent: 12.90 32737.83 0 0
+INFO:__main__:Sent: 12.90 32744.28 0 0
+INFO:__main__:Sent: 12.90 32750.72 0 0
+INFO:__main__:Sent: 12.90 32757.17 0 0
+INFO:__main__:Sent: 12.90 32763.61 0 0
+INFO:__main__:Sent: 12.90 32770.06 0 0
+INFO:__main__:Sent: 12.90 32776.50 0 0
+INFO:__main__:Sent: 12.90 32782.95 0 0
+INFO:__main__:Sent: 12.90 32789.39 0 0
+INFO:__main__:Sent: 12.90 32795.84 0 0
+INFO:__main__:Sent: 12.90 32802.29 0 0
+INFO:__main__:Sent: 12.90 32808.73 0 0
+INFO:__main__:Sent: 12.90 32815.18 0 0
+INFO:__main__:Sent: 12.90 32821.62 0 0
+INFO:__main__:Sent: 12.90 32828.07 0 0
+INFO:__main__:Sent: 12.90 32834.51 0 0
+INFO:__main__:Sent: 12.90 32840.96 0 0
+INFO:__main__:Sent: 12.90 32847.40 0 0
+INFO:__main__:Sent: 12.90 32853.85 0 0
+INFO:__main__:Sent: 12.90 32860.29 0 0
+INFO:__main__:Sent: 12.90 32866.74 0 0
+INFO:__main__:Sent: 12.90 32873.18 0 0
+INFO:__main__:Sent: 12.90 32879.63 0 0
+INFO:__main__:Sent: 12.90 32886.07 0 0
+INFO:__main__:Sent: 12.90 32892.52 0 0
+INFO:__main__:Sent: 12.93 32898.97 0 0
+INFO:__main__:Sent: 12.90 32905.42 0 0
+INFO:__main__:Sent: 12.90 32911.87 0 0
+INFO:__main__:Sent: 12.90 32918.31 0 0
+INFO:__main__:Sent: 12.90 32924.76 0 0
+INFO:__main__:Sent: 12.90 32931.20 0 0
+INFO:__main__:Sent: 12.90 32937.65 0 0
+INFO:__main__:Sent: 12.93 32944.13 0 0
+INFO:__main__:Sent: 12.93 32950.61 0 0
+INFO:__main__:Sent: 12.90 32957.07 0 0
+INFO:__main__:Sent: 12.90 32963.52 0 0
+INFO:__main__:Sent: 12.90 32969.97 0 0
+INFO:__main__:Sent: 12.90 32976.44 0 0
+INFO:__main__:Sent: 12.90 32982.88 0 0
+INFO:__main__:Sent: 12.90 32989.33 0 0
+INFO:__main__:Sent: 12.90 32995.77 0 0
+INFO:__main__:Sent: 12.90 33002.22 0 0
+INFO:__main__:Sent: 12.90 33008.66 0 0
+INFO:__main__:Sent: 12.93 33015.12 0 0
+INFO:__main__:Sent: 12.90 33021.59 0 0
+INFO:__main__:Sent: 12.90 33028.03 0 0
+INFO:__main__:Sent: 12.90 33034.48 0 0
+INFO:__main__:Sent: 12.90 33040.93 0 0
+INFO:__main__:Sent: 12.90 33047.38 0 0
+INFO:__main__:Sent: 12.90 33053.82 0 0
+INFO:__main__:Sent: 12.93 33060.30 0 0
+INFO:__main__:Sent: 12.93 33066.78 0 0
+INFO:__main__:Sent: 12.93 33073.27 0 0
+INFO:__main__:Sent: 12.90 33079.71 0 0
+INFO:__main__:Sent: 12.90 33086.16 0 0
+INFO:__main__:Sent: 12.90 33092.60 0 0
+INFO:__main__:Sent: 12.90 33099.05 0 0
+INFO:__main__:Sent: 12.90 33105.49 0 0
+INFO:__main__:Sent: 12.90 33111.94 0 0
+INFO:__main__:Sent: 12.90 33118.39 0 0
+INFO:__main__:Sent: 12.90 33124.83 0 0
+INFO:__main__:Sent: 12.90 33131.28 0 0
+INFO:__main__:Sent: 12.90 33137.72 0 0
+INFO:__main__:Sent: 12.90 33144.17 0 0
+INFO:__main__:Sent: 12.90 33150.61 0 0
+INFO:__main__:Sent: 12.90 33157.06 0 0
+INFO:__main__:Sent: 12.90 33163.50 0 0
+INFO:__main__:Sent: 12.90 33169.95 0 0
+INFO:__main__:Sent: 12.93 33176.41 0 0
+INFO:__main__:Sent: 12.93 33182.89 0 0
+INFO:__main__:Sent: 12.93 33189.38 0 0
+INFO:__main__:Sent: 12.93 33195.86 0 0
+INFO:__main__:Sent: 12.93 33202.35 0 0
+INFO:__main__:Sent: 12.90 33208.79 0 0
+INFO:__main__:Sent: 12.93 33215.25 0 0
+INFO:__main__:Sent: 12.93 33221.74 0 0
+INFO:__main__:Sent: 12.90 33228.19 0 0
+INFO:__main__:Sent: 12.90 33234.64 0 0
+INFO:__main__:Sent: 12.90 33241.08 0 0
+INFO:__main__:Sent: 12.90 33247.53 0 0
+INFO:__main__:Sent: 12.90 33253.97 0 0
+INFO:__main__:Sent: 12.93 33260.45 0 0
+INFO:__main__:Sent: 12.90 33266.91 0 0
+INFO:__main__:Sent: 12.90 33273.37 0 0
+INFO:__main__:Sent: 12.90 33279.81 0 0
+INFO:__main__:Sent: 12.90 33286.26 0 0
+INFO:__main__:Sent: 12.90 33292.70 0 0
+INFO:__main__:Sent: 12.90 33299.15 0 0
+INFO:__main__:Sent: 12.90 33305.59 0 0
+INFO:__main__:Sent: 12.90 33312.04 0 0
+INFO:__main__:Sent: 12.93 33318.49 0 0
+INFO:__main__:Sent: 12.93 33324.98 0 0
+INFO:__main__:Sent: 12.93 33331.46 0 0
+INFO:__main__:Sent: 12.90 33337.91 0 0
+INFO:__main__:Sent: 12.93 33344.36 0 0
+INFO:__main__:Sent: 12.93 33350.84 0 0
+INFO:__main__:Sent: 12.93 33357.32 0 0
+INFO:__main__:Sent: 12.93 33363.81 0 0
+INFO:__main__:Sent: 12.93 33370.29 0 0
+INFO:__main__:Sent: 12.93 33376.78 0 0
+INFO:__main__:Sent: 12.93 33383.26 0 0
+INFO:__main__:Sent: 12.93 33389.75 0 0
+INFO:__main__:Sent: 12.93 33396.23 0 0
+INFO:__main__:Sent: 12.93 33402.71 0 0
+INFO:__main__:Sent: 12.93 33409.20 0 0
+INFO:__main__:Sent: 12.93 33415.68 0 0
+INFO:__main__:Sent: 12.93 33422.17 0 0
+INFO:__main__:Sent: 12.93 33428.63 0 0
+INFO:__main__:Sent: 12.93 33435.12 0 0
+INFO:__main__:Sent: 12.93 33441.60 0 0
+INFO:__main__:Sent: 12.93 33448.09 0 0
+INFO:__main__:Sent: 12.93 33454.57 0 0
+INFO:__main__:Sent: 12.93 33461.05 0 0
+INFO:__main__:Sent: 12.93 33467.54 0 0
+INFO:__main__:Sent: 12.93 33474.02 0 0
+INFO:__main__:Sent: 12.93 33480.51 0 0
+INFO:__main__:Sent: 12.93 33486.99 0 0
+INFO:__main__:Sent: 12.93 33493.48 0 0
+INFO:__main__:Sent: 12.93 33499.96 0 0
+INFO:__main__:Sent: 12.90 33506.44 0 0
+INFO:__main__:Sent: 12.90 33512.89 0 0
+INFO:__main__:Sent: 12.90 33519.34 0 0
+INFO:__main__:Sent: 12.93 33525.79 0 0
+INFO:__main__:Sent: 12.90 33532.23 0 0
+INFO:__main__:Sent: 12.90 33538.68 0 0
+INFO:__main__:Sent: 12.90 33545.13 0 0
+INFO:__main__:Sent: 12.90 33551.57 0 0
+INFO:__main__:Sent: 12.90 33558.02 0 0
+INFO:__main__:Sent: 12.93 33564.47 0 0
+INFO:__main__:Sent: 12.90 33570.91 0 0
+INFO:__main__:Sent: 12.90 33577.36 0 0
+INFO:__main__:Sent: 12.90 33583.80 0 0
+INFO:__main__:Sent: 12.93 33590.26 0 0
+INFO:__main__:Sent: 12.90 33596.71 0 0
+INFO:__main__:Sent: 12.90 33603.15 0 0
+INFO:__main__:Sent: 12.90 33609.60 0 0
+INFO:__main__:Sent: 12.90 33616.04 0 0
+INFO:__main__:Sent: 12.90 33622.49 0 0
+INFO:__main__:Sent: 12.90 33628.93 0 0
+INFO:__main__:Sent: 12.90 33635.38 0 0
+Sun 08 Dec 2024 12:20:45 IST: Killing processes on ports 3000 and 9001...
+Sun 08 Dec 2024 12:20:45 IST: Activating virtual environment...
+Sun 08 Dec 2024 12:20:45 IST: Starting serial_to_websocket.py...
+Sun 08 Dec 2024 12:20:45 IST: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun 08 Dec 2024 12:20:47 IST: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:2017) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:2017) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 34170.36 0 0
+INFO:__main__:Sent: 12.90 34176.81 0 0
+INFO:__main__:Sent: 12.90 34183.25 0 0
+INFO:__main__:Sent: 12.90 34189.70 0 0
+INFO:__main__:Sent: 12.90 34196.14 0 0
+INFO:__main__:Sent: 12.90 34202.59 0 0
+INFO:__main__:Sent: 12.90 34209.04 0 0
+INFO:__main__:Sent: 12.90 34215.48 0 0
+INFO:__main__:Sent: 12.90 34221.93 0 0
+INFO:__main__:Sent: 12.90 34228.37 0 0
+INFO:__main__:Sent: 12.90 34234.82 0 0
+INFO:__main__:Sent: 12.90 34241.26 0 0
+INFO:__main__:Sent: 12.90 34247.71 0 0
+INFO:__main__:Sent: 12.90 34254.15 0 0
+INFO:__main__:Sent: 12.90 34260.60 0 0
+INFO:__main__:Sent: 12.90 34267.04 0 0
+INFO:__main__:Sent: 12.90 34273.49 0 0
+INFO:__main__:Sent: 12.90 34279.93 0 0
+INFO:__main__:Sent: 12.90 34286.38 0 0
+INFO:__main__:Sent: 12.90 34292.82 0 0
+INFO:__main__:Sent: 12.90 34299.27 0 0
+INFO:__main__:Sent: 12.90 34305.71 0 0
+INFO:__main__:Sent: 12.90 34312.16 0 0
+INFO:__main__:Sent: 12.90 34318.61 0 0
+INFO:__main__:Sent: 12.90 34325.05 0 0
+INFO:__main__:Sent: 12.90 34331.50 0 0
+INFO:__main__:Sent: 12.90 34337.94 0 0
+INFO:__main__:Sent: 12.90 34344.39 0 0
+INFO:__main__:Sent: 12.90 34350.83 0 0
+INFO:__main__:Sent: 12.90 34357.28 0 0
+INFO:__main__:Sent: 12.90 34363.72 0 0
+INFO:__main__:Sent: 12.90 34370.17 0 0
+INFO:__main__:Sent: 12.90 34376.61 0 0
+INFO:__main__:Sent: 12.90 34383.06 0 0
+INFO:__main__:Sent: 12.90 34389.50 0 0
+INFO:__main__:Sent: 12.90 34395.95 0 0
+INFO:__main__:Sent: 12.90 34402.39 0 0
+INFO:__main__:Sent: 12.90 34408.84 0 0
+INFO:__main__:Sent: 12.90 34415.29 0 0
+INFO:__main__:Sent: 12.90 34421.73 0 0
+INFO:__main__:Sent: 12.90 34428.18 0 0
+INFO:__main__:Sent: 12.90 34434.62 0 0
+INFO:__main__:Sent: 12.90 34441.07 0 0
+INFO:__main__:Sent: 12.90 34447.51 0 0
+INFO:__main__:Sent: 12.90 34453.96 0 0
+INFO:__main__:Sent: 12.90 34460.40 0 0
+INFO:__main__:Sent: 12.90 34466.85 0 0
+INFO:__main__:Sent: 12.90 34473.29 0 0
+INFO:__main__:Sent: 12.90 34479.74 0 0
+INFO:__main__:Sent: 12.90 34486.18 0 0
+INFO:__main__:Sent: 12.90 34492.63 0 0
+INFO:__main__:Sent: 12.90 34499.07 0 0
+INFO:__main__:Sent: 12.90 34505.52 0 0
+INFO:__main__:Sent: 12.90 34511.96 0 0
+INFO:__main__:Sent: 12.90 34518.41 0 0
+INFO:__main__:Sent: 12.90 34524.86 0 0
+INFO:__main__:Sent: 12.90 34531.30 0 0
+INFO:__main__:Sent: 12.90 34537.75 0 0
+INFO:__main__:Sent: 12.90 34544.19 0 0
+INFO:__main__:Sent: 12.90 34550.64 0 0
+INFO:__main__:Sent: 12.90 34557.08 0 0
+INFO:__main__:Sent: 12.90 34563.53 0 0
+INFO:__main__:Sent: 12.90 34569.97 0 0
+INFO:__main__:Sent: 12.90 34576.42 0 0
+INFO:__main__:Sent: 12.90 34582.86 0 0
+INFO:__main__:Sent: 12.90 34589.31 0 0
+INFO:__main__:Sent: 12.90 34595.75 0 0
+INFO:__main__:Sent: 12.90 34602.20 0 0
+INFO:__main__:Sent: 12.90 34608.64 0 0
+INFO:__main__:Sent: 12.90 34615.09 0 0
+INFO:__main__:Sent: 12.90 34621.54 0 0
+INFO:__main__:Sent: 12.90 34627.98 0 0
+INFO:__main__:Sent: 12.90 34634.43 0 0
+INFO:__main__:Sent: 12.90 34640.87 0 0
+INFO:__main__:Sent: 12.90 34647.32 0 0
+INFO:__main__:Sent: 12.90 34653.76 0 0
+INFO:__main__:Sent: 12.90 34660.21 0 0
+INFO:__main__:Sent: 12.90 34666.65 0 0
+INFO:__main__:Sent: 12.90 34673.10 0 0
+INFO:__main__:Sent: 12.90 34679.54 0 0
+INFO:__main__:Sent: 12.90 34685.99 0 0
+INFO:__main__:Sent: 12.90 34692.43 0 0
+INFO:__main__:Sent: 12.90 34698.88 0 0
+INFO:__main__:Sent: 12.90 34705.32 0 0
+INFO:__main__:Sent: 12.90 34711.77 0 0
+INFO:__main__:Sent: 12.90 34718.21 0 0
+INFO:__main__:Sent: 12.90 34724.66 0 0
+INFO:__main__:Sent: 12.90 34731.11 0 0
+INFO:__main__:Sent: 12.90 34737.55 0 0
+INFO:__main__:Sent: 12.90 34744.00 0 0
+INFO:__main__:Sent: 12.90 34750.44 0 0
+INFO:__main__:Sent: 12.90 34756.89 0 0
+INFO:__main__:Sent: 12.90 34763.33 0 0
+INFO:__main__:Sent: 12.90 34769.78 0 0
+INFO:__main__:Sent: 12.90 34776.22 0 0
+INFO:__main__:Sent: 12.90 34782.67 0 0
+INFO:__main__:Sent: 12.90 34789.11 0 0
+INFO:__main__:Sent: 12.90 34795.56 0 0
+INFO:__main__:Sent: 12.90 34802.00 0 0
+INFO:__main__:Sent: 12.90 34808.45 0 0
+INFO:__main__:Sent: 12.90 34814.89 0 0
+INFO:__main__:Sent: 12.90 34821.34 0 0
+INFO:__main__:Sent: 12.90 34827.79 0 0
+INFO:__main__:Sent: 12.90 34834.23 0 0
+INFO:__main__:Sent: 12.90 34840.68 0 0
+INFO:__main__:Sent: 12.90 34847.12 0 0
+INFO:__main__:Sent: 12.90 34853.57 0 0
+INFO:__main__:Sent: 12.90 34860.01 0 0
+INFO:__main__:Sent: 12.90 34866.46 0 0
+INFO:__main__:Sent: 12.90 34872.90 0 0
+INFO:__main__:Sent: 12.90 34879.35 0 0
+INFO:__main__:Sent: 12.90 34885.79 0 0
+INFO:__main__:Sent: 12.90 34892.24 0 0
+INFO:__main__:Sent: 12.90 34898.68 0 0
+INFO:__main__:Sent: 12.90 34905.13 0 0
+INFO:__main__:Sent: 12.90 34911.57 0 0
+INFO:__main__:Sent: 12.90 34918.02 0 0
+INFO:__main__:Sent: 12.90 34924.46 0 0
+INFO:__main__:Sent: 12.90 34930.91 0 0
+INFO:__main__:Sent: 12.90 34937.36 0 0
+INFO:__main__:Sent: 12.90 34943.80 0 0
+INFO:__main__:Sent: 12.90 34950.25 0 0
+INFO:__main__:Sent: 12.90 34956.69 0 0
+INFO:__main__:Sent: 12.90 34963.14 0 0
+INFO:__main__:Sent: 12.90 34969.58 0 0
+INFO:__main__:Sent: 12.90 34976.03 0 0
+INFO:__main__:Sent: 12.90 34982.47 0 0
+INFO:__main__:Sent: 12.90 34988.92 0 0
+INFO:__main__:Sent: 12.90 34995.36 0 0
+INFO:__main__:Sent: 12.90 35001.81 0 0
+INFO:__main__:Sent: 12.90 35008.25 0 0
+INFO:__main__:Sent: 12.90 35014.70 0 0
+INFO:__main__:Sent: 12.90 35021.14 0 0
+Sun Dec  8 12:21:51 PM IST 2024: Killing processes on ports 3000 and 9001...
+3000/tcp:             2017
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+9001/tcp:             1974
+Sun Dec  8 12:21:52 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:21:52 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:21:52 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:21:54 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:3023) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3023) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 35027.59 0 0
+INFO:__main__:Sent: 12.90 35034.04 0 0
+INFO:__main__:Sent: 12.90 35040.48 0 0
+INFO:__main__:Sent: 12.90 35046.93 0 0
+INFO:__main__:Sent: 12.90 35053.37 0 0
+INFO:__main__:Sent: 12.90 35059.82 0 0
+INFO:__main__:Sent: 12.90 35066.26 0 0
+INFO:__main__:Sent: 12.90 35072.71 0 0
+INFO:__main__:Sent: 12.90 35079.15 0 0
+INFO:__main__:Sent: 12.90 35085.60 0 0
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 37:  1974 Killed                  python /home/mada/Desktop/Hydrogen_Rocket/serial_to_websocket/serial_to_websocket.py  (wd: ~)
+Sun 08 Dec 2024 12:21:56 IST: Opening app in full screen...
+/home/mada/Desktop/Hydrogen_Rocket/start_hydrogen_project.sh: line 40: chromium-browser: command not found
+Sun 08 Dec 2024 12:21:56 IST: Script completed.
+INFO:__main__:Sent: 12.90 35092.04 0 0
+INFO:__main__:Sent: 12.90 35098.49 0 0
+INFO:__main__:Sent: 12.90 35104.93 0 0
+INFO:__main__:Sent: 12.90 35111.38 0 0
+INFO:__main__:Sent: 12.90 35117.82 0 0
+INFO:__main__:Sent: 12.90 35124.27 0 0
+INFO:__main__:Sent: 12.90 35130.71 0 0
+INFO:__main__:Sent: 12.90 35137.16 0 0
+INFO:__main__:Client disconnected.
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+Sun Dec  8 12:22:10 PM IST 2024: Killing processes on ports 3000 and 9001...
+9001/tcp:             2965
+Sun Dec  8 12:22:10 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:22:10 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:22:10 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:22:13 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:3265) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3265) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 35272.51 0 0
+INFO:__main__:Sent: 12.90 35278.96 0 0
+INFO:__main__:Sent: 12.90 35285.40 0 0
+INFO:__main__:Sent: 12.90 35291.85 0 0
+INFO:__main__:Sent: 12.90 35298.29 0 0
+INFO:__main__:Sent: 12.90 35304.74 0 0
+INFO:__main__:Sent: 12.90 35311.18 0 0
+INFO:__main__:Sent: 12.90 35317.63 0 0
+INFO:__main__:Sent: 12.90 35324.07 0 0
+INFO:__main__:Sent: 12.90 35330.52 0 0
+INFO:__main__:Sent: 12.90 35336.98 0 0
+INFO:__main__:Sent: 12.90 35343.43 0 0
+INFO:__main__:Sent: 12.90 35349.87 0 0
+INFO:__main__:Sent: 12.90 35356.32 0 0
+INFO:__main__:Sent: 12.90 35362.76 0 0
+INFO:__main__:Sent: 12.90 35369.21 0 0
+INFO:__main__:Sent: 12.90 35375.65 0 0
+INFO:__main__:Sent: 12.90 35382.10 0 0
+INFO:__main__:Sent: 12.90 35388.54 0 0
+INFO:__main__:Sent: 12.90 35394.99 0 0
+INFO:__main__:Sent: 12.90 35401.43 0 0
+INFO:__main__:Sent: 12.90 35407.88 0 0
+INFO:__main__:Sent: 12.90 35414.32 0 0
+INFO:__main__:Sent: 12.90 35420.77 0 0
+INFO:__main__:Sent: 12.90 35427.21 0 0
+INFO:__main__:Sent: 12.90 35433.66 0 0
+INFO:__main__:Sent: 12.90 35440.11 0 0
+INFO:__main__:Sent: 12.90 35446.55 0 0
+INFO:__main__:Sent: 12.90 35453.00 0 0
+INFO:__main__:Sent: 12.90 35459.44 0 0
+INFO:__main__:Sent: 12.90 35465.89 0 0
+INFO:__main__:Sent: 12.90 35472.33 0 0
+INFO:__main__:Sent: 12.90 35478.78 0 0
+INFO:__main__:Sent: 12.90 35485.22 0 0
+INFO:__main__:Sent: 12.90 35491.67 0 0
+INFO:__main__:Sent: 12.90 35498.11 0 0
+INFO:__main__:Sent: 12.90 35504.56 0 0
+INFO:__main__:Sent: 12.90 35511.00 0 0
+INFO:__main__:Sent: 12.90 35517.45 0 0
+INFO:__main__:Sent: 12.90 35523.89 0 0
+INFO:__main__:Sent: 12.90 35530.34 0 0
+INFO:__main__:Sent: 12.90 35536.79 0 0
+INFO:__main__:Sent: 12.90 35543.23 0 0
+INFO:__main__:Sent: 12.90 35549.68 0 0
+INFO:__main__:Sent: 12.90 35555.48 0 0
+INFO:__main__:Sent: 12.90 35561.92 0 0
+INFO:__main__:Sent: 12.90 35568.37 0 0
+INFO:__main__:Sent: 12.90 35574.81 0 0
+INFO:__main__:Sent: 12.90 35581.26 0 0
+INFO:__main__:Sent: 12.90 35587.70 0 0
+INFO:__main__:Sent: 12.90 35594.15 0 0
+INFO:__main__:Sent: 12.90 35600.59 0 0
+INFO:__main__:Sent: 12.90 35607.04 0 0
+INFO:__main__:Sent: 12.90 35613.48 0 0
+INFO:__main__:Sent: 12.90 35619.93 0 0
+INFO:__main__:Sent: 12.90 35626.38 0 0
+INFO:__main__:Sent: 12.90 35632.82 0 0
+INFO:__main__:Sent: 12.90 35639.27 0 0
+INFO:__main__:Sent: 12.90 35645.71 0 0
+INFO:__main__:Sent: 12.90 35652.16 0 0
+INFO:__main__:Sent: 12.90 35658.60 0 0
+INFO:__main__:Sent: 12.90 35665.05 0 0
+INFO:__main__:Sent: 12.90 35671.49 0 0
+INFO:__main__:Sent: 12.90 35677.94 0 0
+INFO:__main__:Sent: 12.90 35684.38 0 0
+INFO:__main__:Sent: 12.90 35690.83 0 0
+INFO:__main__:Sent: 12.90 35697.27 0 0
+INFO:__main__:Sent: 12.90 35703.72 0 0
+INFO:__main__:Sent: 12.90 35710.16 0 0
+INFO:__main__:Sent: 12.90 35716.61 0 0
+INFO:__main__:Sent: 12.90 35723.05 0 0
+INFO:__main__:Sent: 12.90 35729.50 0 0
+INFO:__main__:Sent: 12.90 35735.95 0 0
+INFO:__main__:Sent: 12.90 35742.39 0 0
+INFO:__main__:Sent: 12.90 35748.84 0 0
+INFO:__main__:Sent: 12.90 35755.28 0 0
+INFO:__main__:Sent: 12.90 35761.73 0 0
+INFO:__main__:Sent: 12.90 35768.17 0 0
+INFO:__main__:Sent: 12.90 35774.62 0 0
+INFO:__main__:Sent: 12.90 35781.06 0 0
+INFO:__main__:Sent: 12.90 35787.51 0 0
+INFO:__main__:Sent: 12.90 35793.95 0 0
+INFO:__main__:Sent: 12.90 35800.40 0 0
+INFO:__main__:Sent: 12.90 35806.84 0 0
+INFO:__main__:Sent: 12.90 35813.29 0 0
+INFO:__main__:Sent: 12.90 35819.73 0 0
+INFO:__main__:Sent: 12.90 35826.18 0 0
+INFO:__main__:Sent: 12.90 35832.63 0 0
+INFO:__main__:Sent: 12.90 35839.07 0 0
+INFO:__main__:Sent: 12.90 35845.52 0 0
+INFO:__main__:Sent: 12.90 35851.96 0 0
+INFO:__main__:Sent: 12.90 35858.41 0 0
+INFO:__main__:Sent: 12.90 35864.85 0 0
+INFO:__main__:Sent: 12.90 35871.30 0 0
+INFO:__main__:Sent: 12.90 35877.74 0 0
+INFO:__main__:Sent: 12.90 35884.19 0 0
+INFO:__main__:Sent: 12.90 35890.63 0 0
+INFO:__main__:Client disconnected.
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+Sun Dec  8 12:23:00 PM IST 2024: Killing processes on ports 3000 and 9001...
+9001/tcp:             3207
+Sun Dec  8 12:23:00 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:23:00 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:23:00 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:23:00 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:23:02 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:3472) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:3472) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 35916.41 0 0
+INFO:__main__:Sent: 12.90 35922.86 0 0
+INFO:__main__:Sent: 12.90 35929.30 0 0
+INFO:__main__:Sent: 12.90 35935.75 0 0
+INFO:__main__:Sent: 12.90 35942.20 0 0
+INFO:__main__:Sent: 12.90 35948.64 0 0
+INFO:__main__:Sent: 12.90 35955.09 0 0
+INFO:__main__:Sent: 12.90 35961.53 0 0
+INFO:__main__:Sent: 12.90 35967.98 0 0
+INFO:__main__:Sent: 12.90 35974.42 0 0
+INFO:__main__:Sent: 12.90 35980.87 0 0
+INFO:__main__:Sent: 12.90 35987.31 0 0
+INFO:__main__:Client disconnected.
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+Sun Dec  8 12:23:12 PM IST 2024: Opening app in browser...
+Sun Dec  8 12:23:12 PM IST 2024: Script completed.
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 36000.20 0 0
+INFO:__main__:Sent: 12.90 36006.65 0 0
+INFO:__main__:Sent: 12.90 36013.09 0 0
+INFO:__main__:Sent: 12.90 36019.54 0 0
+INFO:__main__:Sent: 12.90 36025.98 0 0
+INFO:__main__:Sent: 12.90 36032.43 0 0
+INFO:__main__:Sent: 12.90 36038.88 0 0
+INFO:__main__:Sent: 12.90 36045.32 0 0
+INFO:__main__:Sent: 12.90 36051.77 0 0
+INFO:__main__:Sent: 12.90 36058.21 0 0
+INFO:__main__:Sent: 12.90 36064.66 0 0
+INFO:__main__:Sent: 12.90 36071.10 0 0
+INFO:__main__:Sent: 12.93 36077.55 0 0
+INFO:__main__:Sent: 12.90 36084.00 0 0
+INFO:__main__:Sent: 12.90 36090.45 0 0
+INFO:__main__:Sent: 12.90 36096.89 0 0
+INFO:__main__:Sent: 12.90 36103.34 0 0
+INFO:__main__:Sent: 12.90 36109.78 0 0
+INFO:__main__:Sent: 12.90 36116.23 0 0
+INFO:__main__:Sent: 12.90 36122.67 0 0
+INFO:__main__:Sent: 12.90 36129.12 0 0
+INFO:__main__:Sent: 12.90 36135.56 0 0
+INFO:__main__:Sent: 12.90 36142.01 0 0
+INFO:__main__:Sent: 12.90 36148.45 0 0
+INFO:__main__:Sent: 12.90 36154.90 0 0
+INFO:__main__:Sent: 12.90 36161.34 0 0
+INFO:__main__:Sent: 12.90 36167.79 0 0
+INFO:__main__:Sent: 12.90 36174.23 0 0
+INFO:__main__:Sent: 12.90 36180.68 0 0
+INFO:__main__:Sent: 12.90 36187.13 0 0
+INFO:__main__:Sent: 12.90 36193.57 0 0
+INFO:__main__:Sent: 12.90 36200.02 0 0
+INFO:__main__:Sent: 12.90 36206.46 0 0
+INFO:__main__:Sent: 12.90 36212.91 0 0
+INFO:__main__:Sent: 12.90 36219.35 0 0
+INFO:__main__:Sent: 12.90 36225.80 0 0
+INFO:__main__:Sent: 12.90 36232.24 0 0
+INFO:__main__:Sent: 12.90 36238.69 0 0
+INFO:__main__:Sent: 12.90 36245.13 0 0
+INFO:__main__:Sent: 12.90 36251.58 0 0
+INFO:__main__:Sent: 12.90 36258.02 0 0
+INFO:__main__:Sent: 12.90 36264.47 0 0
+INFO:__main__:Sent: 12.90 36270.91 0 0
+INFO:__main__:Sent: 12.90 36277.36 0 0
+INFO:__main__:Sent: 12.90 36283.80 0 0
+INFO:__main__:Sent: 12.90 36290.25 0 0
+INFO:__main__:Sent: 12.90 36296.70 0 0
+INFO:__main__:Sent: 12.90 36303.14 0 0
+INFO:__main__:Sent: 12.90 36309.59 0 0
+INFO:__main__:Sent: 12.90 36316.03 0 0
+INFO:__main__:Sent: 12.90 36322.48 0 0
+INFO:__main__:Sent: 12.90 36328.92 0 0
+INFO:__main__:Sent: 12.90 36335.37 0 0
+INFO:__main__:Sent: 12.90 36341.81 0 0
+INFO:__main__:Sent: 12.90 36348.26 0 0
+INFO:__main__:Sent: 12.90 36354.70 0 0
+INFO:__main__:Sent: 12.90 36361.15 0 0
+INFO:__main__:Sent: 12.90 36367.59 0 0
+INFO:__main__:Sent: 12.90 36374.04 0 0
+INFO:__main__:Sent: 12.90 36380.48 0 0
+INFO:__main__:Sent: 12.90 36386.93 0 0
+INFO:__main__:Sent: 12.90 36393.38 0 0
+INFO:__main__:Sent: 12.90 36399.82 0 0
+INFO:__main__:Sent: 12.90 36406.27 0 0
+INFO:__main__:Sent: 12.90 36412.71 0 0
+INFO:__main__:Sent: 12.90 36419.16 0 0
+INFO:__main__:Sent: 12.90 36425.60 0 0
+INFO:__main__:Sent: 12.90 36432.05 0 0
+INFO:__main__:Sent: 12.90 36438.49 0 0
+INFO:__main__:Sent: 12.90 36444.94 0 0
+INFO:__main__:Sent: 12.90 36451.38 0 0
+INFO:__main__:Sent: 12.90 36457.83 0 0
+INFO:__main__:Sent: 12.90 36464.27 0 0
+INFO:__main__:Sent: 12.90 36470.72 0 0
+INFO:__main__:Sent: 12.90 36477.16 0 0
+INFO:__main__:Sent: 12.90 36483.61 0 0
+INFO:__main__:Sent: 12.90 36490.05 0 0
+INFO:__main__:Sent: 12.90 36496.50 0 0
+INFO:__main__:Sent: 12.90 36502.95 0 0
+INFO:__main__:Sent: 12.90 36509.39 0 0
+INFO:__main__:Sent: 12.90 36515.84 0 0
+INFO:__main__:Sent: 12.90 36522.28 0 0
+INFO:__main__:Sent: 12.90 36528.73 0 0
+INFO:__main__:Sent: 12.90 36535.17 0 0
+INFO:__main__:Sent: 12.90 36541.62 0 0
+INFO:__main__:Sent: 12.90 36548.06 0 0
+INFO:__main__:Sent: 12.90 36554.51 0 0
+INFO:__main__:Sent: 12.90 36560.95 0 0
+INFO:__main__:Sent: 12.90 36567.40 0 0
+INFO:__main__:Sent: 12.90 36573.84 0 0
+INFO:__main__:Sent: 12.90 36580.29 0 0
+INFO:__main__:Sent: 12.90 36586.73 0 0
+INFO:__main__:Sent: 12.90 36593.18 0 0
+INFO:__main__:Client disconnected.
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 353, in conn_handler
+    await connection.handshake(
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/server.py", line 139, in handshake
+    async with self.send_context(expected_state=CONNECTING):
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mada/Desktop/Hydrogen_Rocket/my_env/lib/python3.12/site-packages/websockets/asyncio/connection.py", line 933, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+Sun Dec  8 12:24:03 PM IST 2024: Killing processes on ports 3000 and 9001...
+3000/tcp:             3472
+The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.
+9001/tcp:             3422
+Sun Dec  8 12:24:03 PM IST 2024: Killing existing serial_to_websocket.py processes...
+No existing serial_to_websocket.py processes found.
+Sun Dec  8 12:24:03 PM IST 2024: Activating virtual environment...
+Sun Dec  8 12:24:03 PM IST 2024: Starting serial_to_websocket.py...
+Sun Dec  8 12:24:03 PM IST 2024: serial_to_websocket.py is running in the background.
+INFO:__main__:Connected to /dev/ttyUSB0
+Sun Dec  8 12:24:05 PM IST 2024: Starting the React app...
+INFO:__main__:Starting WebSocket server on ws://localhost:9001
+INFO:websockets.server:server listening on 127.0.0.1:9001
+
+> hydrogen-rocket-ui@0.1.0 start
+> react-scripts start
+
+(node:4098) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:4098) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view hydrogen-rocket-ui in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.22.1.177:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.90 36728.65 0 0
+INFO:__main__:Sent: 12.90 36735.10 0 0
+INFO:__main__:Sent: 12.90 36741.54 0 0
+INFO:__main__:Sent: 12.90 36747.99 0 0
+INFO:__main__:Sent: 12.90 36754.43 0 0
+INFO:__main__:Sent: 12.90 36760.88 0 0
+INFO:__main__:Sent: 12.90 36767.32 0 0
+INFO:__main__:Sent: 12.90 36773.77 0 0
+INFO:__main__:Sent: 12.90 36780.21 0 0
+INFO:__main__:Sent: 12.90 36786.66 0 0
+INFO:__main__:Sent: 12.93 36793.11 0 0
+INFO:__main__:Sent: 12.90 36799.56 0 0
+INFO:__main__:Sent: 12.90 36806.01 0 0
+INFO:__main__:Sent: 12.90 36812.45 0 0
+INFO:__main__:Sent: 12.90 36818.90 0 0
+INFO:__main__:Sent: 12.90 36825.34 0 0
+INFO:__main__:Sent: 12.90 36831.79 0 0
+INFO:__main__:Sent: 12.90 36838.23 0 0
+INFO:__main__:Sent: 12.90 36844.68 0 0
+INFO:__main__:Sent: 12.90 36851.13 0 0
+INFO:__main__:Sent: 12.90 36857.57 0 0
+INFO:__main__:Sent: 12.90 36864.02 0 0
+INFO:__main__:Sent: 12.90 36870.46 0 0
+INFO:__main__:Sent: 12.90 36876.91 0 0
+Sun Dec  8 12:24:15 PM IST 2024: Opening app in browser...
+Sun Dec  8 12:24:15 PM IST 2024: Script completed.
+INFO:__main__:Sent: 12.90 36883.35 0 0
+INFO:__main__:Sent: 12.90 36889.80 0 0
+INFO:__main__:Sent: 12.90 36896.24 0 0
+INFO:__main__:Sent: 12.90 36902.69 0 0
+INFO:__main__:Sent: 12.90 36909.13 0 0
+INFO:__main__:Sent: 12.90 36915.58 0 0
+INFO:__main__:Sent: 12.90 36922.02 0 0
+INFO:__main__:Sent: 12.90 36928.47 0 0
+INFO:__main__:Sent: 12.90 36934.91 0 0
+INFO:__main__:Sent: 12.90 36941.36 0 0
+INFO:__main__:Sent: 12.90 36947.80 0 0
+INFO:__main__:Sent: 12.90 36954.25 0 0
+INFO:__main__:Sent: 12.90 36960.70 0 0
+INFO:__main__:Sent: 12.90 36967.14 0 0
+INFO:__main__:Sent: 12.90 36973.59 0 0
+INFO:__main__:Client disconnected.
+INFO:websockets.server:connection open
+INFO:__main__:Sent: 12.93 36986.49 0 0
+INFO:__main__:Sent: 12.90 36992.96 0 0
+INFO:__main__:Sent: 12.90 36999.41 0 0
+INFO:__main__:Sent: 12.90 37005.86 0 0
+INFO:__main__:Sent: 12.93 37012.34 0 0
+INFO:__main__:Sent: 12.93 37018.82 0 0
+INFO:__main__:Sent: 12.90 37025.27 0 0
+INFO:__main__:Sent: 12.90 37031.71 0 0
+INFO:__main__:Sent: 12.90 37038.16 0 0
+INFO:__main__:Sent: 12.90 37043.96 0 0
+INFO:__main__:Sent: 12.90 37050.41 0 0
+INFO:__main__:Sent: 12.90 37056.85 0 0
+INFO:__main__:Sent: 12.90 37063.32 0 0
+INFO:__main__:Sent: 12.90 37069.77 0 0
+INFO:__main__:Sent: 12.90 37076.21 0 0
+INFO:__main__:Sent: 12.90 37082.66 0 0
+INFO:__main__:Sent: 12.90 37089.11 0 0
+INFO:__main__:Sent: 12.90 37095.55 0 0
+INFO:__main__:Sent: 12.90 37102.00 0 0
+INFO:__main__:Sent: 12.90 37108.44 0 0
+INFO:__main__:Sent: 12.90 37114.89 0 0
+INFO:__main__:Sent: 12.90 37121.33 0 0
+INFO:__main__:Sent: 12.90 37127.78 0 0
+INFO:__main__:Sent: 12.90 37134.22 0 0
+INFO:__main__:Sent: 12.90 37140.67 0 0
+INFO:__main__:Sent: 12.90 37147.11 0 0
+INFO:__main__:Sent: 12.90 37153.56 0 0
+INFO:__main__:Sent: 12.90 37160.00 0 0
+INFO:__main__:Sent: 12.90 37166.45 0 0
+INFO:__main__:Sent: 12.90 37172.89 0 0
+INFO:__main__:Sent: 12.90 37179.34 0 0
+INFO:__main__:Sent: 12.90 37185.79 0 0
+INFO:__main__:Sent: 12.90 37192.23 0 0
+INFO:__main__:Sent: 12.90 37198.68 0 0
+INFO:__main__:Sent: 12.90 37205.12 0 0
+INFO:__main__:Sent: 12.90 37211.57 0 0
+INFO:__main__:Sent: 12.90 37218.01 0 0
+INFO:__main__:Sent: 12.90 37224.46 0 0
+INFO:__main__:Sent: 12.90 37230.90 0 0
+INFO:__main__:Sent: 12.90 37237.35 0 0
+INFO:__main__:Sent: 12.90 37243.79 0 0
+INFO:__main__:Sent: 12.90 37250.24 0 0
+INFO:__main__:Sent: 12.90 37256.68 0 0
+INFO:__main__:Sent: 12.90 37263.13 0 0
+INFO:__main__:Sent: 12.90 37269.57 0 0
+INFO:__main__:Sent: 12.90 37276.02 0 0
+INFO:__main__:Sent: 12.90 37282.46 0 0
+INFO:__main__:Sent: 12.90 37288.91 0 0
+INFO:__main__:Sent: 12.90 37295.36 0 0
+INFO:__main__:Sent: 12.90 37301.80 0 0
+INFO:__main__:Sent: 12.90 37308.25 0 0
+INFO:__main__:Sent: 12.90 37314.69 0 0
+INFO:__main__:Sent: 12.90 37321.14 0 0
+INFO:__main__:Sent: 12.90 37327.58 0 0
+INFO:__main__:Sent: 12.90 37334.03 0 0
+INFO:__main__:Sent: 12.90 37340.47 0 0
+INFO:__main__:Sent: 12.90 37346.92 0 0
+INFO:__main__:Sent: 12.90 37353.36 0 0
+INFO:__main__:Sent: 12.90 37359.81 0 0
+INFO:__main__:Sent: 12.90 37366.25 0 0
+INFO:__main__:Sent: 12.90 37372.70 0 0
+INFO:__main__:Sent: 12.90 37379.14 0 0
+INFO:__main__:Sent: 12.90 37385.59 0 0
+INFO:__main__:Sent: 12.90 37392.04 0 0
+INFO:__main__:Sent: 12.90 37398.48 0 0
+INFO:__main__:Sent: 12.90 37404.93 0 0
+INFO:__main__:Sent: 12.90 37411.38 0 0
+INFO:__main__:Sent: 12.90 37417.82 0 0
+INFO:__main__:Sent: 12.90 37424.27 0 0
+INFO:__main__:Sent: 12.90 37430.72 0 0
+INFO:__main__:Sent: 12.90 37437.16 0 0
+INFO:__main__:Sent: 12.90 37443.61 0 0
+INFO:__main__:Sent: 12.93 37450.09 0 0
+INFO:__main__:Sent: 12.93 37456.57 0 0
+INFO:__main__:Sent: 12.90 37463.04 0 0
+INFO:__main__:Sent: 12.90 37469.49 0 0
+INFO:__main__:Sent: 12.93 37475.95 0 0
+INFO:__main__:Sent: 12.90 37482.40 0 0
+INFO:__main__:Sent: 12.90 37488.85 0 0
+INFO:__main__:Sent: 12.90 37495.29 0 0
+INFO:__main__:Sent: 12.90 37501.74 0 0
+INFO:__main__:Sent: 12.90 37508.18 0 0
+INFO:__main__:Sent: 12.90 37514.63 0 0
+INFO:__main__:Sent: 12.90 37521.07 0 0
+INFO:__main__:Sent: 12.90 37527.52 0 0
+INFO:__main__:Sent: 12.90 37533.96 0 0
+INFO:__main__:Sent: 12.90 37540.41 0 0
+INFO:__main__:Sent: 12.90 37546.86 0 0
+INFO:__main__:Sent: 12.90 37553.30 0 0
+INFO:__main__:Sent: 12.90 37559.75 0 0
+INFO:__main__:Sent: 12.90 37566.19 0 0
+INFO:__main__:Sent: 12.90 37572.64 0 0
+INFO:__main__:Sent: 12.90 37579.08 0 0
+INFO:__main__:Sent: 12.90 37585.53 0 0
+INFO:__main__:Sent: 12.90 37591.97 0 0
+INFO:__main__:Sent: 12.90 37598.42 0 0
+INFO:__main__:Sent: 12.90 37604.86 0 0
+INFO:__main__:Sent: 12.90 37611.31 0 0
+INFO:__main__:Sent: 12.90 37617.75 0 0
+INFO:__main__:Sent: 12.90 37624.20 0 0
+INFO:__main__:Sent: 12.90 37630.64 0 0
+INFO:__main__:Sent: 12.90 37637.09 0 0
+INFO:__main__:Sent: 12.90 37643.54 0 0
+INFO:__main__:Sent: 12.90 37649.98 0 0
+INFO:__main__:Sent: 12.90 37656.43 0 0
+INFO:__main__:Sent: 12.90 37662.87 0 0
+INFO:__main__:Sent: 12.90 37669.32 0 0
+INFO:__main__:Sent: 12.90 37675.76 0 0
+INFO:__main__:Sent: 12.90 37682.21 0 0
+INFO:__main__:Sent: 12.90 37688.65 0 0
+INFO:__main__:Sent: 12.90 37695.10 0 0
+INFO:__main__:Sent: 12.90 37701.54 0 0
+INFO:__main__:Sent: 12.90 37707.99 0 0
+INFO:__main__:Sent: 12.90 37714.43 0 0
+INFO:__main__:Sent: 12.90 37720.88 0 0
+INFO:__main__:Sent: 12.90 37727.32 0 0
+INFO:__main__:Sent: 12.90 37733.77 0 0
+INFO:__main__:Sent: 12.90 37740.21 0 0
+INFO:__main__:Sent: 12.90 37746.66 0 0
+INFO:__main__:Sent: 12.90 37753.11 0 0
+INFO:__main__:Sent: 12.90 37759.55 0 0
+INFO:__main__:Sent: 12.93 37766.02 0 0
+INFO:__main__:Sent: 12.90 37772.47 0 0
+INFO:__main__:Sent: 12.90 37778.92 0 0
+INFO:__main__:Sent: 12.90 37785.36 0 0
+INFO:__main__:Sent: 12.90 37791.81 0 0
+INFO:__main__:Sent: 12.90 37798.25 0 0
+INFO:__main__:Sent: 12.90 37804.70 0 0
+INFO:__main__:Sent: 12.90 37811.14 0 0
+INFO:__main__:Sent: 12.90 37817.59 0 0
+INFO:__main__:Sent: 12.90 37824.04 0 0
+INFO:__main__:Sent: 12.90 37830.48 0 0
+INFO:__main__:Sent: 12.90 37836.93 0 0
+INFO:__main__:Sent: 12.90 37843.37 0 0
+INFO:__main__:Sent: 12.90 37849.82 0 0
+INFO:__main__:Sent: 12.90 37856.26 0 0
+INFO:__main__:Sent: 12.90 37862.71 0 0
+INFO:__main__:Sent: 12.90 37869.16 0 0
+INFO:__main__:Sent: 12.90 37875.60 0 0
+INFO:__main__:Sent: 12.93 37882.05 0 0
+INFO:__main__:Sent: 12.93 37888.54 0 0
+INFO:__main__:Sent: 12.93 37895.02 0 0
+INFO:__main__:Sent: 12.93 37901.50 0 0
+INFO:__main__:Sent: 12.93 37907.99 0 0
+INFO:__main__:Sent: 12.90 37914.46 0 0
+INFO:__main__:Sent: 12.93 37920.93 0 0
+INFO:__main__:Sent: 12.90 37927.39 0 0
+INFO:__main__:Sent: 12.93 37933.85 0 0
+INFO:__main__:Sent: 12.93 37940.34 0 0
+INFO:__main__:Sent: 12.93 37946.82 0 0
+INFO:__main__:Sent: 12.93 37953.30 0 0
+INFO:__main__:Sent: 12.93 37959.79 0 0
+INFO:__main__:Sent: 12.93 37966.27 0 0
+INFO:__main__:Sent: 12.93 37972.76 0 0
+INFO:__main__:Sent: 12.90 37979.22 0 0
+INFO:__main__:Sent: 12.93 37985.70 0 0
+INFO:__main__:Sent: 12.93 37992.18 0 0
+INFO:__main__:Sent: 12.93 37998.67 0 0
+INFO:__main__:Sent: 12.93 38005.15 0 0
+INFO:__main__:Sent: 12.93 38011.64 0 0
+INFO:__main__:Sent: 12.93 38018.12 0 0
+INFO:__main__:Sent: 12.93 38024.61 0 0
+INFO:__main__:Sent: 12.93 38031.09 0 0
+INFO:__main__:Sent: 12.93 38037.57 0 0
+INFO:__main__:Sent: 12.93 38044.06 0 0
+INFO:__main__:Sent: 12.90 38050.53 0 0
+INFO:__main__:Sent: 12.90 38056.99 0 0
+INFO:__main__:Sent: 12.93 38063.46 0 0
+INFO:__main__:Sent: 12.90 38069.91 0 0
+INFO:__main__:Sent: 12.90 38076.35 0 0
+INFO:__main__:Sent: 12.93 38082.82 0 0
+INFO:__main__:Sent: 12.93 38089.31 0 0
+INFO:__main__:Sent: 12.93 38095.79 0 0
+INFO:__main__:Sent: 12.90 38102.25 0 0
+INFO:__main__:Sent: 12.90 38108.70 0 0
+INFO:__main__:Sent: 12.90 38115.14 0 0
+INFO:__main__:Sent: 12.90 38121.59 0 0
+INFO:__main__:Sent: 12.90 38128.04 0 0
+INFO:__main__:Sent: 12.90 38134.49 0 0
+INFO:__main__:Sent: 12.90 38140.93 0 0
+INFO:__main__:Sent: 12.93 38147.40 0 0
+INFO:__main__:Sent: 12.93 38153.88 0 0
+INFO:__main__:Sent: 12.93 38160.37 0 0
+INFO:__main__:Sent: 12.90 38166.83 0 0
+INFO:__main__:Sent: 12.93 38173.32 0 0
+INFO:__main__:Sent: 12.93 38179.80 0 0
+INFO:__main__:Sent: 12.93 38186.29 0 0
+INFO:__main__:Sent: 12.93 38192.77 0 0
+INFO:__main__:Sent: 12.93 38199.25 0 0
+INFO:__main__:Sent: 12.93 38205.74 0 0
+INFO:__main__:Sent: 12.93 38212.22 0 0
+INFO:__main__:Sent: 12.93 38218.71 0 0
+INFO:__main__:Sent: 12.93 38225.19 0 0
+INFO:__main__:Sent: 12.93 38231.68 0 0
+INFO:__main__:Sent: 12.90 38238.15 0 0
+INFO:__main__:Sent: 12.93 38244.61 0 0
+INFO:__main__:Sent: 12.93 38251.10 0 0
+INFO:__main__:Sent: 12.93 38257.58 0 0
+INFO:__main__:Sent: 12.93 38264.07 0 0
+INFO:__main__:Sent: 12.90 38270.52 0 0
+INFO:__main__:Sent: 12.90 38276.96 0 0
+INFO:__main__:Sent: 12.90 38283.41 0 0
+INFO:__main__:Sent: 12.90 38289.85 0 0
+INFO:__main__:Sent: 12.90 38296.30 0 0
+INFO:__main__:Sent: 12.90 38302.74 0 0
+INFO:__main__:Sent: 12.90 38309.19 0 0
+INFO:__main__:Sent: 12.90 38315.63 0 0
+INFO:__main__:Sent: 12.90 38322.08 0 0
+INFO:__main__:Sent: 12.90 38328.52 0 0
+INFO:__main__:Sent: 12.90 38334.97 0 0
+INFO:__main__:Sent: 12.90 38341.41 0 0
+INFO:__main__:Sent: 12.90 38347.86 0 0
+INFO:__main__:Sent: 12.90 38354.30 0 0
+INFO:__main__:Sent: 12.90 38360.75 0 0
+INFO:__main__:Sent: 12.90 38367.20 0 0
+INFO:__main__:Sent: 12.90 38373.64 0 0
+INFO:__main__:Sent: 12.90 38380.09 0 0
+INFO:__main__:Sent: 12.90 38386.53 0 0
+INFO:__main__:Sent: 12.90 38392.98 0 0
+INFO:__main__:Sent: 12.90 38399.42 0 0
+INFO:__main__:Sent: 12.90 38405.87 0 0
+INFO:__main__:Sent: 12.90 38412.31 0 0
+INFO:__main__:Sent: 12.90 38418.76 0 0
+INFO:__main__:Sent: 12.90 38425.20 0 0
+INFO:__main__:Sent: 12.90 38431.65 0 0
+INFO:__main__:Sent: 12.90 38438.09 0 0
+INFO:__main__:Sent: 12.90 38444.54 0 0
+INFO:__main__:Sent: 12.90 38450.98 0 0
+INFO:__main__:Sent: 12.90 38457.43 0 0
+INFO:__main__:Sent: 12.90 38463.88 0 0
+INFO:__main__:Sent: 12.90 38470.32 0 0
+INFO:__main__:Sent: 12.90 38476.77 0 0
+INFO:__main__:Sent: 12.90 38483.21 0 0
+INFO:__main__:Sent: 12.90 38489.66 0 0
+INFO:__main__:Sent: 12.90 38496.10 0 0
+INFO:__main__:Sent: 12.90 38502.55 0 0
+INFO:__main__:Sent: 12.90 38508.99 0 0
+INFO:__main__:Sent: 12.90 38515.44 0 0
+INFO:__main__:Sent: 12.90 38521.88 0 0
+INFO:__main__:Sent: 12.90 38528.33 0 0
+INFO:__main__:Sent: 12.90 38534.77 0 0
+INFO:__main__:Sent: 12.90 38541.22 0 0
+INFO:__main__:Sent: 12.90 38547.66 0 0
+INFO:__main__:Sent: 12.90 38554.11 0 0
+INFO:__main__:Sent: 12.90 38560.55 0 0
+INFO:__main__:Sent: 12.90 38567.00 0 0
+INFO:__main__:Sent: 12.90 38573.45 0 0
+INFO:__main__:Sent: 12.90 38579.89 0 0
+INFO:__main__:Sent: 12.90 38586.34 0 0
+INFO:__main__:Sent: 12.90 38592.78 0 0
+INFO:__main__:Sent: 12.90 38598.58 0 0
+INFO:__main__:Sent: 12.90 38605.03 0 0
+INFO:__main__:Sent: 12.90 38611.47 0 0
+INFO:__main__:Sent: 12.90 38617.92 0 0
+INFO:__main__:Sent: 12.90 38624.36 0 0
+INFO:__main__:Sent: 12.90 38630.81 0 0
+INFO:__main__:Sent: 12.90 38637.25 0 0
+INFO:__main__:Sent: 12.90 38643.70 0 0
+INFO:__main__:Sent: 12.90 38650.14 0 0
+INFO:__main__:Sent: 12.90 38656.59 0 0
+INFO:__main__:Sent: 12.90 38663.04 0 0
+INFO:__main__:Sent: 12.90 38669.48 0 0
+INFO:__main__:Sent: 12.90 38675.93 0 0
+INFO:__main__:Sent: 12.90 38682.37 0 0
+INFO:__main__:Sent: 12.90 38688.82 0 0
+INFO:__main__:Sent: 12.90 38695.26 0 0
+INFO:__main__:Sent: 12.90 38701.71 0 0
+INFO:__main__:Sent: 12.90 38708.15 0 0
+INFO:__main__:Sent: 12.90 38714.60 0 0
+INFO:__main__:Sent: 12.90 38721.04 0 0
+INFO:__main__:Sent: 12.90 38727.49 0 0
+INFO:__main__:Sent: 12.90 38733.93 0 0
+INFO:__main__:Sent: 12.90 38740.38 0 0
+INFO:__main__:Sent: 12.90 38746.82 0 0
+INFO:__main__:Sent: 12.90 38753.27 0 0
+INFO:__main__:Sent: 12.90 38759.71 0 0
+INFO:__main__:Sent: 12.90 38766.16 0 0
+INFO:__main__:Sent: 12.90 38772.61 0 0
+INFO:__main__:Sent: 12.90 38779.05 0 0
+INFO:__main__:Sent: 12.90 38785.50 0 0
+INFO:__main__:Sent: 12.90 38791.94 0 0
+INFO:__main__:Sent: 12.90 38798.39 0 0
+INFO:__main__:Sent: 12.90 38804.83 0 0
+INFO:__main__:Sent: 12.90 38811.28 0 0
+INFO:__main__:Sent: 12.90 38817.72 0 0
+INFO:__main__:Sent: 12.90 38824.17 0 0
+INFO:__main__:Sent: 12.88 38830.61 0 0
+INFO:__main__:Sent: 12.88 38837.06 0 0
+INFO:__main__:Sent: 12.90 38843.50 0 0
+INFO:__main__:Sent: 12.90 38849.95 0 0
+INFO:__main__:Sent: 12.90 38856.39 0 0
+INFO:__main__:Sent: 12.90 38862.84 0 0
+INFO:__main__:Sent: 12.90 38869.29 0 0
+INFO:__main__:Sent: 12.90 38875.73 0 0
+INFO:__main__:Sent: 12.90 38882.18 0 0
+INFO:__main__:Sent: 12.88 38888.62 0 0
+INFO:__main__:Sent: 12.90 38895.07 0 0
+INFO:__main__:Sent: 12.90 38901.51 0 0
+INFO:__main__:Sent: 12.90 38907.96 0 0
+INFO:__main__:Sent: 12.90 38914.40 0 0
+INFO:__main__:Sent: 12.90 38920.85 0 0
+INFO:__main__:Sent: 12.90 38927.29 0 0
+INFO:__main__:Sent: 12.90 38933.74 0 0
+INFO:__main__:Sent: 12.90 38940.18 0 0
+INFO:__main__:Sent: 12.90 38946.63 0 0
+INFO:__main__:Sent: 12.90 38953.07 0 0
+INFO:__main__:Sent: 12.90 38959.52 0 0
+INFO:__main__:Sent: 12.90 38965.96 0 0
+INFO:__main__:Sent: 12.90 38972.41 0 0
+INFO:__main__:Sent: 12.90 38978.86 0 0
+INFO:__main__:Sent: 12.90 38985.30 0 0
+INFO:__main__:Sent: 12.90 38991.75 0 0
+INFO:__main__:Sent: 12.90 38998.19 0 0
+INFO:__main__:Sent: 12.90 39004.64 0 0
+INFO:__main__:Sent: 12.90 39011.08 0 0
+INFO:__main__:Sent: 12.90 39017.53 0 0
+INFO:__main__:Sent: 12.90 39023.97 0 0
+INFO:__main__:Sent: 12.90 39030.42 0 0
+INFO:__main__:Sent: 12.90 39036.86 0 0
+INFO:__main__:Sent: 12.90 39043.31 0 0
+INFO:__main__:Sent: 12.90 39049.75 0 0
+INFO:__main__:Sent: 12.90 39056.20 0 0
+INFO:__main__:Sent: 12.90 39062.64 0 0
+INFO:__main__:Sent: 12.90 39069.09 0 0
+INFO:__main__:Sent: 12.90 39075.54 0 0
+INFO:__main__:Sent: 12.90 39081.98 0 0
+INFO:__main__:Sent: 12.90 39088.43 0 0
+INFO:__main__:Sent: 12.90 39094.87 0 0
+INFO:__main__:Sent: 12.90 39101.32 0 0
+INFO:__main__:Sent: 12.90 39107.76 0 0
+INFO:__main__:Sent: 12.90 39114.21 0 0
+INFO:__main__:Sent: 12.90 39120.65 0 0
+INFO:__main__:Sent: 12.90 39127.10 0 0
+INFO:__main__:Sent: 12.90 39133.54 0 0
+INFO:__main__:Sent: 12.90 39139.99 0 0
+INFO:__main__:Sent: 12.90 39146.43 0 0
+INFO:__main__:Sent: 12.90 39152.88 0 0
+INFO:__main__:Sent: 12.90 39159.32 0 0
+INFO:__main__:Sent: 12.90 39165.77 0 0
+INFO:__main__:Sent: 12.90 39172.21 0 0
+INFO:__main__:Sent: 12.90 39178.66 0 0
+INFO:__main__:Sent: 12.90 39185.11 0 0
+INFO:__main__:Sent: 12.90 39191.55 0 0
+INFO:__main__:Sent: 12.90 39198.00 0 0
+INFO:__main__:Sent: 12.90 39204.44 0 0
+INFO:__main__:Sent: 12.90 39210.89 0 0
+INFO:__main__:Sent: 12.90 39217.33 0 0
+INFO:__main__:Sent: 12.90 39223.78 0 0
+INFO:__main__:Sent: 12.90 39230.22 0 0
+INFO:__main__:Sent: 12.90 39236.67 0 0
+INFO:__main__:Sent: 12.90 39243.11 0 0
+INFO:__main__:Sent: 12.90 39249.56 0 0
+INFO:__main__:Sent: 12.90 39256.00 0 0
+INFO:__main__:Sent: 12.90 39262.45 0 0
+INFO:__main__:Sent: 12.90 39268.89 0 0
+INFO:__main__:Sent: 12.90 39275.34 0 0
+INFO:__main__:Sent: 12.90 39281.79 0 0
+INFO:__main__:Sent: 12.90 39288.23 0 0
+INFO:__main__:Sent: 12.90 39294.68 0 0
+INFO:__main__:Sent: 12.90 39301.12 0 0
+INFO:__main__:Sent: 12.90 39307.57 0 0
+INFO:__main__:Sent: 12.90 39314.01 0 0
+INFO:__main__:Sent: 12.90 39320.46 0 0
+INFO:__main__:Sent: 12.90 39326.90 0 0
+INFO:__main__:Sent: 12.90 39333.35 0 0
+INFO:__main__:Sent: 12.90 39339.79 0 0
+INFO:__main__:Sent: 12.90 39346.24 0 0
+INFO:__main__:Sent: 12.90 39352.68 0 0
+INFO:__main__:Sent: 12.90 39359.13 0 0
+INFO:__main__:Sent: 12.90 39365.57 0 0
+INFO:__main__:Sent: 12.90 39372.02 0 0
+INFO:__main__:Sent: 12.90 39378.46 0 0
+INFO:__main__:Sent: 12.90 39384.91 0 0
+INFO:__main__:Sent: 12.90 39391.36 0 0
+INFO:__main__:Sent: 12.90 39397.80 0 0
+INFO:__main__:Sent: 12.90 39404.25 0 0
+INFO:__main__:Sent: 12.90 39410.69 0 0
+INFO:__main__:Sent: 12.90 39417.14 0 0
+INFO:__main__:Sent: 12.90 39423.58 0 0
+INFO:__main__:Sent: 12.90 39430.03 0 0
+INFO:__main__:Sent: 12.90 39436.47 0 0
+INFO:__main__:Sent: 12.90 39442.92 0 0
+INFO:__main__:Sent: 12.90 39449.36 0 0
+INFO:__main__:Sent: 12.90 39455.81 0 0
+INFO:__main__:Sent: 12.90 39462.25 0 0
+INFO:__main__:Sent: 12.90 39468.70 0 0
+INFO:__main__:Sent: 12.90 39475.14 0 0
+INFO:__main__:Sent: 12.90 39481.59 0 0
+INFO:__main__:Sent: 12.90 39488.04 0 0
+INFO:__main__:Sent: 12.90 39494.48 0 0
+INFO:__main__:Sent: 12.90 39500.93 0 0
+INFO:__main__:Sent: 12.90 39507.37 0 0
+INFO:__main__:Sent: 12.90 39513.82 0 0
+INFO:__main__:Sent: 12.90 39520.26 0 0
+INFO:__main__:Sent: 12.90 39526.71 0 0
+INFO:__main__:Sent: 12.90 39533.15 0 0
+INFO:__main__:Sent: 12.90 39539.60 0 0
+INFO:__main__:Sent: 12.90 39546.04 0 0
+INFO:__main__:Sent: 12.90 39552.49 0 0
+INFO:__main__:Sent: 12.90 39558.93 0 0
+INFO:__main__:Sent: 12.90 39565.38 0 0
+INFO:__main__:Sent: 12.90 39571.82 0 0
+INFO:__main__:Sent: 12.90 39578.27 0 0
+INFO:__main__:Sent: 12.90 39584.71 0 0
+INFO:__main__:Sent: 12.90 39591.16 0 0
+INFO:__main__:Sent: 12.90 39597.61 0 0
+INFO:__main__:Sent: 12.90 39604.05 0 0
+INFO:__main__:Sent: 12.90 39610.50 0 0
+INFO:__main__:Sent: 12.90 39616.94 0 0
+INFO:__main__:Sent: 12.90 39623.39 0 0
+INFO:__main__:Sent: 12.90 39629.83 0 0
+INFO:__main__:Sent: 12.90 39636.28 0 0
+INFO:__main__:Sent: 12.90 39642.72 0 0
+INFO:__main__:Sent: 12.90 39649.17 0 0
+INFO:__main__:Sent: 12.90 39655.61 0 0
+INFO:__main__:Sent: 12.90 39662.06 0 0
+INFO:__main__:Sent: 12.90 39668.50 0 0
+INFO:__main__:Sent: 12.90 39674.95 0 0
+INFO:__main__:Sent: 12.90 39681.39 0 0
+INFO:__main__:Sent: 12.90 39687.84 0 0
+INFO:__main__:Sent: 12.90 39694.29 0 0
+INFO:__main__:Sent: 12.90 39700.73 0 0
+INFO:__main__:Sent: 12.90 39707.18 0 0
+INFO:__main__:Sent: 12.90 39713.62 0 0
+INFO:__main__:Sent: 12.90 39720.07 0 0
+INFO:__main__:Sent: 12.90 39726.51 0 0
+INFO:__main__:Sent: 12.90 39732.96 0 0
+INFO:__main__:Sent: 12.90 39739.40 0 0
+INFO:__main__:Sent: 12.90 39745.85 0 0
+INFO:__main__:Sent: 12.90 39752.29 0 0
+INFO:__main__:Sent: 12.90 39758.74 0 0
+INFO:__main__:Sent: 12.90 39765.18 0 0
+INFO:__main__:Sent: 12.90 39771.63 0 0
+INFO:__main__:Sent: 12.90 39778.07 0 0
+INFO:__main__:Sent: 12.90 39784.52 0 0
+INFO:__main__:Sent: 12.90 39790.96 0 0
+INFO:__main__:Sent: 12.90 39797.41 0 0
+INFO:__main__:Sent: 12.90 39803.86 0 0
+INFO:__main__:Sent: 12.90 39810.30 0 0
+INFO:__main__:Sent: 12.90 39816.75 0 0
+INFO:__main__:Sent: 12.90 39823.19 0 0
+INFO:__main__:Sent: 12.90 39829.64 0 0
+INFO:__main__:Sent: 12.90 39836.08 0 0
+INFO:__main__:Sent: 12.90 39842.53 0 0
+INFO:__main__:Sent: 12.90 39848.97 0 0
+INFO:__main__:Sent: 12.90 39855.42 0 0
+INFO:__main__:Sent: 12.90 39861.86 0 0
+INFO:__main__:Sent: 12.90 39868.31 0 0
+INFO:__main__:Sent: 12.90 39874.75 0 0
+INFO:__main__:Sent: 12.90 39881.20 0 0
+INFO:__main__:Sent: 12.90 39887.64 0 0
+INFO:__main__:Sent: 12.90 39894.09 0 0
+INFO:__main__:Sent: 12.90 39900.54 0 0
+INFO:__main__:Sent: 12.90 39906.98 0 0
+INFO:__main__:Sent: 12.90 39913.43 0 0
+INFO:__main__:Sent: 12.90 39919.87 0 0
+INFO:__main__:Sent: 12.90 39926.32 0 0
+INFO:__main__:Sent: 12.90 39932.76 0 0
+INFO:__main__:Sent: 12.90 39939.21 0 0
+INFO:__main__:Sent: 12.90 39945.65 0 0
+INFO:__main__:Sent: 12.90 39952.10 0 0
+INFO:__main__:Sent: 12.90 39958.54 0 0
+INFO:__main__:Sent: 12.90 39964.99 0 0
+INFO:__main__:Sent: 12.90 39971.43 0 0
+INFO:__main__:Sent: 12.90 39977.88 0 0
+INFO:__main__:Sent: 12.90 39984.32 0 0
+INFO:__main__:Sent: 12.90 39990.77 0 0
+INFO:__main__:Sent: 12.90 39997.21 0 0
+INFO:__main__:Sent: 12.90 40003.66 0 0
+INFO:__main__:Sent: 12.90 40010.11 0 0
+INFO:__main__:Sent: 12.90 40016.55 0 0
+INFO:__main__:Sent: 12.90 40023.00 0 0
+INFO:__main__:Sent: 12.90 40029.44 0 0
+INFO:__main__:Sent: 12.90 40035.24 0 0
+INFO:__main__:Sent: 12.90 40041.69 0 0
+INFO:__main__:Sent: 12.90 40048.13 0 0
+INFO:__main__:Sent: 12.90 40054.58 0 0
+INFO:__main__:Sent: 12.90 40061.02 0 0
+INFO:__main__:Sent: 12.90 40067.47 0 0
+INFO:__main__:Sent: 12.90 40073.91 0 0
+INFO:__main__:Sent: 12.90 40080.36 0 0
+INFO:__main__:Sent: 12.90 40086.80 0 0
+INFO:__main__:Sent: 12.90 40093.25 0 0
+INFO:__main__:Sent: 12.90 40099.70 0 0
+INFO:__main__:Sent: 12.90 40106.14 0 0
+INFO:__main__:Sent: 12.90 40112.59 0 0
+INFO:__main__:Sent: 12.90 40119.03 0 0
+INFO:__main__:Sent: 12.90 40125.48 0 0
+INFO:__main__:Sent: 12.90 40131.92 0 0
+INFO:__main__:Sent: 12.90 40138.37 0 0
+INFO:__main__:Sent: 12.90 40144.81 0 0
+INFO:__main__:Sent: 12.90 40151.26 0 0
+INFO:__main__:Sent: 12.90 40157.70 0 0
+INFO:__main__:Sent: 12.90 40164.15 0 0
+INFO:__main__:Sent: 12.90 40170.59 0 0
+INFO:__main__:Sent: 12.90 40177.04 0 0
+INFO:__main__:Sent: 12.90 40183.48 0 0
+INFO:__main__:Sent: 12.90 40189.93 0 0
+INFO:__main__:Sent: 12.90 40196.38 0 0
+INFO:__main__:Sent: 12.90 40202.82 0 0
+INFO:__main__:Sent: 12.90 40209.27 0 0
+INFO:__main__:Sent: 12.90 40215.71 0 0
+INFO:__main__:Sent: 12.90 40222.16 0 0
+INFO:__main__:Sent: 12.90 40228.60 0 0
+INFO:__main__:Sent: 12.90 40235.05 0 0
+INFO:__main__:Sent: 12.90 40241.49 0 0
+INFO:__main__:Sent: 12.90 40247.94 0 0
+INFO:__main__:Sent: 12.90 40254.38 0 0
+INFO:__main__:Sent: 12.90 40260.83 0 0
+INFO:__main__:Sent: 12.90 40267.27 0 0
+INFO:__main__:Sent: 12.90 40273.72 0 0
+INFO:__main__:Sent: 12.90 40280.16 0 0
+INFO:__main__:Sent: 12.90 40286.61 0 0
+INFO:__main__:Sent: 12.90 40293.05 0 0
+INFO:__main__:Sent: 12.90 40299.50 0 0
+INFO:__main__:Sent: 12.90 40305.95 0 0
+INFO:__main__:Sent: 12.90 40312.39 0 0
+INFO:__main__:Sent: 12.90 40318.84 0 0
+INFO:__main__:Sent: 12.90 40325.28 0 0
+INFO:__main__:Sent: 12.90 40331.73 0 0
+INFO:__main__:Sent: 12.90 40338.17 0 0
+INFO:__main__:Sent: 12.90 40344.62 0 0
+INFO:__main__:Sent: 12.90 40351.06 0 0
+INFO:__main__:Sent: 12.90 40357.51 0 0
+INFO:__main__:Sent: 12.90 40363.95 0 0
+INFO:__main__:Sent: 12.90 40370.40 0 0
+INFO:__main__:Sent: 12.90 40376.84 0 0
+INFO:__main__:Sent: 12.90 40383.29 0 0
+INFO:__main__:Sent: 12.90 40389.73 0 0
+INFO:__main__:Sent: 12.90 40396.18 0 0
+INFO:__main__:Sent: 12.90 40402.63 0 0
+INFO:__main__:Sent: 12.90 40409.07 0 0
+INFO:__main__:Sent: 12.90 40415.52 0 0
+INFO:__main__:Sent: 12.90 40421.96 0 0
+INFO:__main__:Sent: 12.90 40428.41 0 0
+INFO:__main__:Sent: 12.90 40434.85 0 0
+INFO:__main__:Sent: 12.90 40441.31 0 0
+INFO:__main__:Sent: 12.90 40447.76 0 0
+INFO:__main__:Sent: 12.93 40454.22 0 0
+INFO:__main__:Sent: 12.93 40460.70 0 0
+INFO:__main__:Sent: 12.93 40467.19 0 0
+INFO:__main__:Sent: 12.93 40473.67 0 0
+INFO:__main__:Sent: 12.90 40480.13 0 0
+INFO:__main__:Sent: 12.90 40486.57 0 0
+INFO:__main__:Sent: 12.90 40493.02 0 0
+INFO:__main__:Sent: 12.90 40499.46 0 0
+INFO:__main__:Sent: 12.90 40505.91 0 0
+INFO:__main__:Sent: 12.90 40512.36 0 0
+INFO:__main__:Sent: 12.90 40518.80 0 0
+INFO:__main__:Sent: 12.90 40525.25 0 0
+INFO:__main__:Sent: 12.93 40531.70 0 0
+INFO:__main__:Sent: 12.90 40538.16 0 0
+INFO:__main__:Sent: 12.90 40544.61 0 0
+INFO:__main__:Sent: 12.90 40551.05 0 0
+INFO:__main__:Sent: 12.90 40557.50 0 0
+INFO:__main__:Sent: 12.93 40563.97 0 0
+INFO:__main__:Sent: 12.93 40570.45 0 0
+INFO:__main__:Sent: 12.93 40576.94 0 0
+INFO:__main__:Sent: 12.93 40583.42 0 0
+INFO:__main__:Sent: 12.90 40589.87 0 0
+INFO:__main__:Sent: 12.90 40596.32 0 0
+INFO:__main__:Sent: 12.90 40602.76 0 0
+INFO:__main__:Sent: 12.90 40609.21 0 0
+INFO:__main__:Sent: 12.90 40615.67 0 0
+INFO:__main__:Sent: 12.90 40622.12 0 0
+INFO:__main__:Sent: 12.90 40628.56 0 0
+INFO:__main__:Sent: 12.90 40635.01 0 0
+INFO:__main__:Sent: 12.90 40641.45 0 0
+INFO:__main__:Sent: 12.90 40647.90 0 0
+INFO:__main__:Sent: 12.90 40654.34 0 0
+INFO:__main__:Sent: 12.90 40660.79 0 0
+INFO:__main__:Sent: 12.90 40667.23 0 0
+INFO:__main__:Sent: 12.90 40673.68 0 0
+INFO:__main__:Sent: 12.90 40680.13 0 0
+INFO:__main__:Sent: 12.90 40686.57 0 0
+INFO:__main__:Sent: 12.90 40693.02 0 0
+INFO:__main__:Sent: 12.90 40699.46 0 0
+INFO:__main__:Sent: 12.90 40705.91 0 0
+INFO:__main__:Sent: 12.90 40712.35 0 0
+INFO:__main__:Sent: 12.90 40718.80 0 0
+INFO:__main__:Sent: 12.90 40725.24 0 0
+INFO:__main__:Sent: 12.90 40731.69 0 0
+INFO:__main__:Sent: 12.90 40738.13 0 0
+INFO:__main__:Sent: 12.90 40744.58 0 0
+INFO:__main__:Sent: 12.90 40751.02 0 0
+INFO:__main__:Sent: 12.90 40757.47 0 0
+INFO:__main__:Sent: 12.90 40763.91 0 0
+INFO:__main__:Sent: 12.90 40770.36 0 0
+INFO:__main__:Sent: 12.90 40776.80 0 0
+INFO:__main__:Sent: 12.90 40783.25 0 0
+INFO:__main__:Sent: 12.90 40789.70 0 0
+INFO:__main__:Sent: 12.90 40796.14 0 0
+INFO:__main__:Sent: 12.90 40802.59 0 0
+INFO:__main__:Sent: 12.90 40809.03 0 0
+INFO:__main__:Sent: 12.90 40815.48 0 0
+INFO:__main__:Sent: 12.90 40821.92 0 0
+INFO:__main__:Sent: 12.90 40828.37 0 0
+INFO:__main__:Sent: 12.90 40834.81 0 0
+INFO:__main__:Sent: 12.90 40841.26 0 0
+INFO:__main__:Sent: 12.90 40847.70 0 0
+INFO:__main__:Sent: 12.90 40854.15 0 0
+INFO:__main__:Sent: 12.90 40860.59 0 0
+INFO:__main__:Sent: 12.90 40867.04 0 0
+INFO:__main__:Sent: 12.90 40873.48 0 0
+INFO:__main__:Sent: 12.90 40879.93 0 0
+INFO:__main__:Sent: 12.90 40886.38 0 0
+INFO:__main__:Sent: 12.90 40892.82 0 0
+INFO:__main__:Sent: 12.90 40899.27 0 0
+INFO:__main__:Sent: 12.90 40905.71 0 0
+INFO:__main__:Sent: 12.90 40912.16 0 0
+INFO:__main__:Sent: 12.90 40918.60 0 0
+INFO:__main__:Sent: 12.90 40925.05 0 0
+INFO:__main__:Sent: 12.90 40931.49 0 0
+INFO:__main__:Sent: 12.90 40937.94 0 0
+INFO:__main__:Sent: 12.90 40944.38 0 0
+INFO:__main__:Sent: 12.90 40950.83 0 0
+INFO:__main__:Sent: 12.90 40957.27 0 0
+INFO:__main__:Sent: 12.90 40963.72 0 0
+INFO:__main__:Sent: 12.90 40970.16 0 0
+INFO:__main__:Sent: 12.90 40976.61 0 0
+INFO:__main__:Sent: 12.90 40983.05 0 0
+INFO:__main__:Sent: 12.90 40989.50 0 0
+INFO:__main__:Sent: 12.90 40995.95 0 0
+INFO:__main__:Sent: 12.90 41002.39 0 0
+INFO:__main__:Sent: 12.90 41008.84 0 0
+INFO:__main__:Sent: 12.90 41015.28 0 0
+INFO:__main__:Sent: 12.90 41021.73 0 0
+INFO:__main__:Sent: 12.90 41028.17 0 0
+INFO:__main__:Sent: 12.90 41034.62 0 0
+INFO:__main__:Sent: 12.90 41041.06 0 0
+INFO:__main__:Sent: 12.90 41047.51 0 0
+INFO:__main__:Sent: 12.90 41053.95 0 0
+INFO:__main__:Sent: 12.90 41060.40 0 0
+INFO:__main__:Sent: 12.90 41066.84 0 0
+INFO:__main__:Sent: 12.90 41073.29 0 0
+INFO:__main__:Sent: 12.90 41079.73 0 0
+INFO:__main__:Sent: 12.90 41086.18 0 0
+INFO:__main__:Sent: 12.90 41092.63 0 0
+INFO:__main__:Sent: 12.90 41099.07 0 0
+INFO:__main__:Sent: 12.90 41105.52 0 0
+INFO:__main__:Sent: 12.90 41111.96 0 0
+INFO:__main__:Sent: 12.90 41118.41 0 0
+INFO:__main__:Sent: 12.90 41124.85 0 0
+INFO:__main__:Sent: 12.90 41131.30 0 0
+INFO:__main__:Sent: 12.90 41137.74 0 0
+INFO:__main__:Sent: 12.90 41144.19 0 0
+INFO:__main__:Sent: 12.90 41150.63 0 0
+INFO:__main__:Sent: 12.90 41157.08 0 0
+INFO:__main__:Sent: 12.90 41163.52 0 0
+INFO:__main__:Sent: 12.90 41169.97 0 0
+INFO:__main__:Sent: 12.90 41176.41 0 0
+INFO:__main__:Sent: 12.90 41182.86 0 0
+INFO:__main__:Sent: 12.90 41189.32 0 0
+INFO:__main__:Sent: 12.93 41195.80 0 0
+INFO:__main__:Sent: 12.93 41202.28 0 0
+INFO:__main__:Sent: 12.90 41208.74 0 0
+INFO:__main__:Sent: 12.90 41215.19 0 0
+INFO:__main__:Sent: 12.90 41221.63 0 0
+INFO:__main__:Sent: 12.90 41228.08 0 0
+INFO:__main__:Sent: 12.93 41234.57 0 0
+INFO:__main__:Sent: 12.93 41241.05 0 0
+INFO:__main__:Sent: 12.90 41247.52 0 0
+INFO:__main__:Sent: 12.93 41253.99 0 0
+INFO:__main__:Sent: 12.93 41260.47 0 0
+INFO:__main__:Sent: 12.93 41266.96 0 0
+INFO:__main__:Sent: 12.93 41273.44 0 0
+INFO:__main__:Sent: 12.90 41279.89 0 0
+INFO:__main__:Sent: 12.90 41286.34 0 0
+INFO:__main__:Sent: 12.90 41292.79 0 0
+INFO:__main__:Sent: 12.90 41299.23 0 0
+INFO:__main__:Sent: 12.90 41305.68 0 0
+INFO:__main__:Sent: 12.90 41312.12 0 0
+INFO:__main__:Sent: 12.90 41318.57 0 0
+INFO:__main__:Sent: 12.90 41325.01 0 0
+INFO:__main__:Sent: 12.90 41331.46 0 0
+INFO:__main__:Sent: 12.90 41337.90 0 0
+INFO:__main__:Sent: 12.90 41344.35 0 0
+INFO:__main__:Sent: 12.90 41350.79 0 0
+INFO:__main__:Sent: 12.90 41357.24 0 0
+INFO:__main__:Sent: 12.90 41363.68 0 0
+INFO:__main__:Sent: 12.90 41370.13 0 0
+INFO:__main__:Sent: 12.90 41376.57 0 0
+INFO:__main__:Sent: 12.90 41383.02 0 0
+INFO:__main__:Sent: 12.90 41389.46 0 0
+INFO:__main__:Sent: 12.90 41395.91 0 0
+INFO:__main__:Sent: 12.90 41402.36 0 0
+INFO:__main__:Sent: 12.90 41408.80 0 0
+INFO:__main__:Sent: 12.90 41415.25 0 0
+INFO:__main__:Sent: 12.90 41421.69 0 0
+INFO:__main__:Sent: 12.90 41428.14 0 0
+INFO:__main__:Sent: 12.90 41434.58 0 0
+INFO:__main__:Sent: 12.90 41441.03 0 0
+INFO:__main__:Sent: 12.90 41447.47 0 0
+INFO:__main__:Sent: 12.90 41453.92 0 0
+INFO:__main__:Sent: 12.90 41460.36 0 0
+INFO:__main__:Sent: 12.90 41466.81 0 0
+INFO:__main__:Sent: 12.90 41473.26 0 0
+INFO:__main__:Sent: 12.90 41479.71 0 0
+INFO:__main__:Sent: 12.90 41486.15 0 0
+INFO:__main__:Sent: 12.93 41492.63 0 0
+INFO:__main__:Sent: 12.90 41499.10 0 0
+INFO:__main__:Sent: 12.90 41505.54 0 0
+INFO:__main__:Sent: 12.93 41512.00 0 0
+INFO:__main__:Sent: 12.93 41518.49 0 0
+INFO:__main__:Sent: 12.93 41524.97 0 0
+INFO:__main__:Sent: 12.90 41531.43 0 0
+INFO:__main__:Sent: 12.90 41537.88 0 0
+INFO:__main__:Sent: 12.90 41544.32 0 0
+INFO:__main__:Sent: 12.90 41550.77 0 0
+INFO:__main__:Sent: 12.90 41557.21 0 0
+INFO:__main__:Sent: 12.90 41563.66 0 0
+INFO:__main__:Sent: 12.90 41570.11 0 0
+INFO:__main__:Sent: 12.90 41576.55 0 0
+INFO:__main__:Sent: 12.90 41583.00 0 0
+INFO:__main__:Sent: 12.90 41589.44 0 0
+INFO:__main__:Sent: 12.90 41595.89 0 0
+INFO:__main__:Sent: 12.90 41602.33 0 0
+INFO:__main__:Sent: 12.90 41608.78 0 0
+INFO:__main__:Sent: 12.90 41615.22 0 0
+INFO:__main__:Sent: 12.90 41621.67 0 0
+INFO:__main__:Sent: 12.93 41628.14 0 0
+INFO:__main__:Sent: 12.90 41634.61 0 0
+INFO:__main__:Sent: 12.90 41641.09 0 0
+INFO:__main__:Sent: 12.90 41647.54 0 0
+INFO:__main__:Sent: 12.90 41653.98 0 0
+INFO:__main__:Sent: 12.93 41660.46 0 0
+INFO:__main__:Sent: 12.93 41666.95 0 0
+INFO:__main__:Sent: 12.93 41673.43 0 0
+INFO:__main__:Sent: 12.93 41679.92 0 0
+INFO:__main__:Sent: 12.90 41686.36 0 0
+INFO:__main__:Sent: 12.90 41692.81 0 0
+INFO:__main__:Sent: 12.93 41699.28 0 0
+INFO:__main__:Sent: 12.90 41705.75 0 0
+INFO:__main__:Sent: 12.90 41712.20 0 0
+INFO:__main__:Sent: 12.90 41718.64 0 0
+INFO:__main__:Sent: 12.93 41725.10 0 0
+INFO:__main__:Sent: 12.93 41731.59 0 0
+INFO:__main__:Sent: 12.93 41738.07 0 0
+INFO:__main__:Sent: 12.93 41744.55 0 0
+INFO:__main__:Sent: 12.93 41751.04 0 0
+INFO:__main__:Sent: 12.93 41757.52 0 0
+INFO:__main__:Sent: 12.93 41764.01 0 0
+INFO:__main__:Sent: 12.93 41770.49 0 0
+INFO:__main__:Sent: 12.90 41776.94 0 0
+INFO:__main__:Sent: 12.90 41783.38 0 0
+INFO:__main__:Sent: 12.93 41789.84 0 0
+INFO:__main__:Sent: 12.90 41796.30 0 0
+INFO:__main__:Sent: 12.90 41802.75 0 0
+INFO:__main__:Sent: 12.90 41809.20 0 0
+INFO:__main__:Sent: 12.90 41815.64 0 0
+INFO:__main__:Sent: 12.93 41822.12 0 0
+INFO:__main__:Sent: 12.93 41828.60 0 0
+INFO:__main__:Sent: 12.93 41835.06 0 0
+INFO:__main__:Sent: 12.90 41841.52 0 0
+INFO:__main__:Sent: 12.90 41847.96 0 0
+INFO:__main__:Sent: 12.90 41854.41 0 0
+INFO:__main__:Sent: 12.90 41860.86 0 0
+INFO:__main__:Sent: 12.93 41867.33 0 0
+INFO:__main__:Sent: 12.93 41873.82 0 0
+INFO:__main__:Sent: 12.93 41880.30 0 0
+INFO:__main__:Sent: 12.90 41886.76 0 0
+INFO:__main__:Sent: 12.90 41893.22 0 0
+INFO:__main__:Sent: 12.93 41899.68 0 0
+INFO:__main__:Sent: 12.93 41906.15 0 0
+INFO:__main__:Sent: 12.90 41912.59 0 0
+INFO:__main__:Sent: 12.90 41919.07 0 0
+INFO:__main__:Sent: 12.93 41925.55 0 0
+INFO:__main__:Sent: 12.93 41932.04 0 0
+INFO:__main__:Sent: 12.93 41938.52 0 0
+INFO:__main__:Sent: 12.93 41945.01 0 0
+INFO:__main__:Sent: 12.93 41951.49 0 0
+INFO:__main__:Sent: 12.93 41957.98 0 0
+INFO:__main__:Sent: 12.90 41964.43 0 0
+INFO:__main__:Sent: 12.90 41970.89 0 0
+INFO:__main__:Sent: 12.93 41977.36 0 0
+INFO:__main__:Sent: 12.93 41983.85 0 0
+INFO:__main__:Sent: 12.93 41990.33 0 0
+INFO:__main__:Sent: 12.93 41996.82 0 0
+INFO:__main__:Sent: 12.90 42003.28 0 0
+INFO:__main__:Sent: 12.90 42009.75 0 0
+INFO:__main__:Sent: 12.93 42016.21 0 0
+INFO:__main__:Sent: 12.93 42022.70 0 0
+INFO:__main__:Sent: 12.93 42029.18 0 0
+INFO:__main__:Sent: 12.93 42035.67 0 0
+INFO:__main__:Sent: 12.93 42042.15 0 0
+INFO:__main__:Sent: 12.93 42048.64 0 0
+INFO:__main__:Sent: 12.93 42055.12 0 0
+INFO:__main__:Sent: 12.93 42061.61 0 0
+INFO:__main__:Sent: 12.93 42068.09 0 0
+INFO:__main__:Sent: 12.93 42074.57 0 0
+INFO:__main__:Sent: 12.93 42081.06 0 0
+INFO:__main__:Sent: 12.93 42087.54 0 0
+INFO:__main__:Sent: 12.93 42094.03 0 0
+INFO:__main__:Sent: 12.90 42100.48 0 0
+INFO:__main__:Sent: 12.93 42106.95 0 0
+INFO:__main__:Sent: 12.93 42113.43 0 0
+INFO:__main__:Sent: 12.93 42119.91 0 0
+INFO:__main__:Sent: 12.90 42126.39 0 0
+INFO:__main__:Sent: 12.93 42132.87 0 0
+INFO:__main__:Sent: 12.90 42139.33 0 0
+INFO:__main__:Sent: 12.90 42145.78 0 0
+INFO:__main__:Sent: 12.93 42152.23 0 0
+INFO:__main__:Sent: 12.93 42158.72 0 0
+INFO:__main__:Sent: 12.90 42165.20 0 0
+INFO:__main__:Sent: 12.90 42171.64 0 0
+INFO:__main__:Sent: 12.93 42178.12 0 0
+INFO:__main__:Sent: 12.93 42184.61 0 0
+INFO:__main__:Sent: 12.93 42191.09 0 0
+INFO:__main__:Sent: 12.93 42197.57 0 0
+INFO:__main__:Sent: 12.93 42204.06 0 0
+INFO:__main__:Sent: 12.90 42210.54 0 0
+INFO:__main__:Sent: 12.90 42216.98 0 0
+INFO:__main__:Sent: 12.90 42223.43 0 0
+INFO:__main__:Sent: 12.90 42229.87 0 0
+INFO:__main__:Sent: 12.90 42236.32 0 0
+INFO:__main__:Sent: 12.90 42242.76 0 0
+INFO:__main__:Sent: 12.90 42249.21 0 0
+INFO:__main__:Sent: 12.90 42255.65 0 0
+INFO:__main__:Sent: 12.90 42262.10 0 0
+INFO:__main__:Sent: 12.90 42268.54 0 0
+INFO:__main__:Sent: 12.90 42274.99 0 0
+INFO:__main__:Sent: 12.90 42281.43 0 0
+INFO:__main__:Sent: 12.90 42287.88 0 0
+INFO:__main__:Sent: 12.90 42294.32 0 0
+INFO:__main__:Sent: 12.90 42300.77 0 0
+INFO:__main__:Sent: 12.90 42307.21 0 0
+INFO:__main__:Sent: 12.90 42313.66 0 0
+INFO:__main__:Sent: 12.90 42320.11 0 0
+INFO:__main__:Sent: 12.90 42326.55 0 0
+INFO:__main__:Sent: 12.90 42333.00 0 0
+INFO:__main__:Sent: 12.90 42339.44 0 0
+INFO:__main__:Sent: 12.90 42345.89 0 0
+INFO:__main__:Sent: 12.90 42352.33 0 0
+INFO:__main__:Sent: 12.93 42358.82 0 0
+INFO:__main__:Sent: 12.90 42365.29 0 0
+INFO:__main__:Sent: 12.90 42371.73 0 0
+INFO:__main__:Sent: 12.90 42378.18 0 0
+INFO:__main__:Sent: 12.90 42384.63 0 0
+INFO:__main__:Sent: 12.90 42391.07 0 0
+INFO:__main__:Sent: 12.90 42397.52 0 0
+INFO:__main__:Sent: 12.90 42403.96 0 0
+INFO:__main__:Sent: 12.90 42410.41 0 0
+INFO:__main__:Sent: 12.90 42416.85 0 0
+INFO:__main__:Sent: 12.90 42423.30 0 0
+INFO:__main__:Sent: 12.90 42429.74 0 0
+INFO:__main__:Sent: 12.93 42436.21 0 0
+INFO:__main__:Sent: 12.93 42442.70 0 0
+INFO:__main__:Sent: 12.93 42449.18 0 0
+INFO:__main__:Sent: 12.93 42455.67 0 0
+INFO:__main__:Sent: 12.93 42462.15 0 0
+INFO:__main__:Sent: 12.93 42468.64 0 0
+INFO:__main__:Sent: 12.93 42475.12 0 0
+INFO:__main__:Sent: 12.93 42481.61 0 0
+INFO:__main__:Sent: 12.93 42488.09 0 0
+INFO:__main__:Sent: 12.93 42494.57 0 0
+INFO:__main__:Sent: 12.93 42501.06 0 0
+INFO:__main__:Sent: 12.93 42507.54 0 0
+INFO:__main__:Sent: 12.93 42514.03 0 0
+INFO:__main__:Sent: 12.93 42520.51 0 0
+INFO:__main__:Sent: 12.93 42527.00 0 0
+INFO:__main__:Sent: 12.93 42533.48 0 0
+INFO:__main__:Sent: 12.93 42539.96 0 0
+INFO:__main__:Sent: 12.93 42546.45 0 0
+INFO:__main__:Sent: 12.93 42552.93 0 0
+INFO:__main__:Sent: 12.93 42559.42 0 0
+INFO:__main__:Sent: 12.93 42565.90 0 0
+INFO:__main__:Sent: 12.93 42572.39 0 0
+INFO:__main__:Sent: 12.93 42578.87 0 0
+INFO:__main__:Sent: 12.93 42585.36 0 0
+INFO:__main__:Sent: 12.93 42591.84 0 0
+INFO:__main__:Sent: 12.93 42598.32 0 0
+INFO:__main__:Sent: 12.93 42604.81 0 0
+INFO:__main__:Sent: 12.93 42611.29 0 0
+INFO:__main__:Sent: 12.93 42617.78 0 0
+INFO:__main__:Sent: 12.93 42624.26 0 0
+INFO:__main__:Sent: 12.93 42630.75 0 0
+INFO:__main__:Sent: 12.93 42637.23 0 0
+INFO:__main__:Sent: 12.93 42643.71 0 0
+INFO:__main__:Sent: 12.93 42650.20 0 0
+INFO:__main__:Sent: 12.93 42656.68 0 0
+INFO:__main__:Sent: 12.93 42663.17 0 0
+INFO:__main__:Sent: 12.93 42669.65 0 0
+INFO:__main__:Sent: 12.93 42676.14 0 0
+INFO:__main__:Sent: 12.93 42682.62 0 0
+INFO:__main__:Sent: 12.93 42689.11 0 0
+INFO:__main__:Sent: 12.93 42695.59 0 0
+INFO:__main__:Sent: 12.93 42702.07 0 0
+INFO:__main__:Sent: 12.93 42708.56 0 0
+INFO:__main__:Sent: 12.93 42715.04 0 0
+INFO:__main__:Sent: 12.93 42721.53 0 0
+INFO:__main__:Sent: 12.93 42728.01 0 0
+INFO:__main__:Sent: 12.93 42734.50 0 0
+INFO:__main__:Sent: 12.93 42740.98 0 0
+INFO:__main__:Sent: 12.93 42747.46 0 0
+INFO:__main__:Sent: 12.93 42753.95 0 0
+INFO:__main__:Sent: 12.93 42760.43 0 0
+INFO:__main__:Sent: 12.93 42766.92 0 0
+INFO:__main__:Sent: 12.93 42773.40 0 0
+INFO:__main__:Sent: 12.93 42779.89 0 0
+INFO:__main__:Sent: 12.93 42786.37 0 0
+INFO:__main__:Sent: 12.93 42792.86 0 0
+INFO:__main__:Sent: 12.93 42799.34 0 0
+INFO:__main__:Sent: 12.90 42805.82 0 0
+INFO:__main__:Sent: 12.90 42812.26 0 0
+INFO:__main__:Sent: 12.93 42818.73 0 0
+INFO:__main__:Sent: 12.93 42825.22 0 0
+INFO:__main__:Sent: 12.93 42831.70 0 0
+INFO:__main__:Sent: 12.93 42838.19 0 0
+INFO:__main__:Sent: 12.93 42844.67 0 0
+INFO:__main__:Sent: 12.93 42851.16 0 0
+INFO:__main__:Sent: 12.93 42857.64 0 0
+INFO:__main__:Sent: 12.93 42864.13 0 0
+INFO:__main__:Sent: 12.93 42870.61 0 0
+INFO:__main__:Sent: 12.93 42877.09 0 0
+INFO:__main__:Sent: 12.93 42883.58 0 0
+INFO:__main__:Sent: 12.93 42890.06 0 0
+INFO:__main__:Sent: 12.93 42896.55 0 0
+INFO:__main__:Sent: 12.93 42903.03 0 0
+INFO:__main__:Sent: 12.93 42909.52 0 0
+INFO:__main__:Sent: 12.93 42916.00 0 0
+INFO:__main__:Sent: 12.93 42922.48 0 0
+INFO:__main__:Sent: 12.93 42928.97 0 0
+INFO:__main__:Sent: 12.93 42935.45 0 0
+INFO:__main__:Sent: 12.93 42941.94 0 0
+INFO:__main__:Sent: 12.93 42948.42 0 0
+INFO:__main__:Sent: 12.93 42954.91 0 0
+INFO:__main__:Sent: 12.93 42961.39 0 0
+INFO:__main__:Sent: 12.93 42967.88 0 0
+INFO:__main__:Sent: 12.93 42974.36 0 0
+INFO:__main__:Sent: 12.93 42980.84 0 0
+INFO:__main__:Sent: 12.93 42987.33 0 0
+INFO:__main__:Sent: 12.93 42993.81 0 0
+INFO:__main__:Sent: 12.93 43000.30 0 0
+INFO:__main__:Sent: 12.90 43006.76 0 0
+INFO:__main__:Sent: 12.93 43013.24 0 0
+INFO:__main__:Sent: 12.93 43019.72 0 0
+INFO:__main__:Sent: 12.93 43026.21 0 0
+INFO:__main__:Sent: 12.93 43032.69 0 0
+INFO:__main__:Sent: 12.93 43039.18 0 0
+INFO:__main__:Sent: 12.93 43045.66 0 0
+INFO:__main__:Sent: 12.93 43052.14 0 0
+INFO:__main__:Sent: 12.93 43058.63 0 0
+INFO:__main__:Sent: 12.93 43065.11 0 0
+INFO:__main__:Sent: 12.93 43071.60 0 0
+INFO:__main__:Sent: 12.93 43078.08 0 0
+INFO:__main__:Sent: 12.93 43084.57 0 0
+INFO:__main__:Sent: 12.93 43091.05 0 0
+INFO:__main__:Sent: 12.93 43097.54 0 0
+INFO:__main__:Sent: 12.93 43104.02 0 0
+INFO:__main__:Sent: 12.93 43110.50 0 0
+INFO:__main__:Sent: 12.93 43116.99 0 0
+INFO:__main__:Sent: 12.93 43123.47 0 0
+INFO:__main__:Sent: 12.93 43129.96 0 0
+INFO:__main__:Sent: 12.93 43136.44 0 0
+INFO:__main__:Sent: 12.93 43142.93 0 0
+INFO:__main__:Sent: 12.93 43149.41 0 0
+INFO:__main__:Sent: 12.90 43155.89 0 0
+INFO:__main__:Sent: 12.93 43162.37 0 0
+INFO:__main__:Sent: 12.93 43168.86 0 0
+INFO:__main__:Sent: 12.93 43175.34 0 0
+INFO:__main__:Sent: 12.93 43181.82 0 0
+INFO:__main__:Sent: 12.93 43188.31 0 0
+INFO:__main__:Sent: 12.93 43194.79 0 0
+INFO:__main__:Sent: 12.93 43201.28 0 0
+INFO:__main__:Sent: 12.93 43207.76 0 0
+INFO:__main__:Sent: 12.93 43214.25 0 0
+INFO:__main__:Sent: 12.93 43220.73 0 0
+INFO:__main__:Sent: 12.93 43227.21 0 0
+INFO:__main__:Sent: 12.93 43233.70 0 0
+INFO:__main__:Sent: 12.93 43240.18 0 0
+INFO:__main__:Sent: 12.93 43246.67 0 0
+INFO:__main__:Sent: 12.93 43253.15 0 0
+INFO:__main__:Sent: 12.93 43259.64 0 0
+INFO:__main__:Sent: 12.93 43266.12 0 0
+INFO:__main__:Sent: 12.93 43272.60 0 0
+INFO:__main__:Sent: 12.90 43279.07 0 0
+INFO:__main__:Sent: 12.90 43285.52 0 0
+INFO:__main__:Sent: 12.90 43291.96 0 0
+INFO:__main__:Sent: 12.90 43298.43 0 0
+INFO:__main__:Sent: 12.93 43304.89 0 0
+INFO:__main__:Sent: 12.93 43311.37 0 0
+INFO:__main__:Sent: 12.93 43317.86 0 0
+INFO:__main__:Sent: 12.93 43324.34 0 0
+INFO:__main__:Sent: 12.93 43330.82 0 0
+INFO:__main__:Sent: 12.93 43337.30 0 0
+INFO:__main__:Sent: 12.93 43343.78 0 0
+INFO:__main__:Sent: 12.90 43350.24 0 0
+INFO:__main__:Sent: 12.93 43356.72 0 0
+INFO:__main__:Sent: 12.93 43363.20 0 0
+INFO:__main__:Sent: 12.93 43369.69 0 0
+INFO:__main__:Sent: 12.93 43376.17 0 0
+INFO:__main__:Sent: 12.93 43382.66 0 0
+INFO:__main__:Sent: 12.93 43389.14 0 0
+INFO:__main__:Sent: 12.93 43395.63 0 0
+INFO:__main__:Sent: 12.93 43402.11 0 0
+INFO:__main__:Sent: 12.90 43408.57 0 0
+INFO:__main__:Sent: 12.93 43415.02 0 0
+INFO:__main__:Sent: 12.93 43421.50 0 0
+INFO:__main__:Sent: 12.90 43427.98 0 0
+INFO:__main__:Sent: 12.93 43434.46 0 0
+INFO:__main__:Sent: 12.93 43440.95 0 0
+INFO:__main__:Sent: 12.93 43447.43 0 0
+INFO:__main__:Sent: 12.93 43453.92 0 0
+INFO:__main__:Sent: 12.93 43460.40 0 0
+INFO:__main__:Sent: 12.93 43466.89 0 0
+INFO:__main__:Sent: 12.93 43473.37 0 0
+INFO:__main__:Sent: 12.93 43479.86 0 0
+INFO:__main__:Sent: 12.90 43486.32 0 0
+INFO:__main__:Sent: 12.93 43492.80 0 0
+INFO:__main__:Sent: 12.93 43499.28 0 0
+INFO:__main__:Sent: 12.93 43505.77 0 0
+INFO:__main__:Sent: 12.93 43512.25 0 0
+INFO:__main__:Sent: 12.93 43518.73 0 0
+INFO:__main__:Sent: 12.93 43525.22 0 0
+INFO:__main__:Sent: 12.93 43531.70 0 0
+INFO:__main__:Sent: 12.93 43538.19 0 0
+INFO:__main__:Sent: 12.93 43544.67 0 0
+INFO:__main__:Sent: 12.93 43551.16 0 0
+INFO:__main__:Sent: 12.93 43557.64 0 0
+INFO:__main__:Sent: 12.93 43564.13 0 0
+INFO:__main__:Sent: 12.93 43570.61 0 0
+INFO:__main__:Sent: 12.93 43577.09 0 0
+INFO:__main__:Sent: 12.93 43583.58 0 0
+INFO:__main__:Sent: 12.93 43590.06 0 0
+INFO:__main__:Sent: 12.93 43596.55 0 0
+INFO:__main__:Sent: 12.93 43603.03 0 0
+INFO:__main__:Sent: 12.93 43609.52 0 0
+INFO:__main__:Sent: 12.93 43616.00 0 0
+INFO:__main__:Sent: 12.93 43622.48 0 0
+INFO:__main__:Sent: 12.93 43628.97 0 0
+INFO:__main__:Sent: 12.93 43635.45 0 0
+INFO:__main__:Sent: 12.93 43641.94 0 0
+INFO:__main__:Sent: 12.93 43647.77 0 0
+INFO:__main__:Sent: 12.93 43654.26 0 0
+INFO:__main__:Sent: 12.93 43660.74 0 0
+INFO:__main__:Sent: 12.93 43667.23 0 0
+INFO:__main__:Sent: 12.93 43673.71 0 0
+INFO:__main__:Sent: 12.93 43680.20 0 0
+INFO:__main__:Sent: 12.93 43686.68 0 0
+INFO:__main__:Sent: 12.93 43693.16 0 0
+INFO:__main__:Sent: 12.93 43699.65 0 0
+INFO:__main__:Sent: 12.93 43706.13 0 0
+INFO:__main__:Sent: 12.93 43712.62 0 0
+INFO:__main__:Sent: 12.93 43719.10 0 0
+INFO:__main__:Sent: 12.93 43725.59 0 0
+INFO:__main__:Sent: 12.93 43732.07 0 0
+INFO:__main__:Sent: 12.93 43738.55 0 0
+INFO:__main__:Sent: 12.93 43745.04 0 0
+INFO:__main__:Sent: 12.93 43751.52 0 0
+INFO:__main__:Sent: 12.93 43758.01 0 0
+INFO:__main__:Sent: 12.93 43764.49 0 0
+INFO:__main__:Sent: 12.93 43770.98 0 0
+INFO:__main__:Sent: 12.93 43777.46 0 0
+INFO:__main__:Sent: 12.93 43783.95 0 0
+INFO:__main__:Sent: 12.93 43790.43 0 0
+INFO:__main__:Sent: 12.93 43796.91 0 0
+INFO:__main__:Sent: 12.93 43803.40 0 0
+INFO:__main__:Sent: 12.93 43809.88 0 0
+INFO:__main__:Sent: 12.93 43816.37 0 0
+INFO:__main__:Sent: 12.93 43822.85 0 0
+INFO:__main__:Sent: 12.93 43829.34 0 0
+INFO:__main__:Sent: 12.93 43835.82 0 0
+INFO:__main__:Sent: 12.93 43842.29 0 0
+INFO:__main__:Sent: 12.93 43848.77 0 0
+INFO:__main__:Sent: 12.93 43855.25 0 0
+INFO:__main__:Sent: 12.93 43861.74 0 0
+INFO:__main__:Sent: 12.93 43868.22 0 0
+INFO:__main__:Sent: 12.93 43874.71 0 0
+INFO:__main__:Sent: 12.93 43881.19 0 0
+INFO:__main__:Sent: 12.90 43887.67 0 0
+INFO:__main__:Sent: 12.90 43894.14 0 0
+INFO:__main__:Sent: 12.93 43900.61 0 0
+INFO:__main__:Sent: 12.93 43907.09 0 0
+INFO:__main__:Sent: 12.93 43913.57 0 0
+INFO:__main__:Sent: 12.93 43920.06 0 0
+INFO:__main__:Sent: 12.93 43926.54 0 0
+INFO:__main__:Sent: 12.93 43933.03 0 0
+INFO:__main__:Sent: 12.93 43939.51 0 0
+INFO:__main__:Sent: 12.93 43946.00 0 0
+INFO:__main__:Sent: 12.93 43952.46 0 0
+INFO:__main__:Sent: 12.93 43958.94 0 0
+INFO:__main__:Sent: 12.93 43965.43 0 0
+INFO:__main__:Sent: 12.93 43971.91 0 0
+INFO:__main__:Sent: 12.93 43978.39 0 0
+INFO:__main__:Sent: 12.93 43984.88 0 0
+INFO:__main__:Sent: 12.93 43991.36 0 0
+INFO:__main__:Sent: 12.93 43997.85 0 0
+INFO:__main__:Sent: 12.93 44004.33 0 0
+INFO:__main__:Sent: 12.93 44010.82 0 0
+INFO:__main__:Sent: 12.93 44017.30 0 0
+INFO:__main__:Sent: 12.93 44023.79 0 0
+INFO:__main__:Sent: 12.93 44030.27 0 0
+INFO:__main__:Sent: 12.93 44036.75 0 0
+INFO:__main__:Sent: 12.93 44043.23 0 0
+INFO:__main__:Sent: 12.93 44049.71 0 0
+INFO:__main__:Sent: 12.93 44056.19 0 0
+INFO:__main__:Sent: 12.93 44062.68 0 0
+INFO:__main__:Sent: 12.93 44069.16 0 0
+INFO:__main__:Sent: 12.93 44075.64 0 0
+INFO:__main__:Sent: 12.93 44082.13 0 0
+INFO:__main__:Sent: 12.93 44088.61 0 0
+INFO:__main__:Sent: 12.93 44095.10 0 0
+INFO:__main__:Sent: 12.93 44101.58 0 0
+INFO:__main__:Sent: 12.93 44108.07 0 0
+INFO:__main__:Sent: 12.93 44114.55 0 0
+INFO:__main__:Sent: 12.93 44121.03 0 0
+INFO:__main__:Sent: 12.93 44127.52 0 0
+INFO:__main__:Sent: 12.93 44134.00 0 0
+INFO:__main__:Sent: 12.93 44140.48 0 0
+INFO:__main__:Sent: 12.93 44146.97 0 0
+INFO:__main__:Sent: 12.93 44153.45 0 0
+INFO:__main__:Sent: 12.93 44159.94 0 0
+INFO:__main__:Sent: 12.90 44166.40 0 0
+INFO:__main__:Sent: 12.93 44172.86 0 0
+INFO:__main__:Sent: 12.93 44179.34 0 0
+INFO:__main__:Sent: 12.93 44185.82 0 0
+INFO:__main__:Sent: 12.93 44192.31 0 0
+INFO:__main__:Sent: 12.93 44198.79 0 0
+INFO:__main__:Sent: 12.90 44205.25 0 0
+INFO:__main__:Sent: 12.93 44211.73 0 0
+INFO:__main__:Sent: 12.93 44218.21 0 0
+INFO:__main__:Sent: 12.93 44224.70 0 0
+INFO:__main__:Sent: 12.93 44231.17 0 0
+INFO:__main__:Sent: 12.93 44237.63 0 0
+INFO:__main__:Sent: 12.90 44244.08 0 0
+INFO:__main__:Sent: 12.93 44250.56 0 0
+INFO:__main__:Sent: 12.93 44257.04 0 0
+INFO:__main__:Sent: 12.90 44263.52 0 0
+INFO:__main__:Sent: 12.90 44269.96 0 0
+INFO:__main__:Sent: 12.93 44276.42 0 0
+INFO:__main__:Sent: 12.93 44282.90 0 0
+INFO:__main__:Sent: 12.93 44289.39 0 0
+INFO:__main__:Sent: 12.93 44295.87 0 0
+INFO:__main__:Sent: 12.93 44302.36 0 0
+INFO:__main__:Sent: 12.93 44308.84 0 0
+INFO:__main__:Sent: 12.90 44315.30 0 0
+INFO:__main__:Sent: 12.93 44321.75 0 0
+INFO:__main__:Sent: 12.93 44328.23 0 0
+INFO:__main__:Sent: 12.93 44334.71 0 0
+INFO:__main__:Sent: 12.93 44341.20 0 0
+INFO:__main__:Sent: 12.93 44347.68 0 0
+INFO:__main__:Sent: 12.93 44354.17 0 0
+INFO:__main__:Sent: 12.93 44360.65 0 0
+INFO:__main__:Sent: 12.93 44367.14 0 0
+INFO:__main__:Sent: 12.90 44373.62 0 0
+INFO:__main__:Sent: 12.93 44380.08 0 0
+INFO:__main__:Sent: 12.93 44386.56 0 0
+INFO:__main__:Sent: 12.93 44393.05 0 0
+INFO:__main__:Sent: 12.93 44399.53 0 0
+INFO:__main__:Sent: 12.93 44406.02 0 0
+INFO:__main__:Sent: 12.93 44412.50 0 0
+INFO:__main__:Sent: 12.93 44418.98 0 0
+INFO:__main__:Sent: 12.93 44425.47 0 0
+INFO:__main__:Sent: 12.93 44431.95 0 0
+INFO:__main__:Sent: 12.90 44438.40 0 0
+INFO:__main__:Sent: 12.90 44444.85 0 0
+INFO:__main__:Sent: 12.93 44451.33 0 0
+INFO:__main__:Sent: 12.93 44457.79 0 0
+INFO:__main__:Sent: 12.93 44464.24 0 0
+INFO:__main__:Sent: 12.93 44470.72 0 0
+INFO:__main__:Sent: 12.93 44477.20 0 0
+INFO:__main__:Sent: 12.93 44483.68 0 0
+INFO:__main__:Sent: 12.93 44490.16 0 0
+INFO:__main__:Sent: 12.93 44496.64 0 0
+INFO:__main__:Sent: 12.93 44503.13 0 0
+INFO:__main__:Sent: 12.93 44509.61 0 0
+INFO:__main__:Sent: 12.93 44516.10 0 0
+INFO:__main__:Sent: 12.93 44522.58 0 0
+INFO:__main__:Sent: 12.93 44529.07 0 0
+INFO:__main__:Sent: 12.93 44535.55 0 0
+INFO:__main__:Sent: 12.93 44542.04 0 0
+INFO:__main__:Sent: 12.90 44548.48 0 0
+INFO:__main__:Sent: 12.90 44554.93 0 0
+INFO:__main__:Sent: 12.90 44561.37 0 0
+INFO:__main__:Sent: 12.90 44567.82 0 0
+INFO:__main__:Sent: 12.93 44574.30 0 0
+INFO:__main__:Sent: 12.93 44580.79 0 0
+INFO:__main__:Sent: 12.93 44587.27 0 0
+INFO:__main__:Sent: 12.93 44593.75 0 0
+INFO:__main__:Sent: 12.90 44600.20 0 0
+INFO:__main__:Sent: 12.90 44606.64 0 0
+INFO:__main__:Sent: 12.90 44613.09 0 0
+INFO:__main__:Sent: 12.93 44619.56 0 0
+INFO:__main__:Sent: 12.93 44626.04 0 0
+INFO:__main__:Sent: 12.93 44632.52 0 0
+INFO:__main__:Sent: 12.93 44639.00 0 0
+INFO:__main__:Sent: 12.90 44645.48 0 0
+INFO:__main__:Sent: 12.93 44651.94 0 0
+INFO:__main__:Sent: 12.93 44658.39 0 0
+INFO:__main__:Sent: 12.90 44664.84 0 0
+INFO:__main__:Sent: 12.90 44671.28 0 0
+INFO:__main__:Sent: 12.90 44677.73 0 0
+INFO:__main__:Sent: 12.90 44684.17 0 0
+INFO:__main__:Sent: 12.90 44690.62 0 0
+INFO:__main__:Sent: 12.93 44697.07 0 0
+INFO:__main__:Sent: 12.93 44703.55 0 0
+INFO:__main__:Sent: 12.90 44710.03 0 0
+INFO:__main__:Sent: 12.93 44716.50 0 0
+INFO:__main__:Sent: 12.93 44722.99 0 0
+INFO:__main__:Sent: 12.93 44729.47 0 0
+INFO:__main__:Sent: 12.93 44735.96 0 0
+INFO:__main__:Sent: 12.93 44742.44 0 0
+INFO:__main__:Sent: 12.93 44748.93 0 0
+INFO:__main__:Sent: 12.90 44755.40 0 0
+INFO:__main__:Sent: 12.90 44761.85 0 0
+INFO:__main__:Sent: 12.93 44768.31 0 0
+INFO:__main__:Sent: 12.93 44774.79 0 0
+INFO:__main__:Sent: 12.93 44781.28 0 0
+INFO:__main__:Sent: 12.90 44787.73 0 0
+INFO:__main__:Sent: 12.90 44794.17 0 0
+INFO:__main__:Sent: 12.90 44800.62 0 0
+INFO:__main__:Sent: 12.90 44807.06 0 0
+INFO:__main__:Sent: 12.90 44813.51 0 0
+INFO:__main__:Sent: 12.90 44819.95 0 0
+INFO:__main__:Sent: 12.93 44826.40 0 0
+INFO:__main__:Sent: 12.93 44832.89 0 0
+INFO:__main__:Sent: 12.93 44839.37 0 0
+INFO:__main__:Sent: 12.90 44845.84 0 0
+INFO:__main__:Sent: 12.90 44852.29 0 0
+INFO:__main__:Sent: 12.90 44858.73 0 0
+INFO:__main__:Sent: 12.90 44865.18 0 0
+INFO:__main__:Sent: 12.90 44871.63 0 0
+INFO:__main__:Sent: 12.93 44878.11 0 0
+INFO:__main__:Sent: 12.93 44884.59 0 0
+INFO:__main__:Sent: 12.90 44891.06 0 0
+INFO:__main__:Sent: 12.90 44897.50 0 0
+INFO:__main__:Sent: 12.93 44903.96 0 0
+INFO:__main__:Sent: 12.93 44910.44 0 0
+INFO:__main__:Sent: 12.93 44916.93 0 0
+INFO:__main__:Sent: 12.93 44923.41 0 0
+INFO:__main__:Sent: 12.93 44929.89 0 0
+INFO:__main__:Sent: 12.93 44936.38 0 0
+INFO:__main__:Sent: 12.93 44942.86 0 0
+INFO:__main__:Sent: 12.93 44949.35 0 0
+INFO:__main__:Sent: 12.93 44955.83 0 0
+INFO:__main__:Sent: 12.93 44962.32 0 0
+INFO:__main__:Sent: 12.93 44968.79 0 0
+INFO:__main__:Sent: 12.93 44975.28 0 0
+INFO:__main__:Sent: 12.90 44981.75 0 0
+INFO:__main__:Sent: 12.90 44988.22 0 0
+INFO:__main__:Sent: 12.93 44994.69 0 0
+INFO:__main__:Sent: 12.93 45001.18 0 0
+INFO:__main__:Sent: 12.90 45007.65 0 0
+INFO:__main__:Sent: 12.93 45014.11 0 0
+INFO:__main__:Sent: 12.93 45020.60 0 0
+INFO:__main__:Sent: 12.93 45027.08 0 0
+INFO:__main__:Sent: 12.93 45033.57 0 0
+INFO:__main__:Sent: 12.93 45040.05 0 0
+INFO:__main__:Sent: 12.93 45046.54 0 0
+INFO:__main__:Sent: 12.93 45053.02 0 0
+INFO:__main__:Sent: 12.93 45059.50 0 0
+INFO:__main__:Sent: 12.93 45065.99 0 0
+INFO:__main__:Sent: 12.93 45072.47 0 0
+INFO:__main__:Sent: 12.93 45078.93 0 0
+INFO:__main__:Sent: 12.93 45085.42 0 0
+INFO:__main__:Sent: 12.93 45091.90 0 0
+INFO:__main__:Sent: 12.93 45098.39 0 0
+INFO:__main__:Sent: 12.93 45104.87 0 0
+INFO:__main__:Sent: 12.93 45111.36 0 0
+INFO:__main__:Sent: 12.93 45117.84 0 0
+INFO:__main__:Sent: 12.93 45124.32 0 0
+INFO:__main__:Sent: 12.93 45130.81 0 0
+INFO:__main__:Sent: 12.93 45137.29 0 0
+INFO:__main__:Sent: 12.93 45143.78 0 0
+INFO:__main__:Sent: 12.93 45150.26 0 0
+INFO:__main__:Sent: 12.93 45156.75 0 0
+INFO:__main__:Sent: 12.93 45163.23 0 0
+INFO:__main__:Sent: 12.93 45169.71 0 0
+INFO:__main__:Sent: 12.93 45176.20 0 0
+INFO:__main__:Sent: 12.93 45182.68 0 0
+INFO:__main__:Sent: 12.93 45189.17 0 0
+INFO:__main__:Sent: 12.93 45195.65 0 0
+INFO:__main__:Sent: 12.93 45202.14 0 0
+INFO:__main__:Sent: 12.93 45208.62 0 0
+INFO:__main__:Sent: 12.93 45215.11 0 0
+INFO:__main__:Sent: 12.93 45221.59 0 0
+INFO:__main__:Sent: 12.93 45228.07 0 0
+INFO:__main__:Sent: 12.93 45234.56 0 0
+INFO:__main__:Sent: 12.93 45241.04 0 0
+INFO:__main__:Sent: 12.93 45247.53 0 0
+INFO:__main__:Sent: 12.93 45254.01 0 0
+INFO:__main__:Sent: 12.93 45260.50 0 0
+INFO:__main__:Sent: 12.93 45266.98 0 0
+INFO:__main__:Sent: 12.93 45273.46 0 0
+INFO:__main__:Sent: 12.93 45279.95 0 0
+INFO:__main__:Sent: 12.93 45286.43 0 0
+INFO:__main__:Sent: 12.93 45292.92 0 0
+INFO:__main__:Sent: 12.93 45299.40 0 0
+INFO:__main__:Sent: 12.93 45305.89 0 0
+INFO:__main__:Sent: 12.93 45312.37 0 0
+INFO:__main__:Sent: 12.93 45318.86 0 0
+INFO:__main__:Sent: 12.93 45325.34 0 0
+INFO:__main__:Sent: 12.93 45331.82 0 0
+INFO:__main__:Sent: 12.93 45338.31 0 0
+INFO:__main__:Sent: 12.93 45344.79 0 0
+INFO:__main__:Sent: 12.93 45351.28 0 0
+INFO:__main__:Sent: 12.93 45357.76 0 0
+INFO:__main__:Sent: 12.93 45364.25 0 0
+INFO:__main__:Sent: 12.93 45370.73 0 0
+INFO:__main__:Sent: 12.93 45377.21 0 0
+INFO:__main__:Sent: 12.93 45383.70 0 0
+INFO:__main__:Sent: 12.93 45390.18 0 0
+INFO:__main__:Sent: 12.93 45396.67 0 0
+INFO:__main__:Sent: 12.93 45403.15 0 0
+INFO:__main__:Sent: 12.93 45409.64 0 0
+INFO:__main__:Sent: 12.93 45416.12 0 0
+INFO:__main__:Sent: 12.93 45422.61 0 0
+INFO:__main__:Sent: 12.93 45429.09 0 0
+INFO:__main__:Sent: 12.93 45435.57 0 0
+INFO:__main__:Sent: 12.93 45442.06 0 0
+INFO:__main__:Sent: 12.93 45448.54 0 0
+INFO:__main__:Sent: 12.93 45455.03 0 0
+INFO:__main__:Sent: 12.93 45461.51 0 0
+INFO:__main__:Sent: 12.93 45468.00 0 0
+INFO:__main__:Sent: 12.93 45474.48 0 0
+INFO:__main__:Sent: 12.93 45480.96 0 0
+INFO:__main__:Sent: 12.93 45487.45 0 0
+INFO:__main__:Sent: 12.93 45493.93 0 0
+INFO:__main__:Sent: 12.93 45500.42 0 0
+INFO:__main__:Sent: 12.93 45506.90 0 0
+INFO:__main__:Sent: 12.93 45513.39 0 0
+INFO:__main__:Sent: 12.93 45519.22 0 0
+INFO:__main__:Sent: 12.93 45525.71 0 0
+INFO:__main__:Sent: 12.93 45532.19 0 0
+INFO:__main__:Sent: 12.93 45538.68 0 0
+INFO:__main__:Sent: 12.93 45545.16 0 0
+INFO:__main__:Sent: 12.93 45551.64 0 0
+INFO:__main__:Sent: 12.93 45558.13 0 0
+INFO:__main__:Sent: 12.93 45564.60 0 0
+INFO:__main__:Sent: 12.93 45571.09 0 0
+INFO:__main__:Sent: 12.93 45577.57 0 0
+INFO:__main__:Sent: 12.93 45584.05 0 0
+INFO:__main__:Sent: 12.93 45590.54 0 0
+INFO:__main__:Sent: 12.93 45597.02 0 0
+INFO:__main__:Sent: 12.93 45603.51 0 0
+INFO:__main__:Sent: 12.93 45609.99 0 0
+INFO:__main__:Sent: 12.90 45616.45 0 0
+INFO:__main__:Sent: 12.90 45622.90 0 0
+INFO:__main__:Sent: 12.93 45629.38 0 0
+INFO:__main__:Sent: 12.93 45635.86 0 0
+INFO:__main__:Sent: 12.90 45642.31 0 0
+INFO:__main__:Sent: 12.90 45648.76 0 0
+INFO:__main__:Sent: 12.90 45655.20 0 0
+INFO:__main__:Sent: 12.90 45661.65 0 0
+INFO:__main__:Sent: 12.90 45668.11 0 0
+INFO:__main__:Sent: 12.90 45674.57 0 0
+INFO:__main__:Sent: 12.90 45681.02 0 0
+INFO:__main__:Sent: 12.93 45687.48 0 0
+INFO:__main__:Sent: 12.93 45693.97 0 0
+INFO:__main__:Sent: 12.90 45700.43 0 0
+INFO:__main__:Sent: 12.90 45706.88 0 0
+INFO:__main__:Sent: 12.90 45713.32 0 0
+INFO:__main__:Sent: 12.93 45719.80 0 0
+INFO:__main__:Sent: 12.93 45726.28 0 0
+INFO:__main__:Sent: 12.93 45732.75 0 0
+INFO:__main__:Sent: 12.93 45739.21 0 0
+INFO:__main__:Sent: 12.90 45745.66 0 0
+INFO:__main__:Sent: 12.90 45752.11 0 0
+INFO:__main__:Sent: 12.90 45758.55 0 0
+INFO:__main__:Sent: 12.90 45765.00 0 0
+INFO:__main__:Sent: 12.93 45771.48 0 0
+INFO:__main__:Sent: 12.93 45777.96 0 0
+INFO:__main__:Sent: 12.93 45784.45 0 0
+INFO:__main__:Sent: 12.93 45790.93 0 0
+INFO:__main__:Sent: 12.93 45797.41 0 0
+INFO:__main__:Sent: 12.93 45803.90 0 0
+INFO:__main__:Sent: 12.93 45810.38 0 0
+INFO:__main__:Sent: 12.93 45816.87 0 0
+INFO:__main__:Sent: 12.93 45823.35 0 0
+INFO:__main__:Sent: 12.93 45829.84 0 0
+INFO:__main__:Sent: 12.93 45836.32 0 0
+INFO:__main__:Sent: 12.90 45842.78 0 0
+INFO:__main__:Sent: 12.90 45849.24 0 0
+INFO:__main__:Sent: 12.93 45855.72 0 0
+INFO:__main__:Sent: 12.93 45862.20 0 0
+INFO:__main__:Sent: 12.93 45868.69 0 0
+INFO:__main__:Sent: 12.93 45875.17 0 0
+INFO:__main__:Sent: 12.93 45881.66 0 0
+INFO:__main__:Sent: 12.93 45888.14 0 0
+INFO:__main__:Sent: 12.93 45894.63 0 0
+INFO:__main__:Sent: 12.93 45901.11 0 0
+INFO:__main__:Sent: 12.93 45907.59 0 0
+INFO:__main__:Sent: 12.93 45914.08 0 0
+INFO:__main__:Sent: 12.93 45920.56 0 0
+INFO:__main__:Sent: 12.93 45927.05 0 0
+INFO:__main__:Sent: 12.93 45933.53 0 0
+INFO:__main__:Sent: 12.93 45940.01 0 0
+INFO:__main__:Sent: 12.93 45946.50 0 0
+INFO:__main__:Sent: 12.93 45952.98 0 0
+INFO:__main__:Sent: 12.93 45959.46 0 0
+INFO:__main__:Sent: 12.93 45965.95 0 0
+INFO:__main__:Sent: 12.93 45972.43 0 0
+INFO:__main__:Sent: 12.93 45978.92 0 0
+INFO:__main__:Sent: 12.93 45985.40 0 0
+INFO:__main__:Sent: 12.93 45991.89 0 0
+INFO:__main__:Sent: 12.93 45998.37 0 0
+INFO:__main__:Sent: 12.93 46004.86 0 0
+INFO:__main__:Sent: 12.93 46011.34 0 0
+INFO:__main__:Sent: 12.93 46017.82 0 0
+INFO:__main__:Sent: 12.93 46024.31 0 0
+INFO:__main__:Sent: 12.93 46030.79 0 0
+INFO:__main__:Sent: 12.93 46037.28 0 0
+INFO:__main__:Sent: 12.93 46043.76 0 0
+INFO:__main__:Sent: 12.93 46050.25 0 0
+INFO:__main__:Sent: 12.93 46056.73 0 0
+INFO:__main__:Sent: 12.93 46063.21 0 0
+INFO:__main__:Sent: 12.93 46069.70 0 0
+INFO:__main__:Sent: 12.93 46076.18 0 0
+INFO:__main__:Sent: 12.93 46082.67 0 0
+INFO:__main__:Sent: 12.93 46089.15 0 0
+INFO:__main__:Sent: 12.93 46095.64 0 0
+INFO:__main__:Sent: 12.93 46102.12 0 0
+INFO:__main__:Sent: 12.93 46108.61 0 0
+INFO:__main__:Sent: 12.93 46115.09 0 0
+INFO:__main__:Sent: 12.93 46121.57 0 0
+INFO:__main__:Sent: 12.93 46128.06 0 0
+INFO:__main__:Sent: 12.93 46134.54 0 0
+INFO:__main__:Sent: 12.93 46141.03 0 0
+INFO:__main__:Sent: 12.93 46147.51 0 0
+INFO:__main__:Sent: 12.93 46154.00 0 0
+INFO:__main__:Sent: 12.93 46160.48 0 0
+INFO:__main__:Sent: 12.93 46166.96 0 0
+INFO:__main__:Sent: 12.93 46173.45 0 0
+INFO:__main__:Sent: 12.93 46179.93 0 0
+INFO:__main__:Sent: 12.93 46186.42 0 0
+INFO:__main__:Sent: 12.93 46192.90 0 0
+INFO:__main__:Sent: 12.93 46199.39 0 0
+INFO:__main__:Sent: 12.93 46205.87 0 0
+INFO:__main__:Sent: 12.93 46212.36 0 0
+INFO:__main__:Sent: 12.93 46218.84 0 0
+INFO:__main__:Sent: 12.93 46225.32 0 0
+INFO:__main__:Sent: 12.93 46231.81 0 0
+INFO:__main__:Sent: 12.93 46238.29 0 0
+INFO:__main__:Sent: 12.93 46244.78 0 0
+INFO:__main__:Sent: 12.93 46251.26 0 0
+INFO:__main__:Sent: 12.93 46257.75 0 0
+INFO:__main__:Sent: 12.93 46264.23 0 0
+INFO:__main__:Sent: 12.93 46270.71 0 0
+INFO:__main__:Sent: 12.93 46277.20 0 0
+INFO:__main__:Sent: 12.93 46283.68 0 0
+INFO:__main__:Sent: 12.93 46290.17 0 0
+INFO:__main__:Sent: 12.93 46296.65 0 0
+INFO:__main__:Sent: 12.90 46303.12 0 0
+INFO:__main__:Sent: 12.90 46309.57 0 0
+INFO:__main__:Sent: 12.90 46316.01 0 0
+INFO:__main__:Sent: 12.90 46322.46 0 0
+INFO:__main__:Sent: 12.90 46328.91 0 0
+INFO:__main__:Sent: 12.90 46335.36 0 0
+INFO:__main__:Sent: 12.93 46341.83 0 0
+INFO:__main__:Sent: 12.93 46348.32 0 0
+INFO:__main__:Sent: 12.93 46354.80 0 0
+INFO:__main__:Sent: 12.90 46361.26 0 0
+INFO:__main__:Sent: 12.90 46367.71 0 0
+INFO:__main__:Sent: 12.93 46374.18 0 0
+INFO:__main__:Sent: 12.90 46380.66 0 0
+INFO:__main__:Sent: 12.93 46387.14 0 0
+INFO:__main__:Sent: 12.93 46393.63 0 0
+INFO:__main__:Sent: 12.93 46400.11 0 0
+INFO:__main__:Sent: 12.93 46406.59 0 0
+INFO:__main__:Sent: 12.93 46413.08 0 0
+INFO:__main__:Sent: 12.93 46419.56 0 0
+INFO:__main__:Sent: 12.93 46426.05 0 0
+INFO:__main__:Sent: 12.93 46432.53 0 0
+INFO:__main__:Sent: 12.93 46439.02 0 0
+INFO:__main__:Sent: 12.90 46445.50 0 0
+INFO:__main__:Sent: 12.93 46451.95 0 0
+INFO:__main__:Sent: 12.93 46458.43 0 0
+INFO:__main__:Sent: 12.93 46464.91 0 0
+INFO:__main__:Sent: 12.93 46471.40 0 0
+INFO:__main__:Sent: 12.90 46477.85 0 0
+INFO:__main__:Sent: 12.90 46484.30 0 0
+INFO:__main__:Sent: 12.90 46490.74 0 0
+INFO:__main__:Sent: 12.90 46497.19 0 0
+INFO:__main__:Sent: 12.90 46503.63 0 0
+INFO:__main__:Sent: 12.90 46510.08 0 0
+INFO:__main__:Sent: 12.90 46516.53 0 0
+INFO:__main__:Sent: 12.93 46522.98 0 0
+INFO:__main__:Sent: 12.93 46529.44 0 0
+INFO:__main__:Sent: 12.90 46535.89 0 0
+INFO:__main__:Sent: 12.90 46542.34 0 0
+INFO:__main__:Sent: 12.90 46548.78 0 0
+INFO:__main__:Sent: 12.90 46555.23 0 0
+INFO:__main__:Sent: 12.90 46561.68 0 0
+INFO:__main__:Sent: 12.90 46568.12 0 0
+INFO:__main__:Sent: 12.90 46574.57 0 0
+INFO:__main__:Sent: 12.90 46581.01 0 0
+INFO:__main__:Sent: 12.90 46587.46 0 0
+INFO:__main__:Sent: 12.90 46593.90 0 0
+INFO:__main__:Sent: 12.90 46600.35 0 0
+INFO:__main__:Sent: 12.90 46606.79 0 0
+INFO:__main__:Sent: 12.93 46613.26 0 0
+INFO:__main__:Sent: 12.90 46619.72 0 0
+INFO:__main__:Sent: 12.90 46626.16 0 0
+INFO:__main__:Sent: 12.90 46632.61 0 0
+INFO:__main__:Sent: 12.90 46639.05 0 0
+INFO:__main__:Sent: 12.90 46645.50 0 0
+INFO:__main__:Sent: 12.90 46651.95 0 0
+INFO:__main__:Sent: 12.90 46658.39 0 0
+INFO:__main__:Sent: 12.90 46664.84 0 0
+INFO:__main__:Sent: 12.90 46671.28 0 0
+INFO:__main__:Sent: 12.90 46677.73 0 0
+INFO:__main__:Sent: 12.90 46684.18 0 0
+INFO:__main__:Sent: 12.90 46690.63 0 0
+INFO:__main__:Sent: 12.90 46697.07 0 0
+INFO:__main__:Sent: 12.90 46703.52 0 0
+INFO:__main__:Sent: 12.90 46709.96 0 0
+INFO:__main__:Sent: 12.90 46716.41 0 0
+INFO:__main__:Sent: 12.90 46722.85 0 0
+INFO:__main__:Sent: 12.90 46729.30 0 0
+INFO:__main__:Sent: 12.90 46735.74 0 0
+INFO:__main__:Sent: 12.90 46742.19 0 0
+INFO:__main__:Sent: 12.90 46748.63 0 0
+INFO:__main__:Sent: 12.90 46755.08 0 0
+INFO:__main__:Sent: 12.90 46761.52 0 0
+INFO:__main__:Sent: 12.90 46767.97 0 0
+INFO:__main__:Sent: 12.90 46774.41 0 0
+INFO:__main__:Sent: 12.90 46780.86 0 0
+INFO:__main__:Sent: 12.90 46787.30 0 0
+INFO:__main__:Sent: 12.90 46793.75 0 0
+INFO:__main__:Sent: 12.90 46800.20 0 0
+INFO:__main__:Sent: 12.90 46806.64 0 0
+INFO:__main__:Sent: 12.90 46813.09 0 0
+INFO:__main__:Sent: 12.90 46819.53 0 0
+INFO:__main__:Sent: 12.90 46825.98 0 0
+INFO:__main__:Sent: 12.90 46832.42 0 0
+INFO:__main__:Sent: 12.90 46838.87 0 0
+INFO:__main__:Sent: 12.90 46845.31 0 0
+INFO:__main__:Sent: 12.90 46851.76 0 0
+INFO:__main__:Sent: 12.90 46858.20 0 0
+INFO:__main__:Sent: 12.90 46864.65 0 0
+INFO:__main__:Sent: 12.90 46871.09 0 0
+INFO:__main__:Sent: 12.90 46877.54 0 0
+INFO:__main__:Sent: 12.90 46883.98 0 0
+INFO:__main__:Sent: 12.90 46890.43 0 0
+INFO:__main__:Sent: 12.90 46896.88 0 0
+INFO:__main__:Sent: 12.90 46903.32 0 0
+INFO:__main__:Sent: 12.90 46909.77 0 0
+INFO:__main__:Sent: 12.93 46916.23 0 0
+INFO:__main__:Sent: 12.90 46922.68 0 0
+INFO:__main__:Sent: 12.90 46929.13 0 0
+INFO:__main__:Sent: 12.90 46935.57 0 0
+INFO:__main__:Sent: 12.90 46942.02 0 0
+INFO:__main__:Sent: 12.93 46948.46 0 0
+INFO:__main__:Sent: 12.90 46954.91 0 0
+INFO:__main__:Sent: 12.90 46961.36 0 0
+INFO:__main__:Sent: 12.90 46967.80 0 0
+INFO:__main__:Sent: 12.90 46974.25 0 0
+INFO:__main__:Sent: 12.93 46980.71 0 0
+INFO:__main__:Sent: 12.90 46987.19 0 0
+INFO:__main__:Sent: 12.90 46993.64 0 0
+INFO:__main__:Sent: 12.90 47000.08 0 0
+INFO:__main__:Sent: 12.93 47006.55 0 0
+INFO:__main__:Sent: 12.93 47013.04 0 0
+INFO:__main__:Sent: 12.90 47019.50 0 0
+INFO:__main__:Sent: 12.90 47025.94 0 0
+INFO:__main__:Sent: 12.93 47032.40 0 0
+INFO:__main__:Sent: 12.93 47038.88 0 0
+INFO:__main__:Sent: 12.90 47045.34 0 0
+INFO:__main__:Sent: 12.90 47051.79 0 0
+INFO:__main__:Sent: 12.90 47058.23 0 0
+INFO:__main__:Sent: 12.90 47064.68 0 0
+INFO:__main__:Sent: 12.90 47071.13 0 0
+INFO:__main__:Sent: 12.90 47077.57 0 0
+INFO:__main__:Sent: 12.90 47084.02 0 0
+INFO:__main__:Sent: 12.90 47090.46 0 0
+INFO:__main__:Sent: 12.90 47096.91 0 0
+INFO:__main__:Sent: 12.93 47103.37 0 0
+INFO:__main__:Sent: 12.90 47109.82 0 0
+INFO:__main__:Sent: 12.90 47116.26 0 0
+INFO:__main__:Sent: 12.90 47122.71 0 0
+INFO:__main__:Sent: 12.90 47129.15 0 0
+INFO:__main__:Sent: 12.93 47135.61 0 0
+INFO:__main__:Sent: 12.93 47142.09 0 0
+INFO:__main__:Sent: 12.93 47148.58 0 0
+INFO:__main__:Sent: 12.93 47155.06 0 0
+INFO:__main__:Sent: 12.93 47161.55 0 0
+INFO:__main__:Sent: 12.93 47168.03 0 0
+INFO:__main__:Sent: 12.93 47174.52 0 0
+INFO:__main__:Sent: 12.90 47180.98 0 0
+INFO:__main__:Sent: 12.93 47187.46 0 0
+INFO:__main__:Sent: 12.93 47193.95 0 0
+INFO:__main__:Sent: 12.93 47200.43 0 0
+INFO:__main__:Sent: 12.93 47206.92 0 0
+INFO:__main__:Sent: 12.93 47213.40 0 0
+INFO:__main__:Sent: 12.93 47219.88 0 0
+INFO:__main__:Sent: 12.93 47226.35 0 0
+INFO:__main__:Sent: 12.93 47232.83 0 0
+INFO:__main__:Sent: 12.93 47239.32 0 0
+INFO:__main__:Sent: 12.93 47245.80 0 0
+INFO:__main__:Sent: 12.93 47252.29 0 0
+INFO:__main__:Sent: 12.90 47258.77 0 0
+INFO:__main__:Sent: 12.90 47265.21 0 0
+INFO:__main__:Sent: 12.90 47271.66 0 0
+INFO:__main__:Sent: 12.90 47278.10 0 0
+INFO:__main__:Sent: 12.90 47284.55 0 0
+INFO:__main__:Sent: 12.90 47291.01 0 0
+INFO:__main__:Sent: 12.90 47297.46 0 0
+INFO:__main__:Sent: 12.90 47303.91 0 0
+INFO:__main__:Sent: 12.90 47310.35 0 0
+INFO:__main__:Sent: 12.90 47316.80 0 0
+INFO:__main__:Sent: 12.90 47323.24 0 0
+INFO:__main__:Sent: 12.90 47329.69 0 0
+INFO:__main__:Sent: 12.90 47336.13 0 0
+INFO:__main__:Sent: 12.90 47342.58 0 0
+INFO:__main__:Sent: 12.93 47349.03 0 0
+INFO:__main__:Sent: 12.90 47355.49 0 0
+INFO:__main__:Sent: 12.90 47361.93 0 0
+INFO:__main__:Sent: 12.90 47368.38 0 0
+INFO:__main__:Sent: 12.90 47374.83 0 0
+INFO:__main__:Sent: 12.90 47381.28 0 0
+INFO:__main__:Sent: 12.93 47387.73 0 0
+INFO:__main__:Sent: 12.90 47394.20 0 0
+INFO:__main__:Sent: 12.90 47400.64 0 0
+INFO:__main__:Sent: 12.90 47407.09 0 0
+INFO:__main__:Sent: 12.90 47413.53 0 0
+INFO:__main__:Sent: 12.90 47419.98 0 0
+INFO:__main__:Sent: 12.90 47426.42 0 0
+INFO:__main__:Sent: 12.90 47432.22 0 0
+INFO:__main__:Sent: 12.90 47438.67 0 0
+INFO:__main__:Sent: 12.93 47445.15 0 0
+INFO:__main__:Sent: 12.90 47451.62 0 0
+INFO:__main__:Sent: 12.90 47458.07 0 0
+INFO:__main__:Sent: 12.90 47464.51 0 0
+INFO:__main__:Sent: 12.93 47470.97 0 0
+INFO:__main__:Sent: 12.93 47477.45 0 0
+INFO:__main__:Sent: 12.90 47483.92 0 0
+INFO:__main__:Sent: 12.90 47490.37 0 0
+INFO:__main__:Sent: 12.90 47496.81 0 0
+INFO:__main__:Sent: 12.90 47503.26 0 0
+INFO:__main__:Sent: 12.90 47509.70 0 0
+INFO:__main__:Sent: 12.90 47516.15 0 0
+INFO:__main__:Sent: 12.90 47522.60 0 0
+INFO:__main__:Sent: 12.90 47529.06 0 0
+INFO:__main__:Sent: 12.90 47535.50 0 0
+INFO:__main__:Sent: 12.90 47541.95 0 0
+INFO:__main__:Sent: 12.90 47548.39 0 0
+INFO:__main__:Sent: 12.90 47554.84 0 0
+INFO:__main__:Sent: 12.90 47561.29 0 0
+INFO:__main__:Sent: 12.90 47567.73 0 0
+INFO:__main__:Sent: 12.93 47574.19 0 0
+INFO:__main__:Sent: 12.90 47580.65 0 0
+INFO:__main__:Sent: 12.90 47587.09 0 0
+INFO:__main__:Sent: 12.93 47593.57 0 0
+INFO:__main__:Sent: 12.90 47600.05 0 0
+INFO:__main__:Sent: 12.93 47606.52 0 0
+INFO:__main__:Sent: 12.93 47613.01 0 0
+INFO:__main__:Sent: 12.93 47619.49 0 0
+INFO:__main__:Sent: 12.93 47625.96 0 0
+INFO:__main__:Sent: 12.93 47632.45 0 0
+INFO:__main__:Sent: 12.93 47638.93 0 0
+INFO:__main__:Sent: 12.93 47645.41 0 0
+INFO:__main__:Sent: 12.93 47651.90 0 0
+INFO:__main__:Sent: 12.93 47658.38 0 0
+INFO:__main__:Sent: 12.93 47664.86 0 0
+INFO:__main__:Sent: 12.90 47671.32 0 0
+INFO:__main__:Sent: 12.90 47677.78 0 0
+INFO:__main__:Sent: 12.90 47684.22 0 0
+INFO:__main__:Sent: 12.90 47690.67 0 0
+INFO:__main__:Sent: 12.90 47697.11 0 0
+INFO:__main__:Sent: 12.90 47703.56 0 0
+INFO:__main__:Sent: 12.90 47710.01 0 0
+INFO:__main__:Sent: 12.90 47716.45 0 0
+INFO:__main__:Sent: 12.90 47722.90 0 0
+INFO:__main__:Sent: 12.90 47729.34 0 0
+INFO:__main__:Sent: 12.90 47735.79 0 0
+INFO:__main__:Sent: 12.90 47742.24 0 0
+INFO:__main__:Sent: 12.90 47748.68 0 0
+INFO:__main__:Sent: 12.90 47755.13 0 0
+INFO:__main__:Sent: 12.90 47761.57 0 0
+INFO:__main__:Sent: 12.93 47768.03 0 0
+INFO:__main__:Sent: 12.93 47774.51 0 0
+INFO:__main__:Sent: 12.90 47780.98 0 0
+INFO:__main__:Sent: 12.93 47787.44 0 0
+INFO:__main__:Sent: 12.90 47793.89 0 0
+INFO:__main__:Sent: 12.90 47800.34 0 0
+INFO:__main__:Sent: 12.90 47806.78 0 0
+INFO:__main__:Sent: 12.90 47813.23 0 0
+INFO:__main__:Sent: 12.90 47819.67 0 0
+INFO:__main__:Sent: 12.90 47826.12 0 0
+INFO:__main__:Sent: 12.90 47832.56 0 0
+INFO:__main__:Sent: 12.93 47839.02 0 0
+INFO:__main__:Sent: 12.93 47845.51 0 0
+INFO:__main__:Sent: 12.93 47851.99 0 0
+INFO:__main__:Sent: 12.90 47858.46 0 0
+INFO:__main__:Sent: 12.90 47864.91 0 0
+INFO:__main__:Sent: 12.90 47871.36 0 0
+INFO:__main__:Sent: 12.90 47877.80 0 0
+INFO:__main__:Sent: 12.90 47884.25 0 0
+INFO:__main__:Sent: 12.90 47890.69 0 0
+INFO:__main__:Sent: 12.93 47897.17 0 0
+INFO:__main__:Sent: 12.93 47903.66 0 0
+INFO:__main__:Sent: 12.93 47910.13 0 0
+INFO:__main__:Sent: 12.93 47916.61 0 0
+INFO:__main__:Sent: 12.93 47923.10 0 0
+INFO:__main__:Sent: 12.93 47929.58 0 0
+INFO:__main__:Sent: 12.90 47936.03 0 0
+INFO:__main__:Sent: 12.90 47942.48 0 0
+INFO:__main__:Sent: 12.90 47948.93 0 0
+INFO:__main__:Sent: 12.90 47955.38 0 0
+INFO:__main__:Sent: 12.90 47961.82 0 0
+INFO:__main__:Sent: 12.90 47968.27 0 0
+INFO:__main__:Sent: 12.90 47974.71 0 0
+INFO:__main__:Sent: 12.90 47981.16 0 0
+INFO:__main__:Sent: 12.93 47987.62 0 0
+INFO:__main__:Sent: 12.90 47994.07 0 0
+INFO:__main__:Sent: 12.90 48000.52 0 0
+INFO:__main__:Sent: 12.90 48006.96 0 0
+INFO:__main__:Sent: 12.90 48013.41 0 0
+INFO:__main__:Sent: 12.90 48019.85 0 0
+INFO:__main__:Sent: 12.90 48026.30 0 0
+INFO:__main__:Sent: 12.93 48032.75 0 0
+INFO:__main__:Sent: 12.90 48039.22 0 0
+INFO:__main__:Sent: 12.90 48045.67 0 0
+INFO:__main__:Sent: 12.90 48052.11 0 0
+INFO:__main__:Sent: 12.90 48058.56 0 0
+INFO:__main__:Sent: 12.90 48065.01 0 0
+INFO:__main__:Sent: 12.90 48071.45 0 0
+INFO:__main__:Sent: 12.90 48077.90 0 0
+INFO:__main__:Sent: 12.90 48084.34 0 0
+INFO:__main__:Sent: 12.93 48090.79 0 0
+INFO:__main__:Sent: 12.93 48097.26 0 0
+INFO:__main__:Sent: 12.90 48103.74 0 0
+INFO:__main__:Sent: 12.90 48110.20 0 0
+INFO:__main__:Sent: 12.90 48116.64 0 0
+INFO:__main__:Sent: 12.90 48123.09 0 0
+INFO:__main__:Sent: 12.93 48129.54 0 0
+INFO:__main__:Sent: 12.93 48136.02 0 0
+INFO:__main__:Sent: 12.90 48142.50 0 0
+INFO:__main__:Sent: 12.90 48148.96 0 0
+INFO:__main__:Sent: 12.90 48155.41 0 0
+INFO:__main__:Sent: 12.90 48161.85 0 0
+INFO:__main__:Sent: 12.90 48168.32 0 0
+INFO:__main__:Sent: 12.90 48174.76 0 0
+INFO:__main__:Sent: 12.90 48181.21 0 0
+INFO:__main__:Sent: 12.90 48187.65 0 0
+INFO:__main__:Sent: 12.90 48194.10 0 0
+INFO:__main__:Sent: 12.90 48200.54 0 0
+INFO:__main__:Sent: 12.90 48206.99 0 0
+INFO:__main__:Sent: 12.90 48213.43 0 0
+INFO:__main__:Sent: 12.90 48219.88 0 0
+INFO:__main__:Sent: 12.90 48226.32 0 0
+INFO:__main__:Sent: 12.90 48232.77 0 0
+INFO:__main__:Sent: 12.90 48239.21 0 0
+INFO:__main__:Sent: 12.90 48245.66 0 0
+INFO:__main__:Sent: 12.90 48252.11 0 0
+INFO:__main__:Sent: 12.90 48258.55 0 0
+INFO:__main__:Sent: 12.90 48265.00 0 0
+INFO:__main__:Sent: 12.90 48271.44 0 0
+INFO:__main__:Sent: 12.90 48277.89 0 0
+INFO:__main__:Sent: 12.90 48284.33 0 0
+INFO:__main__:Sent: 12.90 48290.78 0 0
+INFO:__main__:Sent: 12.90 48297.22 0 0
+INFO:__main__:Sent: 12.90 48303.67 0 0
+INFO:__main__:Sent: 12.90 48310.11 0 0
+INFO:__main__:Sent: 12.90 48316.56 0 0
+INFO:__main__:Sent: 12.90 48323.00 0 0
+INFO:__main__:Sent: 12.90 48329.45 0 0
+INFO:__main__:Sent: 12.90 48335.89 0 0
+INFO:__main__:Sent: 12.90 48342.34 0 0
+INFO:__main__:Sent: 12.90 48348.79 0 0
+INFO:__main__:Sent: 12.90 48355.23 0 0
+INFO:__main__:Sent: 12.90 48361.68 0 0
+INFO:__main__:Sent: 12.90 48368.12 0 0
+INFO:__main__:Sent: 12.90 48374.57 0 0
+INFO:__main__:Sent: 12.90 48381.01 0 0
+INFO:__main__:Sent: 12.90 48387.46 0 0
+INFO:__main__:Sent: 12.90 48393.90 0 0
+INFO:__main__:Sent: 12.90 48400.35 0 0
+INFO:__main__:Sent: 12.90 48406.79 0 0
+INFO:__main__:Sent: 12.90 48413.24 0 0
+INFO:__main__:Sent: 12.90 48419.68 0 0
+INFO:__main__:Sent: 12.90 48426.13 0 0
+INFO:__main__:Sent: 12.90 48432.57 0 0
+INFO:__main__:Sent: 12.90 48439.02 0 0
+INFO:__main__:Sent: 12.90 48445.46 0 0
+INFO:__main__:Sent: 12.90 48451.91 0 0
+INFO:__main__:Sent: 12.90 48458.36 0 0
+INFO:__main__:Sent: 12.90 48464.80 0 0
+INFO:__main__:Sent: 12.90 48471.25 0 0
+INFO:__main__:Sent: 12.90 48477.69 0 0
+INFO:__main__:Sent: 12.90 48484.14 0 0
+INFO:__main__:Sent: 12.90 48490.58 0 0
+INFO:__main__:Sent: 12.90 48497.03 0 0
+INFO:__main__:Sent: 12.90 48503.47 0 0
+INFO:__main__:Sent: 12.90 48509.92 0 0
+INFO:__main__:Sent: 12.90 48516.36 0 0
+INFO:__main__:Sent: 12.90 48522.81 0 0
+INFO:__main__:Sent: 12.90 48529.25 0 0
+INFO:__main__:Sent: 12.90 48535.70 0 0
+INFO:__main__:Sent: 12.90 48542.14 0 0
+INFO:__main__:Sent: 12.90 48548.59 0 0
+INFO:__main__:Sent: 12.90 48555.04 0 0
+INFO:__main__:Sent: 12.90 48561.48 0 0
+INFO:__main__:Sent: 12.90 48567.93 0 0
+INFO:__main__:Sent: 12.90 48574.37 0 0
+INFO:__main__:Sent: 12.90 48580.82 0 0
+INFO:__main__:Sent: 12.90 48587.26 0 0
+INFO:__main__:Sent: 12.90 48593.71 0 0
+INFO:__main__:Sent: 12.90 48600.15 0 0
+INFO:__main__:Sent: 12.90 48606.60 0 0
+INFO:__main__:Sent: 12.90 48613.04 0 0
+INFO:__main__:Sent: 12.90 48619.49 0 0
+INFO:__main__:Sent: 12.90 48625.93 0 0
+INFO:__main__:Sent: 12.90 48632.38 0 0
+INFO:__main__:Sent: 12.90 48638.82 0 0
+INFO:__main__:Sent: 12.90 48645.27 0 0
+INFO:__main__:Sent: 12.90 48651.71 0 0
+INFO:__main__:Sent: 12.90 48658.16 0 0
+INFO:__main__:Sent: 12.90 48664.61 0 0
+INFO:__main__:Sent: 12.90 48671.05 0 0
+INFO:__main__:Sent: 12.90 48677.50 0 0
+INFO:__main__:Sent: 12.90 48683.94 0 0
+INFO:__main__:Sent: 12.90 48690.39 0 0
+INFO:__main__:Sent: 12.90 48696.83 0 0
+INFO:__main__:Sent: 12.90 48703.28 0 0
+INFO:__main__:Sent: 12.90 48709.72 0 0
+INFO:__main__:Sent: 12.90 48716.17 0 0
+INFO:__main__:Sent: 12.90 48722.61 0 0
+INFO:__main__:Sent: 12.90 48729.06 0 0
+INFO:__main__:Sent: 12.90 48735.50 0 0
+INFO:__main__:Sent: 12.90 48741.95 0 0
+INFO:__main__:Sent: 12.90 48748.39 0 0
+INFO:__main__:Sent: 12.90 48754.84 0 0
+INFO:__main__:Sent: 12.90 48761.29 0 0
+INFO:__main__:Sent: 12.90 48767.73 0 0
+INFO:__main__:Sent: 12.90 48774.18 0 0
+INFO:__main__:Sent: 12.90 48780.62 0 0
+INFO:__main__:Sent: 12.90 48787.07 0 0
+INFO:__main__:Sent: 12.90 48793.51 0 0
+INFO:__main__:Sent: 12.90 48799.96 0 0
+INFO:__main__:Sent: 12.90 48806.40 0 0
+INFO:__main__:Sent: 12.90 48812.85 0 0
+INFO:__main__:Sent: 12.90 48819.29 0 0
+INFO:__main__:Sent: 12.90 48825.74 0 0
+INFO:__main__:Sent: 12.90 48832.18 0 0
+INFO:__main__:Sent: 12.90 48838.63 0 0
+INFO:__main__:Sent: 12.90 48845.07 0 0
+INFO:__main__:Sent: 12.90 48851.52 0 0
+INFO:__main__:Sent: 12.90 48857.96 0 0
+INFO:__main__:Sent: 12.90 48863.77 0 0
+INFO:__main__:Sent: 12.90 48870.21 0 0
+INFO:__main__:Sent: 12.90 48876.66 0 0
+INFO:__main__:Sent: 12.90 48883.10 0 0
+INFO:__main__:Sent: 12.90 48889.55 0 0
+INFO:__main__:Sent: 12.90 48895.99 0 0
+INFO:__main__:Sent: 12.90 48902.44 0 0
+INFO:__main__:Sent: 12.90 48908.88 0 0
+INFO:__main__:Sent: 12.90 48915.33 0 0
+INFO:__main__:Sent: 12.90 48921.77 0 0
+INFO:__main__:Sent: 12.90 48928.22 0 0
+INFO:__main__:Sent: 12.90 48934.66 0 0
+INFO:__main__:Sent: 12.90 48941.11 0 0
+INFO:__main__:Sent: 12.90 48947.55 0 0
+INFO:__main__:Sent: 12.90 48954.00 0 0
+INFO:__main__:Sent: 12.90 48960.45 0 0
+INFO:__main__:Sent: 12.90 48966.89 0 0
+INFO:__main__:Sent: 12.90 48973.34 0 0
+INFO:__main__:Sent: 12.90 48979.78 0 0
+INFO:__main__:Sent: 12.90 48986.23 0 0
+INFO:__main__:Sent: 12.90 48992.67 0 0
+INFO:__main__:Sent: 12.90 48999.12 0 0
+INFO:__main__:Sent: 12.90 49005.56 0 0
+INFO:__main__:Sent: 12.90 49012.01 0 0
+INFO:__main__:Sent: 12.90 49018.45 0 0
+INFO:__main__:Sent: 12.90 49024.90 0 0
+INFO:__main__:Sent: 12.90 49031.34 0 0
+INFO:__main__:Sent: 12.90 49037.79 0 0
+INFO:__main__:Sent: 12.90 49044.23 0 0
+INFO:__main__:Sent: 12.90 49050.68 0 0
+INFO:__main__:Sent: 12.90 49057.13 0 0
+INFO:__main__:Sent: 12.90 49063.57 0 0
+INFO:__main__:Sent: 12.90 49070.02 0 0
+INFO:__main__:Sent: 12.90 49076.46 0 0
+INFO:__main__:Sent: 12.90 49082.91 0 0
+INFO:__main__:Sent: 12.90 49089.35 0 0
+INFO:__main__:Sent: 12.90 49095.80 0 0
+INFO:__main__:Sent: 12.90 49102.24 0 0
+INFO:__main__:Sent: 12.90 49108.69 0 0
+INFO:__main__:Sent: 12.90 49115.13 0 0
+INFO:__main__:Sent: 12.90 49121.58 0 0
+INFO:__main__:Sent: 12.90 49128.02 0 0
+INFO:__main__:Sent: 12.90 49134.47 0 0
+INFO:__main__:Sent: 12.90 49140.91 0 0
+INFO:__main__:Sent: 12.90 49147.36 0 0
+INFO:__main__:Sent: 12.90 49153.80 0 0
+INFO:__main__:Sent: 12.90 49160.25 0 0
+INFO:__main__:Sent: 12.90 49166.70 0 0
+INFO:__main__:Sent: 12.90 49173.14 0 0
+INFO:__main__:Sent: 12.90 49179.59 0 0
+INFO:__main__:Sent: 12.90 49186.03 0 0
+INFO:__main__:Sent: 12.90 49192.48 0 0
+INFO:__main__:Sent: 12.90 49198.92 0 0
+INFO:__main__:Sent: 12.90 49205.37 0 0
+INFO:__main__:Sent: 12.90 49211.81 0 0
+INFO:__main__:Sent: 12.90 49218.26 0 0
+INFO:__main__:Sent: 12.90 49224.70 0 0
+INFO:__main__:Sent: 12.90 49231.15 0 0
+INFO:__main__:Sent: 12.90 49237.59 0 0
+INFO:__main__:Sent: 12.90 49244.04 0 0
+INFO:__main__:Sent: 12.90 49250.48 0 0
+INFO:__main__:Sent: 12.90 49256.93 0 0
+INFO:__main__:Sent: 12.90 49263.38 0 0
+INFO:__main__:Sent: 12.90 49269.82 0 0
+INFO:__main__:Sent: 12.90 49276.27 0 0
+INFO:__main__:Sent: 12.90 49282.71 0 0
+INFO:__main__:Sent: 12.90 49289.16 0 0
+INFO:__main__:Sent: 12.90 49295.60 0 0
+INFO:__main__:Sent: 12.90 49302.05 0 0
+INFO:__main__:Sent: 12.90 49308.49 0 0
+INFO:__main__:Sent: 12.90 49314.94 0 0
+INFO:__main__:Sent: 12.90 49321.38 0 0
+INFO:__main__:Sent: 12.90 49327.83 0 0
+INFO:__main__:Sent: 12.90 49334.27 0 0
+INFO:__main__:Sent: 12.90 49340.72 0 0
+INFO:__main__:Sent: 12.90 49347.16 0 0
+INFO:__main__:Sent: 12.90 49353.61 0 0
+INFO:__main__:Sent: 12.90 49360.05 0 0
+INFO:__main__:Sent: 12.90 49366.50 0 0
+INFO:__main__:Sent: 12.90 49372.95 0 0
+INFO:__main__:Sent: 12.90 49379.39 0 0
+INFO:__main__:Sent: 12.90 49385.84 0 0
+INFO:__main__:Sent: 12.90 49392.28 0 0
+INFO:__main__:Sent: 12.90 49398.73 0 0
+INFO:__main__:Sent: 12.90 49405.17 0 0
+INFO:__main__:Sent: 12.90 49411.62 0 0
+INFO:__main__:Sent: 12.90 49418.06 0 0
+INFO:__main__:Sent: 12.90 49424.51 0 0
+INFO:__main__:Sent: 12.90 49430.95 0 0
+INFO:__main__:Sent: 12.90 49437.40 0 0

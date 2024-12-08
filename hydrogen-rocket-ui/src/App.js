@@ -26,7 +26,7 @@ class App extends BaseApp {
     }
 
     handleMessage = (event) => {
-        console.log("WebSocket message received:", event);
+        // console.log("WebSocket message received:", event);
     
         let rawData;
     
@@ -40,9 +40,8 @@ class App extends BaseApp {
                 return;
             }
         } else if (typeof event.data === "string") {
-            console.log("Data type is string.");
             rawData = event.data;
-            console.log("Raw string data:", rawData);
+            // console.log("Raw string data:", rawData);
         } else {
             console.warn("Unsupported data type:", event.data);
             return;
@@ -54,7 +53,7 @@ class App extends BaseApp {
                 .split(/\s+/)
                 .map((val, index) => (index < 2 ? parseFloat(val) : parseInt(val, 10)));
     
-            console.log("Parsed data:", { current, charge, ignition, language });
+            // console.log("Parsed data:", { current, charge, ignition, language });
     
             this.setState({
                 rawArduinoData: rawData, // Save raw data for debugging
@@ -66,9 +65,7 @@ class App extends BaseApp {
                 },
                 language: ["Hebrew", "English", "Arabic"][language || 0], // Update language directly
             });
-    
-            console.log("Updated state:", this.state);
-    
+        
             // Trigger transition on ignition button press if charge is sufficient
             if (ignition === 1 && charge >= 100) {
                 console.log("Ignition button pressed with sufficient charge. Transitioning to ending screen...");
@@ -93,6 +90,7 @@ class App extends BaseApp {
     }
 
     handleKeyPress = (event) => {
+        console.log("Key pressed:", event.code);
         if (event.code === "Enter") {
             this.moveToNextScreen();
         } else if (event.code === "Space") {
@@ -111,12 +109,20 @@ class App extends BaseApp {
     };
 
     changeLanguage = () => {
+        if (this.languageChangeTimeout) return; // Prevent rapid key presses
         const languages = ["Hebrew", "English", "Arabic"];
         this.setState((prevState) => {
             const currentIndex = languages.indexOf(prevState.language);
             const nextIndex = (currentIndex + 1) % languages.length;
+            console.log("Changing language to:", languages[nextIndex]);
+            console.log("Current language:", this.state.language);
             return { language: languages[nextIndex] };
         });
+    
+        // Add a short timeout to debounce rapid key presses
+        this.languageChangeTimeout = setTimeout(() => {
+            this.languageChangeTimeout = null;
+        }, 300); // Adjust delay as needed (300ms works well for debouncing)
     };
 
     renderScreen() {
