@@ -1,12 +1,12 @@
 import React from "react";
 import { BaseApp } from "./BaseApp";
 import "./App.css";
-import startHebrew from './assets/start_screen/start_hebrew.png';
-import startEnglish from './assets/start_screen/start_english.png';
-import startArabic from './assets/start_screen/start_arabic.png';
-import endHebrew from './assets/end_screen/end_hebrew.png';
-import endEnglish from './assets/end_screen/end_english.png';
-import endArabic from './assets/end_screen/end_arabic.png';
+import startHebrew from './assets/start_screen/start_new_heb.jpg';
+import startEnglish from './assets/start_screen/start_new_eng.png';
+import startArabic from './assets/start_screen/start_new_arab.png';
+import endHebrew from './assets/end_screen/end heb.png';
+import endEnglish from './assets/end_screen/end eng.png';
+import endArabic from './assets/end_screen/end arab.png';
 
 class App extends BaseApp {
     constructor(props) {
@@ -31,19 +31,10 @@ class App extends BaseApp {
         let rawData;
     
         if (event.data instanceof ArrayBuffer) {
-            console.log("Data type is ArrayBuffer.");
-            try {
-                rawData = new TextDecoder("utf-8").decode(event.data);
-                console.log("Decoded ArrayBuffer data:", rawData);
-            } catch (error) {
-                console.error("Failed to decode WebSocket ArrayBuffer data:", error);
-                return;
-            }
+            rawData = new TextDecoder("utf-8").decode(event.data);
         } else if (typeof event.data === "string") {
             rawData = event.data;
-            // console.log("Raw string data:", rawData);
         } else {
-            console.warn("Unsupported data type:", event.data);
             return;
         }
     
@@ -55,16 +46,32 @@ class App extends BaseApp {
     
             // console.log("Parsed data:", { current, charge, ignition, language });
     
-            this.setState({
-                rawArduinoData: rawData, // Save raw data for debugging
+              // Update Arduino data
+        this.setState((prevState) => {
+            const newLanguage = ["Hebrew", "English", "Arabic"][language || 0];
+
+            // Only update language if it is different from the current language AND no manual change is happening
+            const updatedLanguage =
+                prevState.language === newLanguage ? prevState.language : newLanguage;
+
+            return {
+                rawArduinoData: rawData,
                 arduinoData: {
                     current: current || 0,
                     charge: charge || 0,
                     ignition: ignition || 0,
                     language: language || 0,
                 },
-                language: ["Hebrew", "English", "Arabic"][language || 0], // Update language directly
-            });
+                language: prevState.languageChangeManual
+                    ? prevState.language // Keep the manually set language
+                    : updatedLanguage, // Update only if not manually changed
+            };
+        });
+
+            if (current > 1 && this.state.screen !== "main") {
+                console.log("Charge exceeded threshold. Moving to measuring screen...");
+                this.setState({ screen: "main" });
+            }
         
             // Trigger transition on ignition button press if charge is sufficient
             if (ignition === 1 && charge >= 100) {
@@ -79,6 +86,19 @@ class App extends BaseApp {
         }
     };
     
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.screen === "ending" && prevState.screen !== "ending") {
+            this.endingTimeout = setTimeout(() => {
+                console.log("Timeout reached. Returning to opening screen...");
+                this.setState({ screen: "opening" });
+            }, 30000); // 30 seconds
+        }
+    
+        if (prevState.screen === "ending" && this.state.screen !== "ending") {
+            clearTimeout(this.endingTimeout); // Clear timeout if user leaves ending screen early
+        }
+    }
+    
     componentDidMount() {
         super.componentDidMount(); // Set up WebSocket connection
         window.addEventListener("keydown", this.handleKeyPress);
@@ -87,6 +107,7 @@ class App extends BaseApp {
     componentWillUnmount() {
         super.componentWillUnmount(); // Clean up WebSocket and listeners
         window.removeEventListener("keydown", this.handleKeyPress);
+        clearTimeout(this.endingTimeout);
     }
 
     handleKeyPress = (event) => {
@@ -115,15 +136,23 @@ class App extends BaseApp {
             const currentIndex = languages.indexOf(prevState.language);
             const nextIndex = (currentIndex + 1) % languages.length;
             console.log("Changing language to:", languages[nextIndex]);
-            console.log("Current language:", this.state.language);
-            return { language: languages[nextIndex] };
+            return { 
+                language: languages[nextIndex],
+                languageChangeManual: true, // Set manual change flag
+            };
         });
     
         // Add a short timeout to debounce rapid key presses
         this.languageChangeTimeout = setTimeout(() => {
             this.languageChangeTimeout = null;
         }, 300); // Adjust delay as needed (300ms works well for debouncing)
+    
+        // Reset manual change flag after some time (e.g., 5 seconds)
+        setTimeout(() => {
+            this.setState({ languageChangeManual: false });
+        }, 5000);
     };
+    
 
     renderScreen() {
         const { screen, language, arduinoData } = this.state;
@@ -200,13 +229,7 @@ class App extends BaseApp {
                         alt={`${screen} screen`}
                         className="full-screen-image"
                     />
-                    <div className="gif-container">
-                        <img
-                            src="/assets/gifs/test-tubex (1).gif"
-                            alt="Opening Animation"
-                            className="centered-gif"
-                        />
-                    </div>
+                    
                 </div>
             );
         }
@@ -289,6 +312,8 @@ class App extends BaseApp {
             </div>
         );
     }
+
+    
 }
 
 export default App;
